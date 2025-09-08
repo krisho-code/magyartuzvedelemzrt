@@ -1,0 +1,10 @@
+.logo img:active {
+  transform: scale(0.95);
+}
+
+.mobile-menu:hover {
+  cursor: pointer;
+}
+.mobile-menu:active {
+  transform: scale(0.95);
+}

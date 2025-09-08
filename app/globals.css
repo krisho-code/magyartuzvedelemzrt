@@ -1,77 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-/* 1. Use a more-intuitive box-sizing model */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
-/* 2. Remove default margin */
-* {
-  margin: 0;
+/* .container {
+  margin: auto;
+} */
+
+/* Colors */
+/* .color-primary-text {
+  color: #ae2138;
+}
+.color-primary-bg {
+  background-color: #ae2138;
+} */
+
+/* Typography */
+.text-regular-small {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}
+.text-regular-normal {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.text-medium-normal {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
 }
 
-/* 3. Enable keyword animations */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
-  }
+/* Call to Action Buttons */
+.cta-button-primary {
+  background-color: #ae2138;
+  padding: 12px 24px;
+  border: 1px solid #ae2138;
+  border-radius: none;
+  width: fit-content;
+  height: fit-content;
+
+  /* text-regular-normal */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: white;
+
+  transition: all 0.25s ease-in-out;
+}
+.cta-button-primary:hover {
+  background-color: white;
+  color: #ae2138;
+  border: 1px solid #ae2138;
+}
+.cta:active {
+  transform: scale(0.95);
 }
 
-body {
-  /* 4. Add accessible line-height */
-  line-height: 1.5;
-  /* 5. Improve text rendering */
-  -webkit-font-smoothing: antialiased;
+/* Links */
+a {
+  transition: all 0.25s ease-in-out;
 }
-
-/* 6. Improve media defaults */
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
+a:hover {
+  color: #ae2138;
 }
-
-/* 7. Inherit fonts for form controls */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* 8. Avoid text overflows */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
-/* 9. Improve line wrapping */
-p {
-  text-wrap: pretty;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-}
-
-/*
-  10. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
+a:active {
+  color: #7a151f;
 }
