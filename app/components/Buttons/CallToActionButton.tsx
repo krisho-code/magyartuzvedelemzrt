@@ -2,15 +2,22 @@ import React from "react";
 
 interface CallToActionProps {
   extraClasses?: string;
+  buttonType?: string;
+  text: string;
 }
 
-const CallToActionButton: React.FC<CallToActionProps> = ({ extraClasses }) => {
+const CallToActionButton: React.FC<CallToActionProps> = ({
+  extraClasses,
+  buttonType = "primary",
+  text,
+}) => {
   return (
-    <div className={`flex cta w-fit h-fit ${extraClasses}`}>
-      <a href="#" className="cta-button-primary">
-        Kérjen ajánlatot!
-      </a>
-    </div>
+    <a
+      href="#"
+      className={`cta-button ${buttonType} w-fit h-fit py-3 px-6 ${extraClasses}`}
+    >
+      {text}
+    </a>
   );
 };
 

@@ -37,7 +37,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ mobileOpen }) => {
           </li>
         </ul>
         {/* Item */}
-        <CallToActionButton />
+        <CallToActionButton text="Vegye fel velünk a kapcsolatot!" />
         {/* Item */}
         <div className="language sm:hidden">
           <select name="language" id="language" className="text-regular-normal">

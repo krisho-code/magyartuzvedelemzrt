@@ -3,11 +3,11 @@ import CallToActionButton from "../Buttons/CallToActionButton";
 
 const Topfoot = () => {
   return (
-    <div className="topfoot flex items-center justify-center h-72 md:h-40 bg-gray-100">
+    <div className="topfoot flex items-center justify-center h-88 sm:h-72 md:h-40 bg-gray-100">
       <div className="container flex flex-col gap-4 px-8">
         {/* Item */}
-        <div className="row flex items-center justify-between">
-          <CallToActionButton />
+        <div className="row flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <CallToActionButton text="Vegye fel velünk a kapcsolatot!" />
           <a href="#" className="logo">
             <img src="logo.svg" alt="Magyar Tűzvédelem Zrt." />
           </a>

@@ -19,11 +19,7 @@ html {
 } */
 
 /* Typography */
-.text-regular-small {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-}
+
 .text-regular-normal {
   font-weight: 400;
   font-size: 16px;
@@ -34,30 +30,45 @@ html {
   font-size: 18px;
   line-height: 150%;
 }
+.text-h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+}
 
 /* Call to Action Buttons */
-.cta-button-primary {
-  background-color: #ae2138;
-  padding: 12px 24px;
-  border: 1px solid #ae2138;
-  border-radius: none;
-  width: fit-content;
-  height: fit-content;
-
+.cta-button {
   /* text-regular-normal */
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: white;
-
-  transition: all 0.25s ease-in-out;
 }
-.cta-button-primary:hover {
+
+/* Primary */
+.cta-button.primary {
+  background-color: #ae2138;
+  border: 1px solid #ae2138;
+  color: white;
+}
+/* Secondary */
+.cta-button.secondary {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+/* Alternative  */
+.cta-button.alternative {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.cta-button:hover {
   background-color: white;
   color: #ae2138;
   border: 1px solid #ae2138;
 }
-.cta:active {
+.cta-button:active {
   transform: scale(0.95);
 }
 
@@ -83,4 +94,10 @@ a:active {
 }
 .mobile-menu:active {
   transform: scale(0.95);
+}
+
+/* Main Hero */
+.main-hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/hero-bg.jpg") no-repeat center center/cover;
 }

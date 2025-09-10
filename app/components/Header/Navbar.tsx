@@ -39,7 +39,10 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
           </ul>
         </nav>
         {/* Item */}
-        <CallToActionButton extraClasses={"hidden lg:block"} />
+        <CallToActionButton
+          extraClasses={"hidden xl:flex"}
+          text="Vegye fel velünk a kapcsolatot!"
+        />
 
         {/* Mobile menu */}
         <button className="mobile-menu lg:hidden" onClick={mobileToggle}>
