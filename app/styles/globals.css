@@ -71,3 +71,16 @@ a:hover {
 a:active {
   color: #7a151f;
 }
+
+/* Logo */
+.logo img:active {
+  transform: scale(0.95);
+}
+
+/* Header */
+.mobile-menu:hover {
+  cursor: pointer;
+}
+.mobile-menu:active {
+  transform: scale(0.95);
+}

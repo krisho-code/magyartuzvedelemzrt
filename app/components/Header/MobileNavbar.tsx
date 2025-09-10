@@ -1,5 +1,5 @@
 import React from "react";
-import CallToActionButton from "../CallToActionButton";
+import CallToActionButton from "../Buttons/CallToActionButton";
 
 interface MobileNavbarProps {
   mobileOpen: boolean;

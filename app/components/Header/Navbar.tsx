@@ -1,5 +1,5 @@
 import React from "react";
-import CallToActionButton from "../CallToActionButton";
+import CallToActionButton from "../Buttons/CallToActionButton";
 
 interface NavbarProps {
   mobileToggle: () => void;
@@ -8,7 +8,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
   return (
-    <div className="navbar flex justify-center items-center h-24 border-b-2 sm:border-t-2 border-gray-200">
+    <div className="navbar flex justify-center items-center h-24 border-b-2 sm:border-t-2 border-gray-200 bg-white">
       <div className="container flex items-center justify-between px-8">
         {/* Item */}
         <nav className="nav flex items-center gap-8">

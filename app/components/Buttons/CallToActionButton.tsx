@@ -6,7 +6,7 @@ interface CallToActionProps {
 
 const CallToActionButton: React.FC<CallToActionProps> = ({ extraClasses }) => {
   return (
-    <div className={`cta w-fit h-fit ${extraClasses}`}>
+    <div className={`flex cta w-fit h-fit ${extraClasses}`}>
       <a href="#" className="cta-button-primary">
         Kérjen ajánlatot!
       </a>
