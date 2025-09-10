@@ -15,7 +15,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full z-50">
       <Topbar />
       <Navbar mobileToggle={mobileToggle} mobileOpen={mobileOpen} />
-      <MobileNavbar mobileOpen={mobileOpen} />
+      <MobileNavbar mobileToggle={mobileToggle} mobileOpen={mobileOpen} />
     </header>
   );
 };

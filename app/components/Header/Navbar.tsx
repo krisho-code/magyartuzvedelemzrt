@@ -1,4 +1,6 @@
 import React from "react";
+import Logo from "../Logo";
+import Menu from "../Menu";
 import CallToActionButton from "../Buttons/CallToActionButton";
 
 interface NavbarProps {
@@ -12,34 +14,12 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
       <div className="container flex items-center justify-between px-8">
         {/* Item */}
         <nav className="nav flex items-center gap-8">
-          <a href="#" className="logo">
-            <img src="logo.svg" alt="Magyar Tűzvédelem Zrt." />
-          </a>
-          <ul className="menu hidden lg:flex items-center gap-8">
-            <li>
-              <a href="#" className="text-medium-normal">
-                Cégismertető
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-medium-normal">
-                Szolgáltatások
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-medium-normal">
-                Referenciák
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-medium-normal">
-                Kapcsolat
-              </a>
-            </li>
-          </ul>
+          <Logo />
+          <Menu extraClasses="hidden lg:flex items-center gap-8" />
         </nav>
         {/* Item */}
         <CallToActionButton
+          link="/kapcsolat"
           extraClasses={"hidden xl:flex"}
           text="Vegye fel velünk a kapcsolatot!"
         />

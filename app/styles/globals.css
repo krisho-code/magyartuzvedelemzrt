@@ -17,6 +17,9 @@ html {
 .color-primary-bg {
   background-color: #ae2138;
 } */
+.color-primary-b {
+  border-color: #7a151f;
+}
 
 /* Typography */
 
@@ -100,4 +103,22 @@ a:active {
 .main-hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/hero-bg.jpg") no-repeat center center/cover;
+}
+
+/* Heros */
+.hero-section.about .image {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("/about-hero.jpg") no-repeat center center/cover;
+}
+.hero-section.services .image {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("/services-hero.jpg") no-repeat center center/cover;
+}
+.hero-section.references .image {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("/references-hero.jpg") no-repeat center center/cover;
+}
+.hero-section.contacts .image {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("/contacts-hero.jpg") no-repeat center center/cover;
 }

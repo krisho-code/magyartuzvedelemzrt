@@ -1,5 +1,6 @@
 import React from "react";
 import CallToActionButton from "../Buttons/CallToActionButton";
+import Menu from "../Menu";
 
 const Topfoot = () => {
   return (
@@ -7,7 +8,10 @@ const Topfoot = () => {
       <div className="container flex flex-col gap-4 px-8">
         {/* Item */}
         <div className="row flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <CallToActionButton text="Vegye fel velünk a kapcsolatot!" />
+          <CallToActionButton
+            link="/kapcsolat"
+            text="Vegye fel velünk a kapcsolatot!"
+          />
           <a href="#" className="logo">
             <img src="logo.svg" alt="Magyar Tűzvédelem Zrt." />
           </a>
@@ -15,28 +19,8 @@ const Topfoot = () => {
 
         {/* Item */}
         <div className="row flex items-center justify-between">
-          <ul className="menu flex flex-col gap-2 md:flex-row md:items-center md:gap-8">
-            <li>
-              <a href="#" className="text-medium-normal">
-                Cégismertető
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-medium-normal">
-                Szolgáltatások
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-medium-normal">
-                Referenciák
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-medium-normal">
-                Kapcsolat
-              </a>
-            </li>
-          </ul>
+          <Menu extraClasses="flex flex-col gap-2 md:flex-row md:items-center md:gap-8" />
+
           <div className="contacts hidden lg:flex items-center gap-8">
             <a href="#" className="phone flex items-center gap-4">
               <img src="icons/phone-icon.svg" alt="" width={16} />

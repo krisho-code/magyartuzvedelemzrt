@@ -13,8 +13,12 @@ const MainHero = () => {
           biztonságos holnapért.
         </p>
         <div className="actions flex flex-col md:flex-row gap-4">
-          <CallToActionButton text="Vegye fel velünk a kapcsolatot!" />
           <CallToActionButton
+            link="/kapcsolat"
+            text="Vegye fel velünk a kapcsolatot!"
+          />
+          <CallToActionButton
+            link="/szolgaltatasok"
             buttonType="alternative"
             text="Tekintse meg szolgáltatásainkat!"
           />
