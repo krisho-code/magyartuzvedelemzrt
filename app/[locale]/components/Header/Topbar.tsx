@@ -1,4 +1,5 @@
 import React from "react";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 const Topbar = () => {
   return (
@@ -16,12 +17,7 @@ const Topbar = () => {
           </a>
         </div>
         {/* Item */}
-        <div className="language">
-          <select name="language" id="language" className="text-regular-normal">
-            <option value="hu">Magyar</option>
-            <option value="en">English</option>
-          </select>
-        </div>
+        <LanguageSwitcher />
       </div>
     </div>
   );

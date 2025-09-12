@@ -1,26 +1,29 @@
 import React from "react";
+import { getI18n } from "@/locales/server";
+
 import CallToActionButton from "./Buttons/CallToActionButton";
 
-const MainHero = () => {
+const MainHero = async () => {
+  const t = await getI18n();
+
   return (
     <section className="main-hero-section h-200 md:h-224 flex items-center justify-center">
       <div className="container flex flex-col gap-8 px-8">
-        <h1 className="text-h1 text-white">
-          Professzionális tűzvédelmi megoldások, szakemberektől
+        <h1 className="text-h1 xl:w-60/100 text-white">
+          {t("mainHero.title")}
         </h1>
         <p className="text-medium-normal text-white">
-          Szakembereink gondoskodnak a modern, megbízható megoldásokról a
-          biztonságos holnapért.
+          {t("mainHero.description")}
         </p>
         <div className="actions flex flex-col md:flex-row gap-4">
           <CallToActionButton
             link="/kapcsolat"
-            text="Vegye fel velünk a kapcsolatot!"
+            text={`${t("mainHero.cta1")}`}
           />
           <CallToActionButton
             link="/szolgaltatasok"
             buttonType="alternative"
-            text="Tekintse meg szolgáltatásainkat!"
+            text={`${t("mainHero.cta2")}`}
           />
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import CallToActionButton from "../Buttons/CallToActionButton";
 import Menu from "../Menu";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 interface MobileNavbarProps {
   mobileToggle: () => void;
@@ -30,12 +31,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
           mobileToggle={mobileToggle}
         />
         {/* Item */}
-        <div className="language sm:hidden">
-          <select name="language" id="language" className="text-regular-normal">
-            <option value="hu">Magyar</option>
-            <option value="en">English</option>
-          </select>
-        </div>
+        <LanguageSwitcher extraClasses="sm:hidden" />
       </div>
     </div>
   );
