@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 interface ServiceInfoProps {
   title: string;
@@ -12,10 +13,10 @@ const ServiceInfo: React.FC<ServiceInfoProps> = ({ title, description }) => {
       <div className="content flex flex-col gap-4">
         <h3 className="text-h3">{title}</h3>
         <p className="text-medium-normal">{description}</p>
-        <a href="/szolgaltatasok" className="text-regular-normal flex gap-2">
+        <Link href="/szolgaltatasok" className="text-regular-normal flex gap-2">
           Tudjon meg többet
           <img src="/icons/arrow-icon.svg" alt="" className="w-2" />
-        </a>
+        </Link>
       </div>
     </div>
   );
