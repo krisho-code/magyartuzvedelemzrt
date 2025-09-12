@@ -1,5 +1,6 @@
 import React from "react";
 import CallToActionButton from "../Buttons/CallToActionButton";
+import Logo from "../Logo";
 import Menu from "../Menu";
 
 const Topfoot = () => {
@@ -12,9 +13,7 @@ const Topfoot = () => {
             link="/kapcsolat"
             text="Vegye fel velünk a kapcsolatot!"
           />
-          <a href="#" className="logo">
-            <img src="logo.svg" alt="Magyar Tűzvédelem Zrt." />
-          </a>
+          <Logo />
         </div>
 
         {/* Item */}

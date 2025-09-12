@@ -1,4 +1,5 @@
 import React from "react";
+import PageName from "./PageName";
 import CallToActionButton from "../components/Buttons/CallToActionButton";
 
 interface HeroProps {
@@ -26,9 +27,7 @@ const Hero: React.FC<HeroProps> = ({
     >
       <div className="column h-fit order-2 lg:order-1 py-8 lg:py-16">
         <div className="container flex flex-col gap-8 px-8">
-          <p className="text-regular-normal w-fit border-b-4 color-primary-b">
-            {pageName}
-          </p>
+          <PageName pageName={pageName} />
           <p className="text-h1">{pageTitle}</p>
           <p className="text-medium-normal">{pageDescription}</p>
           <div className="actions flex flex-col md:flex-row gap-4">

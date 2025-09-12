@@ -11,6 +11,7 @@ html {
 } */
 
 /* Colors */
+/* Primary */
 /* .color-primary-text {
   color: #ae2138;
 }
@@ -20,6 +21,10 @@ html {
 .color-primary-b {
   border-color: #7a151f;
 }
+/* Secondary */
+/* .color-secondary-text {
+  color: #8d99ae;
+} */
 
 /* Typography */
 
@@ -37,6 +42,16 @@ html {
   font-weight: 700;
   font-size: 56px;
   line-height: 120%;
+}
+.text-h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+}
+.text-h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
 }
 
 /* Call to Action Buttons */
@@ -99,8 +114,8 @@ a:active {
   transform: scale(0.95);
 }
 
-/* Main Hero */
-.main-hero-section {
+/* Home Hero */
+.home-hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/hero-bg.jpg") no-repeat center center/cover;
 }
