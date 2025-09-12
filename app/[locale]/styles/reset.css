@@ -65,6 +65,9 @@ h5,
 h6 {
   text-wrap: balance;
 }
+a {
+  width: fit-content;
+}
 
 /*
   10. Create a root stacking context
