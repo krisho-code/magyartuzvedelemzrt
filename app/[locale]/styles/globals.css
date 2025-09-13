@@ -102,6 +102,9 @@ a:active {
 }
 
 /* Logo */
+.logo img {
+  transition: all 0.25s ease-in-out;
+}
 .logo img:active {
   transform: scale(0.95);
 }
@@ -118,6 +121,31 @@ a:active {
 .home-hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/hero-bg.jpg") no-repeat center center/cover;
+}
+
+/* Home References */
+.home-references-infos img {
+  filter: brightness(0.75);
+}
+.home-references-infos h3 {
+  transform: translate(-50%, -50%);
+}
+.home-references-infos a::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  background-color: #8d99ae;
+  transition: all 0.25s ease-in-out;
+}
+
+.home-references-infos a:hover::after {
+  bottom: 0;
+}
+.home-references-infos a:active {
+  transform: scale(0.95);
 }
 
 /* Heros */
