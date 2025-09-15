@@ -23,10 +23,10 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <section
-      className={`hero-section ${section} grid grid-rows-[256_auto] lg:grid-cols-2 lg:grid-rows-1`}
+      className={`hero-section ${section} grid grid-rows-[320_auto] lg:grid-cols-2 lg:grid-rows-1 lg:items-center`}
     >
-      <div className="column h-fit order-2 lg:order-1 py-8 lg:py-16">
-        <div className="container flex flex-col gap-8 px-8">
+      <div className="flex items-center justify-center h-fit order-2 lg:order-1">
+        <div className="container flex flex-col gap-8 pt-8 pb-16 px-8 lg:px-16">
           <PageName pageName={pageName} />
           <p className="text-h1">{pageTitle}</p>
           <p className="text-medium-normal">{pageDescription}</p>
@@ -39,7 +39,7 @@ const Hero: React.FC<HeroProps> = ({
           </div>
         </div>
       </div>
-      <div className="image lg:h-full order-1 lg:order-2"></div>
+      <div className="image h-full lg:min-h-[65vh] order-1 lg:order-2"></div>
     </section>
   );
 };
