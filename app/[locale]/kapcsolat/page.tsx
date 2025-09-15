@@ -1,5 +1,8 @@
 import React from "react";
 import Hero from "../components/Hero";
+import ContactInfos from "../components/ContactInfos";
+import ContactForm from "../components/ContactForm";
+import ContactCallToAction from "../components/ContactCallToAction";
 
 const Kapcsolat = () => {
   return (
@@ -13,6 +16,9 @@ const Kapcsolat = () => {
         button2Text="Kérjen ajánlatot!"
         // heroImage="/contacts-hero.jpg"
       />
+      <ContactInfos />
+      <ContactForm />
+      <ContactCallToAction />
     </main>
   );
 };

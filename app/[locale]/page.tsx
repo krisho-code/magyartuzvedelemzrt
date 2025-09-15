@@ -3,6 +3,7 @@ import HomeAbout from "./components/Home/HomeAbout";
 import HomeServices from "./components/Home/HomeServices";
 import HomeReferences from "./components/Home/HomeReferences";
 import ContactForm from "./components/ContactForm";
+import CallToAction from "./components/CallToAction";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <HomeServices />
       <HomeReferences />
       <ContactForm />
+      <CallToAction title="Biztonságban a jövő – válasszon minket!" />
     </main>
   );
 };

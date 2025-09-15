@@ -53,6 +53,11 @@ html {
   font-size: 24px;
   line-height: 140%;
 }
+.text-h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+}
 
 /* Call to Action Buttons */
 .cta-button {
