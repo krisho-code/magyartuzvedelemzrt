@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Stats from "../components/Stats";
 import HomeAbout from "../components/Home/HomeAbout";
 import AboutFuture from "../components/AboutFuture";
+import AboutTeam from "../components/AboutTeam";
 import CallToAction from "../components/CallToAction";
 
 const Cégismertető = () => {
@@ -33,6 +34,7 @@ const Cégismertető = () => {
       />
       <HomeAbout hiddenButton={true} />
       <AboutFuture />
+      <AboutTeam />
       <CallToAction title="Keresse szakértő csapatunkat bizalommal!" />
     </main>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutFuture = () => {
   return (
-    <section className="about-future-section flex items-center justify-center py-16">
+    <section className="about-future-section flex items-center justify-center py-16 bg-gray-200">
       <div className="container grid gap-16 items-center lg:grid-cols-2 px-8">
         <div className="flex flex-col gap-8 order-2 lg:order-1">
           <div className="flex flex-col gap-8">
