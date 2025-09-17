@@ -1,6 +1,9 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Stats from "../components/Stats";
+import HomeAbout from "../components/Home/HomeAbout";
+import AboutFuture from "../components/AboutFuture";
+import CallToAction from "../components/CallToAction";
 
 const Cégismertető = () => {
   return (
@@ -28,6 +31,9 @@ const Cégismertető = () => {
         stat3="50+"
         text3="Településen végzett munka országszerte"
       />
+      <HomeAbout hiddenButton={true} />
+      <AboutFuture />
+      <CallToAction title="Keresse szakértő csapatunkat bizalommal!" />
     </main>
   );
 };

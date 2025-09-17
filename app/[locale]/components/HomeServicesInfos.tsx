@@ -18,9 +18,11 @@ const HomeServicesInfos = () => {
           description="Professzionális megoldások víz okozta károk esetén"
         />
       </div>
-      <div className="col order-1 lg:order-2 flex items-center justify-start">
-        <img src="/home-services.jpg" alt="" />
-      </div>
+      <img
+        src="/home-services.jpg"
+        alt=""
+        className="order-1 lg:order-2 h-full object-cover"
+      />
     </div>
   );
 };
