@@ -1,5 +1,8 @@
 import React from "react";
 import Hero from "../components/Hero";
+import Stats from "../components/Stats";
+import Services from "../components/Services";
+import CallToAction from "../components/CallToAction";
 
 const Szolgáltatások = () => {
   return (
@@ -13,6 +16,18 @@ const Szolgáltatások = () => {
         button2Text="Kapcsolat"
         // heroImage="/services-hero.jpg"
       />
+      <Stats
+        title="Szakértelmünk magáért beszél!"
+        description="A Magyar Tűzvédelem Zrt. több évtizedes szakmai tapasztalattal, elismert minősítésekkel és engedélyekkel biztosítja ügyfelei számára a legmagasabb színvonalú megoldásokat. Minden projektünkben a megbízhatóság, a biztonság és a precíz kivitelezés áll a középpontban, így partnereink garantáltan hosszú távú értéket kapnak."
+        stat1="GNB"
+        text1="Minősítéssel dolgozunk"
+        stat2="HPS"
+        text2="Engedélyünk van a munkáinkra"
+        stat3="30+"
+        text3="Év szakmai tapasztalat"
+      />
+      <Services />
+      <CallToAction title="Fedezze fel szolgáltatásainkat részletesen!" />
     </main>
   );
 };

@@ -178,3 +178,29 @@ a:active {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url("/contacts-hero.jpg") no-repeat center center/cover;
 }
+
+/* Service Hero */
+.service-hero-section.tuzvedelem {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/tuzvedelem.jpg") no-repeat center center/cover;
+}
+.service-hero-section.azbesztmentesites {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/azbesztmentesites.jpg") no-repeat center center/cover;
+}
+.service-hero-section.tuzkarmentesites {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/tuzkarmentesites.jpg") no-repeat center center/cover;
+}
+.service-hero-section.vizkarmentesites {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/vizkarmentesites.jpg") no-repeat center center/cover;
+}
+.service-hero-section.iparitesv {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/iparitesv.jpg") no-repeat center center/cover;
+}
+.service-hero-section.alpintechnika {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/alpintechnika.jpg") no-repeat center center/cover;
+}
