@@ -1,6 +1,6 @@
 import React from "react";
-import Topfoot from "./Footer/Topfoot";
-import Bottomfoot from "./Footer/Bottomfoot";
+import Topfoot from "./Topfoot";
+import Bottomfoot from "./Bottomfoot";
 
 const Footer = () => {
   return (

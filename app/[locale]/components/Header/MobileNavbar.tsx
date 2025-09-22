@@ -1,7 +1,7 @@
 import React from "react";
-import CallToActionButton from "../Buttons/CallToActionButton";
-import Menu from "../Menu";
-import LanguageSwitcher from "../LanguageSwitcher";
+import CallToActionButton from "../CallToAction/CallToActionButton";
+import Menu from "./Menu";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 interface MobileNavbarProps {
   mobileToggle: () => void;

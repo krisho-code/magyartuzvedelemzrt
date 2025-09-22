@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from "../Logo";
-import Menu from "../Menu";
-import CallToActionButton from "../Buttons/CallToActionButton";
+import Logo from "../Global Components/Logo";
+import Menu from "./Menu";
+import CallToActionButton from "../CallToAction/CallToActionButton";
 
 interface NavbarProps {
   mobileToggle: () => void;

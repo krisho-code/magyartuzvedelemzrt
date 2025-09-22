@@ -1,7 +1,7 @@
 import React from "react";
 import { getI18n } from "@/locales/server";
 
-import CallToActionButton from "../Buttons/CallToActionButton";
+import CallToActionButton from "../CallToAction/CallToActionButton";
 
 const HomeHero = async () => {
   const t = await getI18n();

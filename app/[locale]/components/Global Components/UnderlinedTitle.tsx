@@ -8,7 +8,7 @@ interface HomeTitleProps {
   title: string;
 }
 
-const HomeTitle: React.FC<HomeTitleProps> = ({
+const UnderlinedTitle: React.FC<HomeTitleProps> = ({
   pageName,
   extraClassesDiv,
   extraClassesH2,
@@ -22,4 +22,4 @@ const HomeTitle: React.FC<HomeTitleProps> = ({
   );
 };
 
-export default HomeTitle;
+export default UnderlinedTitle;

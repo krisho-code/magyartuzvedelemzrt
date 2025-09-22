@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Stats from "../components/Stats";
+import Hero from "../components/Global Components/Hero";
+import Stats from "../components/Global Components/Stats";
 import HomeAbout from "../components/Home/HomeAbout";
-import AboutFuture from "../components/AboutFuture";
-import AboutTeam from "../components/AboutTeam";
-import CallToAction from "../components/CallToAction";
+import AboutFuture from "../components/About/AboutFuture";
+import AboutTeam from "../components/About/AboutTeam";
+import CallToAction from "../components/CallToAction/CallToAction";
 
 const Cégismertető = () => {
   return (

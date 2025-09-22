@@ -1,6 +1,6 @@
 import React from "react";
 import PageName from "./PageName";
-import CallToActionButton from "../components/Buttons/CallToActionButton";
+import CallToActionButton from "../CallToAction/CallToActionButton";
 
 interface HeroProps {
   section: string;

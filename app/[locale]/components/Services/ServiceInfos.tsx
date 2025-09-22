@@ -1,6 +1,6 @@
 import React from "react";
 import ServiceInfosContent from "./ServiceInfosContent";
-import CallToActionButton from "./Buttons/CallToActionButton";
+import CallToActionButton from "../CallToAction/CallToActionButton";
 
 interface ServiceInfosProps {
   title: string;

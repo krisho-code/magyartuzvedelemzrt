@@ -1,7 +1,6 @@
 import React from "react";
 
-import HomeTitle from "./HomeTitle";
-import CallToActionButton from "./Buttons/CallToActionButton";
+import UnderlinedTitle from "../Global Components/UnderlinedTitle";
 
 const ContactForm = () => {
   return (
@@ -10,7 +9,7 @@ const ContactForm = () => {
         {/* Item */}
         <div className="col flex flex-col gap-16">
           <div className="flex flex-col gap-4">
-            <HomeTitle
+            <UnderlinedTitle
               pageName="Kapcsolatok"
               title="Vegye fel velünk a kapcsolatot!"
             />

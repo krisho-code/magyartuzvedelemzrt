@@ -1,9 +1,9 @@
 import React from "react";
-import ServiceHero from "../../components/ServiceHero";
-import ServiceAbout from "../../components/ServiceAbout";
-import ServiceInfos from "../../components/ServiceInfos";
-import ServiceImages from "../../components/ServiceImages";
-import CallToAction from "../../components/CallToAction";
+import ServiceHero from "../../components/Services/ServiceHero";
+import ServiceAbout from "../../components/Services/ServiceAbout";
+import ServiceInfos from "../../components/Services/ServiceInfos";
+import ServiceImages from "../../components/Services/ServiceImages";
+import CallToAction from "../../components/CallToAction/CallToAction";
 
 const Tűzvédelem = () => {
   return (

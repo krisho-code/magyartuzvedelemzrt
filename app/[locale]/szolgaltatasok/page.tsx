@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Stats from "../components/Stats";
-import Services from "../components/Services";
-import CallToAction from "../components/CallToAction";
+import Hero from "../components/Global Components/Hero";
+import Stats from "../components/Global Components/Stats";
+import Services from "../components/Services/Services";
+import CallToAction from "../components/CallToAction/CallToAction";
 
 const Szolgáltatások = () => {
   return (

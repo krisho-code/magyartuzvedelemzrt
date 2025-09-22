@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import Topbar from "./Header/Topbar";
-import Navbar from "./Header/Navbar";
-import MobileNavbar from "./Header/MobileNavbar";
+import Topbar from "./Topbar";
+import Navbar from "./Navbar";
+import MobileNavbar from "./MobileNavbar";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);

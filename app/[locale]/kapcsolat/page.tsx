@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "../components/Hero";
-import ContactInfos from "../components/ContactInfos";
-import ContactForm from "../components/ContactForm";
-import ContactCallToAction from "../components/ContactCallToAction";
+import Hero from "../components/Global Components/Hero";
+import ContactInfos from "../components/Contacts/ContactInfos";
+import ContactForm from "../components/Contacts/ContactForm";
+import ContactCallToAction from "../components/CallToAction/ContactCallToAction";
 
 const Kapcsolat = () => {
   return (

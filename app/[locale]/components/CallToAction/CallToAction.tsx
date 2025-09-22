@@ -1,5 +1,5 @@
 import React from "react";
-import CallToActionButton from "./Buttons/CallToActionButton";
+import CallToActionButton from "./CallToActionButton";
 
 interface CallToActionProps {
   title: string;

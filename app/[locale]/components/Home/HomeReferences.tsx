@@ -1,13 +1,13 @@
 import React from "react";
-import HomeTitle from "../HomeTitle";
-import HomeReferencesInfos from "../HomeReferencesInfos";
+import UnderlinedTitle from "../Global Components/UnderlinedTitle";
+import HomeReferencesInfos from "./HomeReferencesInfos";
 
 const HomeReferences = () => {
   return (
     <section className="home-references-section flex items-center justify-center py-16 bg-gray-200">
       <div className="container flex flex-col gap-16 px-8">
         <div className="flex flex-col gap-8">
-          <HomeTitle
+          <UnderlinedTitle
             pageName="Referenciák"
             extraClassesDiv="items-center"
             extraClassesH2="text-center"
