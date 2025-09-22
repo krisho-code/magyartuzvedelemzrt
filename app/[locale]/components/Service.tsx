@@ -1,9 +1,11 @@
 import React from "react";
+import Link from "next/link";
 
 interface ServiceProps {
   name: string;
   description: string;
   text: string;
+  link: string;
   img: string;
   borderBottom?: boolean;
 }
@@ -12,6 +14,7 @@ const Service: React.FC<ServiceProps> = ({
   name,
   description,
   text,
+  link,
   img,
   borderBottom = true,
 }) => {
@@ -26,10 +29,13 @@ const Service: React.FC<ServiceProps> = ({
           <h2 className="text-h2">{name}</h2>
           <p className="text-bold-normal">{description}</p>
           <p className="text-regular-normal">{text}</p>
-          <a href="" className="text-regular-normal flex gap-2">
-            Tudjon meg többet{" "}
+          <Link
+            href={`szolgaltatasok/${link}`}
+            className="text-regular-normal flex gap-2"
+          >
+            Tudjon meg többet
             <img src="/icons/arrow-icon.svg" alt="" className="w-2" />
-          </a>
+          </Link>
         </div>
         <img
           src={`${img}`}
