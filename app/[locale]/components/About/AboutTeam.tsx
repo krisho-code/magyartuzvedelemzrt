@@ -3,7 +3,10 @@ import Person from "./Person";
 
 const AboutTeam = () => {
   return (
-    <section className="about-team-section flex items-center justify-center py-16">
+    <section
+      id="about-team-section"
+      className="flex items-center justify-center py-16"
+    >
       <div className="container flex flex-col gap-16 px-8">
         <div className="flex flex-col gap-2">
           <h2 className="text-h2">Ismerje meg csapatunkat!</h2>

@@ -3,7 +3,7 @@ import Service from "./Service";
 
 const Services = () => {
   return (
-    <section className="services-section">
+    <section id="services-section">
       <div className="frame">
         <Service
           name="Tűzvédelem"

@@ -4,14 +4,16 @@ import Link from "next/link";
 interface HomeReferencesInfosContentProps {
   img: string;
   title: string;
+  link?: string;
 }
 
 const HomeReferencesInfosContent: React.FC<HomeReferencesInfosContentProps> = ({
   img,
   title,
+  link = "/referenciak",
 }) => {
   return (
-    <Link href="#" className="relative overflow-clip">
+    <Link href={`${link}`} className="relative overflow-clip">
       <img src={`${img}`} alt="" />
       <h3 className="text-h3 text-center absolute top-[50%] left-[50%] text-white">
         {title}

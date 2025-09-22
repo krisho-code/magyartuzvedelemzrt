@@ -22,8 +22,12 @@ const CallToAction: React.FC<CallToActionProps> = ({
           <p className="text-medium-normal">{text}</p>
         </div>
         <div className="col flex flex-col gap-4">
-          <CallToActionButton text={`${cta1}`} />
-          <CallToActionButton buttonType="secondary" text={`${cta2}`} />
+          <CallToActionButton text={`${cta1}`} link="/szolgaltatasok" />
+          <CallToActionButton
+            buttonType="secondary"
+            text={`${cta2}`}
+            link="/kapcsolat"
+          />
         </div>
       </div>
     </section>

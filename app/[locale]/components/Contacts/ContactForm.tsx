@@ -4,7 +4,10 @@ import UnderlinedTitle from "../Global Components/UnderlinedTitle";
 
 const ContactForm = () => {
   return (
-    <section className="conact-form-section flex items-center justify-center py-16">
+    <section
+      id="conact-form-section"
+      className="flex items-center justify-center py-16"
+    >
       <div className="container grid gap-16 lg:grid-cols-2 px-8">
         {/* Item */}
         <div className="col flex flex-col gap-16">

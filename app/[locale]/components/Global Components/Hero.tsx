@@ -9,6 +9,8 @@ interface HeroProps {
   pageDescription: string;
   button1Text: string;
   button2Text: string;
+  link1?: string;
+  link2?: string;
   // heroImage: string;
 }
 
@@ -19,6 +21,8 @@ const Hero: React.FC<HeroProps> = ({
   pageDescription,
   button1Text,
   button2Text,
+  link1,
+  link2,
   // heroImage,
 }) => {
   return (
@@ -31,10 +35,14 @@ const Hero: React.FC<HeroProps> = ({
           <h1 className="text-h1">{pageTitle}</h1>
           <p className="text-medium-normal">{pageDescription}</p>
           <div className="actions flex flex-col md:flex-row gap-4">
-            <CallToActionButton text={`${button1Text}`} />
+            <CallToActionButton
+              text={`${button1Text}`}
+              link={link1 ? link1 : "#"}
+            />
             <CallToActionButton
               buttonType="secondary"
               text={`${button2Text}`}
+              link={link2 ? link2 : "#"}
             />
           </div>
         </div>

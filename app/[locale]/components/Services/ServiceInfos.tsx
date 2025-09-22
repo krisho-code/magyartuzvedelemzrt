@@ -41,10 +41,14 @@ const ServiceInfos: React.FC<ServiceInfosProps> = ({
           <ServiceInfosContent title={`${info4title}`} text={`${info4text}`} />
         </div>
         <div className="flex flex-col gap-4 lg:flex-row">
-          <CallToActionButton text="Kérjen személyre szabott ajánlatot!" />
+          <CallToActionButton
+            text="Kérjen személyre szabott ajánlatot!"
+            link="/kapcsolat"
+          />
           <CallToActionButton
             buttonType="secondary"
             text="Vegye fel velünk a kapcsolatot!"
+            link="/kapcsolat"
           />
         </div>
       </div>

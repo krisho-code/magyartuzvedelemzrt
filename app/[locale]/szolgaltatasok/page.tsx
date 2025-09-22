@@ -14,6 +14,8 @@ const Szolgáltatások = () => {
         pageDescription="Szolgáltatásaink célja, hogy ügyfeleink számára mindig biztonságos, megbízható és hosszú távon fenntartható megoldásokat nyújtsunk. Munkánk során a szakmai alaposságot és a minőséget helyezzük előtérbe, hogy partnereink minden esetben elégedetten vehessék igénybe szolgáltatásainkat."
         button1Text="Szolgáltatásaink"
         button2Text="Kapcsolat"
+        link1="#services-section"
+        link2="/kapcsolat"
         // heroImage="/services-hero.jpg"
       />
       <Stats

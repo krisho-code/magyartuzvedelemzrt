@@ -3,7 +3,10 @@ import CallToActionButton from "./CallToActionButton";
 
 const ContactCallToAction = () => {
   return (
-    <section className="contact-call-to-action-section flex items-center justify-center py-16 bg-red-50">
+    <section
+      id="contact-call-to-action-section"
+      className="flex items-center justify-center py-16 bg-red-50"
+    >
       <div className="container grid gap-8 lg:grid-cols-[auto_auto] px-8">
         <div className="flex flex-col gap-4">
           <h3 className="text-h3">Nem tudja pontosan mit szeretne?</h3>

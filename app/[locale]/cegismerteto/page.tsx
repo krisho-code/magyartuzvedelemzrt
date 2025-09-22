@@ -20,6 +20,8 @@ const Cégismertető = () => {
             széleskörű referenciái biztosítják."
         button1Text="Küldetésünk és jövőképünk"
         button2Text="Csapatunk"
+        link1="#about-future-section"
+        link2="#about-team-section"
         // heroImage="/about-hero.jpg"
       />
       <Stats

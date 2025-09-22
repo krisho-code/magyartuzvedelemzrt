@@ -8,14 +8,17 @@ const HomeServicesInfos = () => {
         <HomeServicesInfosContent
           title="Tűzvédelem"
           description="Professzionális passzív tűzvédelmi megoldások"
+          link="/szolgaltatasok/tuzvedelem"
         />
         <HomeServicesInfosContent
           title="Azbesztmentesítés"
           description="Biztonságosan és szakszerűen, teljes körű szolgáltatás országosan"
+          link="/szolgaltatasok/azbesztmentesites"
         />
         <HomeServicesInfosContent
           title="Vízkármentesítés"
           description="Professzionális megoldások víz okozta károk esetén"
+          link="/szolgaltatasok/vizkarmentesites"
         />
       </div>
       <img
