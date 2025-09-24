@@ -4,7 +4,7 @@ import HomeReferencesInfos from "./HomeReferencesInfos";
 
 const HomeReferences = () => {
   return (
-    <section className="home-references-section flex items-center justify-center py-16 bg-gray-200">
+    <section className="home-references-section flex items-center justify-center py-16 bg-gray-100">
       <div className="container flex flex-col gap-16 px-8">
         <div className="flex flex-col gap-8">
           <UnderlinedTitle

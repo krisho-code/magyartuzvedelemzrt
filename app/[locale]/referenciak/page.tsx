@@ -3,7 +3,7 @@ import Hero from "../components/Global Components/Hero";
 
 const Referenciák = () => {
   return (
-    <main>
+    <main className="pt-24">
       <Hero
         section="references"
         pageName="Referenciák"

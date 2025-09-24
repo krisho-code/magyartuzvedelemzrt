@@ -7,18 +7,27 @@ const HomeServicesInfos = () => {
       <div className="col order-2 lg:order-1 flex flex-col justify-center gap-8">
         <HomeServicesInfosContent
           title="Tűzvédelem"
-          description="Professzionális passzív tűzvédelmi megoldások"
           link="/szolgaltatasok/tuzvedelem"
         />
         <HomeServicesInfosContent
           title="Azbesztmentesítés"
-          description="Biztonságosan és szakszerűen, teljes körű szolgáltatás országosan"
           link="/szolgaltatasok/azbesztmentesites"
         />
         <HomeServicesInfosContent
+          title="Tűzkármentesítés"
+          link="/szolgaltatasok/tuzkarmentesites"
+        />
+        <HomeServicesInfosContent
           title="Vízkármentesítés"
-          description="Professzionális megoldások víz okozta károk esetén"
           link="/szolgaltatasok/vizkarmentesites"
+        />
+        <HomeServicesInfosContent
+          title="Ipari tisztítás és veszélytelenítés"
+          link="/szolgaltatasok/tisztitasesveszelytelenites"
+        />
+        <HomeServicesInfosContent
+          title="Ipari alpintechnika"
+          link="/szolgaltatasok/alpintechnika"
         />
       </div>
       <img

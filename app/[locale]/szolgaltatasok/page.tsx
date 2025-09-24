@@ -6,7 +6,7 @@ import CallToAction from "../components/CallToAction/CallToAction";
 
 const Szolgáltatások = () => {
   return (
-    <main>
+    <main className="pt-24">
       <Hero
         section="services"
         pageName="Szolgáltatások"

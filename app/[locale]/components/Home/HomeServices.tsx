@@ -5,7 +5,7 @@ import CallToActionButton from "../CallToAction/CallToActionButton";
 
 const HomeServices = () => {
   return (
-    <section className="home-service-section flex items-center justify-center py-16 bg-gray-100">
+    <section className="home-service-section flex items-center justify-center py-16 bg-gray-50">
       <div className="container flex flex-col gap-16 px-8">
         <UnderlinedTitle
           pageName="Szolgáltatások"

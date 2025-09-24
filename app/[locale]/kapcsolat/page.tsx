@@ -6,7 +6,7 @@ import ContactCallToAction from "../components/CallToAction/ContactCallToAction"
 
 const Kapcsolat = () => {
   return (
-    <main>
+    <main className="pt-24">
       <Hero
         section="contacts"
         pageName="Kapcsolatok"
