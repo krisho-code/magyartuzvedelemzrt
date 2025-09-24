@@ -4,7 +4,7 @@ const AboutFuture = () => {
   return (
     <section
       id="about-future-section"
-      className="flex items-center justify-center py-16 bg-gray-200"
+      className="flex items-center justify-center py-16 bg-gray-100"
     >
       <div className="container grid gap-16 items-center lg:grid-cols-2 px-8">
         <div className="flex flex-col gap-8 order-2 lg:order-1">

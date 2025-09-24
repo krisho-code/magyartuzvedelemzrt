@@ -23,7 +23,7 @@ const Stats: React.FC<StatsProps> = ({
   text3,
 }) => {
   return (
-    <section className="stats-section flex items-center justify-center py-16 bg-gray-100">
+    <section className="stats-section flex items-center justify-center py-16 bg-gray-50">
       <div className="container flex flex-col gap-16 px-8">
         <div className="grid gap-8 lg:grid-cols-2">
           <h2 className="text-h2">{title}</h2>

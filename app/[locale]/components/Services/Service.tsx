@@ -22,7 +22,7 @@ const Service: React.FC<ServiceProps> = ({
     <div
       className={`service flex items-center justify-center py-8 w-full ${
         borderBottom ? "border-b-2" : null
-      } transition duration-250 ease-in-out hover:bg-gray-200`}
+      } transition duration-250 ease-in-out hover:bg-gray-100`}
     >
       <Link href={`szolgaltatasok/${link}`} className="nohover">
         <div className="container grid gap-8 lg:grid-cols-2 items-center lg:gap-16 p-8">
