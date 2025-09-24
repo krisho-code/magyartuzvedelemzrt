@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Menu from "./Menu";
 import CallToActionButton from "../CallToAction/CallToActionButton";
 import AlterLogo from "../Global Components/AlterLogo";
@@ -9,8 +9,22 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 48);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="navbar flex justify-center items-center h-24 bg-zinc-800 text-white opacity-80">
+    <div
+      className={`navbar alter-navbar flex justify-center items-center h-24 bg-zinc-800 text-white transition-opacity ease-in-out duration-250 ${
+        scrolled ? "opacity-80" : "opacity-100"
+      } hover:opacity-100`}
+    >
       <div className="container flex items-center justify-between px-8">
         {/* Item */}
         <nav className="nav flex items-center gap-8">
