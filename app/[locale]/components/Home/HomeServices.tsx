@@ -9,7 +9,7 @@ const HomeServices = () => {
       <div className="container flex flex-col gap-16 px-8">
         <UnderlinedTitle
           pageName="Szolgáltatások"
-          title="Fő szolgáltatásaink"
+          title="Tekintsd meg szolgáltatásainkat!"
         />
         <HomeServicesInfos />
         <CallToActionButton

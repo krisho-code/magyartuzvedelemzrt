@@ -14,7 +14,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
 }) => {
   return (
     <div
-      className={`mobile-navbar lg:hidden flex justify-center items-center h-fit py-8 bg-gray-100 ${
+      className={`mobile-navbar lg:hidden flex justify-center items-center h-fit py-8 bg-gray-200 ${
         mobileOpen ? "" : "hidden"
       }`}
     >

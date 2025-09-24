@@ -22,8 +22,8 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
   return (
     <div
       className={`navbar alter-navbar flex justify-center items-center h-24 bg-zinc-800 text-white transition-opacity ease-in-out duration-250 ${
-        scrolled ? "opacity-80" : "opacity-100"
-      } hover:opacity-100`}
+        mobileOpen ? "opacity-100" : "opacity-80"
+      } ${scrolled ? "opacity-80" : "opacity-100"} hover:opacity-100`}
     >
       <div className="container flex items-center justify-between px-8">
         {/* Item */}
