@@ -7,9 +7,9 @@ const HomeHero = async () => {
   const t = await getI18n();
 
   return (
-    <section className="home-hero-section py-48 md:py-64 flex items-center justify-center">
+    <section className="home-hero-section py-48 md:py-64 lg:pt-72 flex items-center justify-center">
       <div className="container flex flex-col gap-8 px-8">
-        <h1 className="text-h1 xl:w-60/100 text-white">
+        <h1 className="text-h1-responsive md:text-h1 xl:w-60/100 text-white">
           {t("mainHero.title")}
         </h1>
         <p className="text-medium-normal text-white">

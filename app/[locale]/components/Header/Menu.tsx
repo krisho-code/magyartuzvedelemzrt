@@ -29,15 +29,6 @@ const Menu: React.FC<MenuProps> = ({ mobileToggle, extraClasses }) => {
       </li>
       <li>
         <Link
-          href="/referenciak"
-          className="text-medium-normal"
-          onClick={mobileToggle}
-        >
-          Referenciák
-        </Link>
-      </li>
-      <li>
-        <Link
           href="/kapcsolat"
           className="text-medium-normal"
           onClick={mobileToggle}
