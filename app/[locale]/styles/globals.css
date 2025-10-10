@@ -9,6 +9,11 @@ html {
 body {
   padding-top: 3rem;
 }
+@media (max-width: 639px) {
+  body {
+    padding-top: calc(3rem - 48px);
+  }
+}
 
 /* .container {
   margin: auto;

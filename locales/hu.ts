@@ -159,4 +159,43 @@ export default {
       title: "Keresse szakértő csapatunkat bizalommal!",
     },
   },
+  contactPage: {
+    hero: {
+      pageName: "Kapcsolatok",
+      title: "Hozzánk bármivel fordulhat!",
+      description:
+        "Lépjen velünk kapcsolatba bizalommal, ha tűzvédelemre, azbesztmentesítésre, veszélyes anyagok eltávolítására, vagy épületbiztonsági tanácsadásra van szüksége! Szakértő csapatunk készséggel válaszol kérdéseire, legyen szó akár konkrét ajánlatkérésről, akár általános tájékozódásról.",
+      button1: "Kérjen visszahívást!",
+      button2: "Kérjen ajánlatot!",
+    },
+    contactInfos: {
+      email: {
+        title: "Email",
+        text: "Hagyjon nekünk egy emailt, és mi 2 napon belül válaszolunk Önnek!",
+        link: "info@magyartuzvedelemzrt.hu",
+      },
+      phone: {
+        title: "Telefon",
+        text: "Hívjon fel minket és mi segítünk eljutni a megoldáshoz!",
+        link: "+36 30 475 1050",
+      },
+      address: {
+        title: "Székhely",
+        text: "Ezen a címen megtalál minket X:00 - X:00 között!",
+        link: "1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson emelet)",
+      },
+      postal: {
+        title: "Levelezési cím",
+        text: "Ha más úton szeretne kapcsolatba lépni velünk, erre címezzen!",
+        link: "2013 Pomáz Kós Károly utca 34/1/A",
+      },
+    },
+    callbackRequest: {
+      title: "Nem tudja pontosan mit szeretne?",
+      description:
+        "Kérjen megkeresést tőlünk emailben és segítünk Önnek kitalálni!",
+      placeholder: "Adja meg az email címét!",
+      button: "Segítséget kérek!",
+    },
+  },
 } as const;

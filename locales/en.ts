@@ -158,4 +158,43 @@ export default {
       title: "Contact Our Expert Team with Confidence!",
     },
   },
+  contactPage: {
+    hero: {
+      pageName: "Contact",
+      title: "You Can Come to Us with Anything!",
+      description:
+        "Contact us with confidence if you need fire protection, asbestos removal, hazardous material removal, or building safety consulting! Our expert team is ready to answer your questions, whether it's a specific quote request or general inquiry.",
+      button1: "Request a Callback!",
+      button2: "Request a Quote!",
+    },
+    contactInfos: {
+      email: {
+        title: "Email",
+        text: "Send us an email, and we will respond to you within 2 days!",
+        link: "info@magyartuzvedelemzrt.hu",
+      },
+      phone: {
+        title: "Phone",
+        text: "Call us and we will help you reach the solution!",
+        link: "+36 30 475 1050",
+      },
+      address: {
+        title: "Headquarters",
+        text: "You can find us at this address between X:00 - X:00!",
+        link: "1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson floor)",
+      },
+      postal: {
+        title: "Mailing Address",
+        text: "If you want to contact us by other means, please use this address!",
+        link: "2013 Pomáz Kós Károly utca 34/1/A",
+      },
+    },
+    callbackRequest: {
+      title: "Not Sure What You Want Exactly?",
+      description:
+        "Request contact from us by email and we'll help you figure it out!",
+      placeholder: "Enter your email address!",
+      button: "I Need Help!",
+    },
+  },
 } as const;
