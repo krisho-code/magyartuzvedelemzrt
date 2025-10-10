@@ -86,23 +86,23 @@ export default {
   header: {
     topbar: {
       phone: "+36 98 123 7456",
-      email: "info@magyar-tuzvedelem.hu"
+      email: "info@magyar-tuzvedelem.hu",
     },
     navigation: {
       about: "Cégismertető",
       services: "Szolgáltatások",
-      contact: "Kapcsolat"
+      contact: "Kapcsolat",
     },
     cta: {
-      contactUs: "Vegye fel velünk a kapcsolatot!"
+      contactUs: "Vegye fel velünk a kapcsolatot!",
     },
     languageSwitcher: {
       hungarian: "Magyar (HU)",
-      english: "English (EN)"
+      english: "English (EN)",
     },
     mobile: {
       closeAlt: "Bezárás",
-      menuAlt: "Menü"
-    }
+      menuAlt: "Menü",
+    },
   },
 } as const;

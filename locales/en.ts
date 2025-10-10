@@ -85,23 +85,23 @@ export default {
   header: {
     topbar: {
       phone: "+36 98 123 7456",
-      email: "info@magyar-tuzvedelem.hu"
+      email: "info@magyar-tuzvedelem.hu",
     },
     navigation: {
       about: "About Us",
       services: "Services",
-      contact: "Contact"
+      contact: "Contact",
     },
     cta: {
-      contactUs: "Get in Touch with Us!"
+      contactUs: "Get in Touch with Us!",
     },
     languageSwitcher: {
       hungarian: "Hungarian (HU)",
-      english: "English (EN)"
+      english: "English (EN)",
     },
     mobile: {
       closeAlt: "Close",
-      menuAlt: "Menu"
-    }
+      menuAlt: "Menu",
+    },
   },
 } as const;

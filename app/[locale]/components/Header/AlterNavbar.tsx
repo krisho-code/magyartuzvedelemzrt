@@ -45,9 +45,17 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
         {/* Mobile menu */}
         <button className="mobile-menu lg:hidden" onClick={mobileToggle}>
           {mobileOpen ? (
-            <img src="icons/close-icon-white.svg" alt={t("header.mobile.closeAlt")} width={24} />
+            <img
+              src="icons/close-icon-white.svg"
+              alt={t("header.mobile.closeAlt")}
+              width={24}
+            />
           ) : (
-            <img src="icons/menu-icon-white.svg" alt={t("header.mobile.menuAlt")} width={24} />
+            <img
+              src="icons/menu-icon-white.svg"
+              alt={t("header.mobile.menuAlt")}
+              width={24}
+            />
           )}
         </button>
       </div>
