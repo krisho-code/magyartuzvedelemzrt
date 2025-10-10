@@ -104,4 +104,12 @@ export default {
       menuAlt: "Menu",
     },
   },
+  footer: {
+    copyright: "© 2025 Magyar Tűzvédelem Zrt. | All rights reserved",
+    links: {
+      faq: "FAQ",
+      cookies: "Cookies",
+      other: "Other",
+    },
+  },
 } as const;

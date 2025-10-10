@@ -105,4 +105,12 @@ export default {
       menuAlt: "Menü",
     },
   },
+  footer: {
+    copyright: "© 2025 Magyar Tűzvédelem Zrt. | Minden jog fenntartva",
+    links: {
+      faq: "GYIK",
+      cookies: "Sütik",
+      other: "Egyéb",
+    },
+  },
 } as const;
