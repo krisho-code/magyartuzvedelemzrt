@@ -1,7 +1,10 @@
 import React from "react";
+import { getI18n } from "@/locales/server";
 import Person from "./Person";
 
-const AboutTeam = () => {
+const AboutTeam = async () => {
+  const t = await getI18n();
+
   return (
     <section
       id="about-team-section"
@@ -9,10 +12,9 @@ const AboutTeam = () => {
     >
       <div className="container flex flex-col gap-16 px-8">
         <div className="flex flex-col gap-2">
-          <h2 className="text-h2">Ismerje meg csapatunkat!</h2>
+          <h2 className="text-h2">{t("aboutPage.team.title")}</h2>
           <p className="text-medium-normal">
-            Tapasztalt kollégáink együttműködésével, magas szintű
-            elhivatottsággal valósítjuk meg projektjeinket.
+            {t("aboutPage.team.description")}
           </p>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-16 lg:grid-cols-4 lg:gap-16">

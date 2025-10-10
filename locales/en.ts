@@ -112,4 +112,50 @@ export default {
       other: "Other",
     },
   },
+  aboutPage: {
+    hero: {
+      pageName: "About Us",
+      title: "Introducing Our Company",
+      description:
+        "The goal of establishing Magyar Tűzvédelem Zrt. was to create an enterprise that meets its clients' expectations with its technical and professional standards. Its reliability is ensured by decades of leadership experience, as well as the professional commitment and extensive references of its staff.",
+      button1: "Our Mission and Vision",
+      button2: "Our Team",
+    },
+    stats: {
+      title: "Our Expertise Stands Out in the Market!",
+      description:
+        "Magyar Tűzvédelem Zrt. is a 100% Hungarian-owned company that offers reliable services based on nearly 30 years of professional experience. Its main activities are passive fire protection and asbestos removal, providing high-quality service to domestic partners.",
+      stat1: "30+",
+      text1: "Years of professional experience",
+      stat2: "100+",
+      text2: "Satisfied clients",
+      stat3: "50+",
+      text3: "Settlements served nationwide",
+    },
+    future: {
+      title: "Our Mission and Vision",
+      description:
+        "The goal of Magyar Tűzvédelem Zrt. is to provide reliable, high-quality services based on its long-term experience and future-oriented approach. Our mission is to strengthen our market position through continuous development and customer-focused solutions, while ensuring the fastest and safest processes for our partners.",
+      mission: {
+        title: "Our Mission",
+        text: "Our goal is to continuously strengthen our presence in the field of passive fire protection through our long-term business relationships, developments, and expanding offerings.",
+      },
+      vision: {
+        title: "Our Vision",
+        text: "Magyar Tűzvédelem Zrt. aims to stand out as the most reliable and fastest service provider in the industry, providing first-class support to its clients and excelling as an attractive employer.",
+      },
+    },
+    team: {
+      title: "Meet Our Team!",
+      description:
+        "We implement our projects with the cooperation of our experienced colleagues and high-level commitment.",
+      person: {
+        defaultName: "Full Name",
+        defaultPosition: "Position",
+      },
+    },
+    cta: {
+      title: "Contact Our Expert Team with Confidence!",
+    },
+  },
 } as const;

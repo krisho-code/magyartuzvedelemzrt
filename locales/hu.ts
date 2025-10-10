@@ -113,4 +113,50 @@ export default {
       other: "Egyéb",
     },
   },
+  aboutPage: {
+    hero: {
+      pageName: "Cégismertető",
+      title: "Vállalatunk bemutatása",
+      description:
+        "A Magyar Tűzvédelem Zrt. alapításának célja egy olyan vállalkozás létrehozása volt, amely műszaki és szakmai színvonalával teljesíti ügyfelei elvárásait. Megbízhatóságát a több évtizedes vezetői tapasztalat, valamint munkatársai szakmai elkötelezettsége és széleskörű referenciái biztosítják.",
+      button1: "Küldetésünk és jövőképünk",
+      button2: "Csapatunk",
+    },
+    stats: {
+      title: "Tudásunk kiemelkedik a piacon!",
+      description:
+        "A Magyar Tűzvédelem Zrt. egy 100%-ban magyar tulajdonú vállalkozás, amely közel 30 év szakmai tapasztalatra építve kínál megbízható szolgáltatásokat. Fő tevékenységei a passzív tűzvédelem és azbesztmentesítés, hazai partnerek magas színvonalú kiszolgálásával.",
+      stat1: "30+",
+      text1: "Év szakmai tapasztalat",
+      stat2: "100+",
+      text2: "Elégedett ügyfél",
+      stat3: "50+",
+      text3: "Településen végzett munka országszerte",
+    },
+    future: {
+      title: "Küldetésünk és jövőképünk",
+      description:
+        "A Magyar Tűzvédelem Zrt. célja, hogy hosszú távú tapasztalatára és jövőorientált szemléletére építve megbízható, magas színvonalú szolgáltatásokat nyújtson. Küldetésünk, hogy folyamatos fejlődéssel és ügyfélközpontú megoldásokkal erősítsük piaci pozíciónkat, miközben biztosítjuk partnereink számára a leggyorsabb és legbiztonságosabb folyamatokat.",
+      mission: {
+        title: "Küldetésünk",
+        text: "Célunk, hogy a passzív tűzvédelem területén folyamatosan erősítsük jelenlétünket, hosszú távú üzleti kapcsolataink, fejlesztéseink és bővülő kínálatunk révén.",
+      },
+      vision: {
+        title: "Jövőképünk",
+        text: "A Magyar Tűzvédelem Zrt. a legmegbízhatóbb és leggyorsabb szolgáltatóként kíván kiemelkedni az iparágban, ügyfeleinek első osztályú támogatást nyújtva, és vonzó munkaadóként is helytállva.",
+      },
+    },
+    team: {
+      title: "Ismerje meg csapatunkat!",
+      description:
+        "Tapasztalt kollégáink együttműködésével, magas szintű elhivatottsággal valósítjuk meg projektjeinket.",
+      person: {
+        defaultName: "Teljes név",
+        defaultPosition: "Beosztás",
+      },
+    },
+    cta: {
+      title: "Keresse szakértő csapatunkat bizalommal!",
+    },
+  },
 } as const;

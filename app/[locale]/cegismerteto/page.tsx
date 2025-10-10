@@ -1,4 +1,5 @@
 import React from "react";
+import { getI18n } from "@/locales/server";
 import Hero from "../components/Global Components/Hero";
 import Stats from "../components/Global Components/Stats";
 import HomeAbout from "../components/Home/HomeAbout";
@@ -6,38 +7,36 @@ import AboutFuture from "../components/About/AboutFuture";
 import AboutTeam from "../components/About/AboutTeam";
 import CallToAction from "../components/CallToAction/CallToAction";
 
-const Cégismertető = () => {
+const Cégismertető = async () => {
+  const t = await getI18n();
+
   return (
     <main className="pt-24">
       <Hero
         section="about"
-        pageName="Cégismertető"
-        pageTitle="Vállalatunk bemutatása"
-        pageDescription="A Magyar Tűzvédelem Zrt. alapításának célja egy olyan vállalkozás
-            létrehozása volt, amely műszaki és szakmai színvonalával teljesíti
-            ügyfelei elvárásait. Megbízhatóságát a több évtizedes vezetői
-            tapasztalat, valamint munkatársai szakmai elkötelezettsége és
-            széleskörű referenciái biztosítják."
-        button1Text="Küldetésünk és jövőképünk"
-        button2Text="Csapatunk"
+        pageName={t("aboutPage.hero.pageName")}
+        pageTitle={t("aboutPage.hero.title")}
+        pageDescription={t("aboutPage.hero.description")}
+        button1Text={t("aboutPage.hero.button1")}
+        button2Text={t("aboutPage.hero.button2")}
         link1="#about-future-section"
         link2="#about-team-section"
         // heroImage="/about-hero.jpg"
       />
       <Stats
-        title="Tudásunk kiemelkedik a piacon!"
-        description="A Magyar Tűzvédelem Zrt. egy 100%-ban magyar tulajdonú vállalkozás, amely közel 30 év szakmai tapasztalatra építve kínál megbízható szolgáltatásokat. Fő tevékenységei a passzív tűzvédelem és azbesztmentesítés, hazai partnerek magas színvonalú kiszolgálásával."
-        stat1="30+"
-        text1="Év szakmai tapasztalat"
-        stat2="100+"
-        text2="Elégedett ügyfél"
-        stat3="50+"
-        text3="Településen végzett munka országszerte"
+        title={t("aboutPage.stats.title")}
+        description={t("aboutPage.stats.description")}
+        stat1={t("aboutPage.stats.stat1")}
+        text1={t("aboutPage.stats.text1")}
+        stat2={t("aboutPage.stats.stat2")}
+        text2={t("aboutPage.stats.text2")}
+        stat3={t("aboutPage.stats.stat3")}
+        text3={t("aboutPage.stats.text3")}
       />
       <HomeAbout hiddenButton={true} />
       <AboutFuture />
       <AboutTeam />
-      <CallToAction title="Keresse szakértő csapatunkat bizalommal!" />
+      <CallToAction title={t("aboutPage.cta.title")} />
     </main>
   );
 };
