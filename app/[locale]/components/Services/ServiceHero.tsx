@@ -13,7 +13,7 @@ const ServiceHero: React.FC<ServiceHeroProps> = ({
 }) => {
   return (
     <section
-      className={`service-hero-section ${pageName} flex items-center justify-center h-80 md:h-96`}
+      className={`service-hero-section ${pageName} flex items-center justify-center pt-16 h-88 md:h-112`}
     >
       <div className="container flex flex-col items-center gap-2 w-fit px-8">
         <h1 className="text-h1 text-white text-center w-fit">{title}</h1>

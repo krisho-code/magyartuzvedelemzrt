@@ -256,4 +256,176 @@ export default {
       title: "Explore Our Services in Detail!",
     },
   },
+  servicePages: {
+    tuzvedelem: {
+      hero: {
+        title: "Fire Protection",
+        description: "Professional passive fire protection solutions",
+      },
+      about: {
+        title: "What is fire protection?",
+        description:
+          "Fire can cause enormous damage in a short time, so it is extremely important that buildings and structures are protected. The essence of fire protection is to prevent walls, steel structures, and wood materials from weakening too quickly, thus leaving time for evacuation and rescue. For this, we use special paints, coatings, and coverings that can withstand the heat of flames for hours. Depending on the size of the work, it can be completed in a few days or weeks, and provides long-term safety for all users of the building.",
+      },
+      infos: {
+        title: "Complex fire protection services for all building types",
+        text: "The goal of Magyar Tűzvédelem Zrt. is to ensure the fire resistance of industrial, commercial, and residential building structures with the most modern, certified technologies. Our services are implemented in accordance with legal requirements, with the involvement of our expert team – so our partners can feel completely safe with themselves and their assets. Our applied technologies include fire protection painting (R15-R120), fire protection cladding (R15-R240), and fire protection mortar (R15-R240).",
+        info1title: "Fire resistance coatings",
+        info1text:
+          "Application of special fire protection paints and coatings that significantly increase the fire resistance of steel and concrete structures.",
+        info2title: "Fire protection seals",
+        info2text:
+          "Professional fire-resistant sealing of cable and pipe penetrations, as well as wall and floor penetrations to prevent the spread of fire and smoke.",
+        info3title: "Lightweight system protection",
+        info3text:
+          "Fire protection cladding of drywall and other structures so that all building types comply with the strictest safety regulations.",
+        info4title: "Certified solutions",
+        info4text:
+          "All our work processes are carried out with qualified materials and approved technologies, guaranteeing legal compliance.",
+      },
+    },
+    azbesztmentesites: {
+      hero: {
+        title: "Asbestos Removal",
+        description:
+          "Safely and professionally, comprehensive service nationwide",
+      },
+      about: {
+        title: "What is asbestos removal?",
+        description:
+          "Asbestos used to be a popular building material, but today we know it is extremely dangerous to health – inhaling it can cause serious diseases. During asbestos removal, we professionally remove old coverings, pipes, and roofing materials in buildings. This is a precise process that requires closed technology, as airborne dust particles pose the real danger. The work is always carried out by licensed professionals, usually within a few days. The result: a healthier, safer environment.",
+      },
+      infos: {
+        title: "Complete solutions for asbestos removal",
+        text: "Magyar Tűzvédelem Zrt. performs safe asbestos removal in any form with nearly 30 years of experience and special expertise. During our work, we ensure the demolition, handling, and disposal of asbestos materials in accordance with regulations, without health-damaging effects and environmental pollution. Our services cover the entire process from preliminary assessment and work plan preparation through demolition to the transportation and destruction of hazardous waste.",
+        info1title: "Sprayed asbestos removal",
+        info1text:
+          "We perform demolition in hermetically sealed black zones with HEPA-filtered technology and strict safety protocols.",
+        info2title: "Asbestos cement material demolition",
+        info2text:
+          "Safe, regulated demolition of corrugated sheets, roof and fence elements and complete disposal of hazardous waste.",
+        info3title: "Indoor asbestos removal",
+        info3text:
+          "Demolition of pipelines, air ducts, coverings, and suspended ceilings with precise technology and compliance with safety regulations.",
+        info4title: "Surveys and inspections",
+        info4text:
+          "Asbestos content testing with sampling and preparation of complete asbestos maps of buildings.",
+      },
+    },
+    tuzkarmentesites: {
+      hero: {
+        title: "Fire Damage Restoration",
+        description: "Fast and professional intervention after fires",
+      },
+      about: {
+        title: "What is fire damage restoration?",
+        description:
+          "After a fire, not only the burning, but also the smoke, soot, and extinguishing water cause serious damage. If we don't start restoration quickly, metals rust, equipment is destroyed, and the building structure continues to deteriorate. The goal of fire damage restoration is to save as much value as possible: we clean, disinfect, and if necessary, rebuild the affected parts. The work can take a few days or even several weeks depending on urgency and the extent of damage, but every hour counts.",
+      },
+      infos: {
+        title: "Complete solutions for post-fire restoration",
+        text: "Magyar Tűzvédelem Zrt. acts quickly and efficiently after fire incidents with special technologies and nearly 30 years of experience. Intervention in the 48-72 hours after a fire is most effective, as this is when serious secondary damage caused by corrosion and chemical processes can be prevented. The goal of our services is to restore buildings, equipment, and structures to a level close to their pre-fire condition as much as possible – economically, in accordance with insurance expectations.",
+        info1title: "Immediate damage mitigation",
+        info1text:
+          "Quick intervention to minimize secondary damage and losses.",
+        info2title: "Building structure restoration",
+        info2text:
+          "Demolition of damaged elements, soot removal, and chemical neutralization for safety.",
+        info3title: "Equipment salvage",
+        info3text:
+          "Cleaning, drying, and corrosion protection of electrical and technical equipment.",
+        info4title: "Complete case management",
+        info4text:
+          "Communication with insurance companies, documentation, and professional restoration in one hand.",
+      },
+    },
+    vizkarmentesites: {
+      hero: {
+        title: "Water Damage Restoration",
+        description: "Professional solutions for water damage",
+      },
+      about: {
+        title: "What is water damage restoration?",
+        description:
+          "Water can cause insidious damage: after pipe bursts, floods, or extinguishing water, walls and floors absorb moisture, which can lead to mold and structural damage. During water damage restoration, we first remove excess water, then dry the walls and rooms with special drying equipment. This prevents further deterioration and mold formation. The process can take from a few days to several weeks, but it is essential for the building to be safely usable again.",
+      },
+      infos: {
+        title: "Complex solutions for post-water damage restoration",
+        text: "Whether it's pipe bursts, storm damage, floods, or extinguishing water, the specialists of Magyar Tűzvédelem Zrt. provide fast and effective help with special equipment and decades of experience. Water damage remediation cannot be delayed: the lack of professional drying and disinfection can lead to serious structural and health problems. Thanks to our modern heat pump technology, we remove excess moisture even from deep within walls, preventing mold and corrosion damage – so most of the building and equipment can be saved.",
+        info1title: "Quick damage mitigation",
+        info1text:
+          "We reduce the risk of secondary damage with immediate measures.",
+        info2title: "Special drying technology",
+        info2text:
+          "We efficiently dry building structures deep into walls with heat pump equipment.",
+        info3title: "Disinfection and mold removal",
+        info3text:
+          "After water damage, we ensure a hygienic environment and air quality restoration.",
+        info4title: "Equipment protection",
+        info4text:
+          "Cleaning, preservation, and corrosion protection of technical equipment to avoid complete replacements.",
+      },
+    },
+    tisztitasesveszelytelenites: {
+      hero: {
+        title: "Industrial Cleaning and Decontamination",
+        description:
+          "Effective, professional solutions even in extreme contamination cases",
+      },
+      about: {
+        title: "What does industrial cleaning and decontamination mean?",
+        description:
+          "In factories, plants, and larger institutions, thorough deep cleaning is needed from time to time. This doesn't mean simple vacuuming: it's about cleaning industrial machinery, air ducts, facades, oil-contaminated floors. Industrial cleaning is done with special tools and chemicals, always adapted to the specific task. This makes the environment not only cleaner, but also safer and healthier. The duration depends on the task, it can be one day or even several weeks of work.",
+      },
+      infos: {
+        title: "Complex cleaning and decontamination solutions",
+        text: "Magyar Tűzvédelem Zrt. provides comprehensive industrial cleaning and decontamination services with nearly three decades of experience. Whether it's factory halls, office buildings, hospitals, or special facilities, our specialists apply the most suitable technologies and cleaning agents for the task. The goal is always the same: to ensure a hygienic, safe, and operational environment while protecting equipment and minimizing downtime. Building on our fire and water damage restoration experience, we apply the most modern procedures in disinfection, contamination removal, and cleaning of special industrial surfaces.",
+        info1title: "Industrial and building cleaning",
+        info1text:
+          "Professional cleaning and disinfection of facades, halls, offices, and hospital spaces.",
+        info2title: "Equipment maintenance cleaning",
+        info2text:
+          "Professional cleaning of machinery lines, power plant generators, HVAC systems, and electronic units.",
+        info3title: "Special decontamination",
+        info3text:
+          "Treatment of oil-contaminated surfaces, bird droppings removal, disinfection after homeless occupation.",
+        info4title: "Emergency situation management",
+        info4text:
+          "Post-storm cleaning, decluttering, and rapid response in critical circumstances.",
+      },
+    },
+    alpintechnika: {
+      hero: {
+        title: "Industrial Rope Access Work",
+        description:
+          "Safe, fast, and cost-effective work performance in the most difficult to reach places",
+      },
+      about: {
+        title: "What is industrial rope access?",
+        description:
+          "There are jobs that can be done without scaffolding or cranes – with industrial rope access. This means that trained professionals reach surfaces at height or in hard-to-reach places with the help of rope techniques. This way, facades can be repaired, HVAC systems installed, bird spikes installed, or even painting can be done faster and more cost-effectively. Such work usually takes from a few hours to several days and provides a safe solution even when other methods would be too expensive or complicated.",
+      },
+      infos: {
+        title: "Flexible and efficient solutions without scaffolding",
+        text: "The industrial rope access services of Magyar Tűzvédelem Zrt. allow us to perform professional and safe work even in the most difficult to reach areas – without using expensive scaffolding or lifting equipment. Our experienced, youthful, and dynamic team can handle almost any height task, whether it's installation, repair, cleaning, or decontamination. Our solutions are fast, cost-effective, and fully comply with safety regulations.",
+        info1title: "Facades and building structures",
+        info1text:
+          "Repair, cleaning, painting, and maintenance with rope access, even at great heights.",
+        info2title: "Industrial and technical tasks",
+        info2text:
+          "Installation of fire alarm systems, HVAC networks, lightning rods, and other equipment.",
+        info3title: "Decontamination and removal",
+        info3text:
+          "Installation of bird spikes, bird removal, removal of hazardous elements.",
+        info4title: "Fast and cost-effective execution",
+        info4text:
+          "Without scaffolding and lifting equipment, flexible and economical solutions for every project.",
+      },
+    },
+    common: {
+      ctaButton1: "Request a Custom Quote!",
+      ctaButton2: "Contact Us!",
+      ctaTitle: "Request a Custom Quote Today!",
+    },
+  },
 } as const;

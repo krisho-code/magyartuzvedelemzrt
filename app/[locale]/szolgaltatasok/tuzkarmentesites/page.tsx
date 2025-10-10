@@ -1,36 +1,39 @@
 import React from "react";
+import { getI18n } from "../../../../locales/server";
 import ServiceHero from "../../components/Services/ServiceHero";
 import ServiceAbout from "../../components/Services/ServiceAbout";
 import ServiceInfos from "../../components/Services/ServiceInfos";
 import ServiceImages from "../../components/Services/ServiceImages";
 import CallToAction from "../../components/CallToAction/CallToAction";
 
-const Tuzkarmentesites = () => {
+const Tuzkarmentesites = async () => {
+  const t = await getI18n();
+
   return (
     <main>
       <ServiceHero
         pageName="tuzkarmentesites"
-        title="Tűzkármentesítés"
-        description="Gyors és szakszerű beavatkozás tűzeset után"
+        title={t("servicePages.tuzkarmentesites.hero.title")}
+        description={t("servicePages.tuzkarmentesites.hero.description")}
       />
       <ServiceAbout
-        title="Mi az a tűzkár mentesítés?"
-        description="Egy tűz után nemcsak az égés, hanem a füst, a korom és az oltóvíz is komoly károkat okoz. Ha nem kezdjük el gyorsan a helyreállítást, a fémek rozsdásodnak, a berendezések tönkre mennek, az épület szerkezete pedig tovább romlik. A tűzkármentesítés célja, hogy a lehető legtöbb értéket megmentsük: kitisztítjuk, fertőtlenítjük és szükség esetén újjáépítjük az érintett részeket. A munka sürgősségtől és károk mértékétől függően pár nap vagy akár több hét is lehet, de minden óra számít."
+        title={t("servicePages.tuzkarmentesites.about.title")}
+        description={t("servicePages.tuzkarmentesites.about.description")}
       />
       <ServiceInfos
-        title="Komplett megoldások tűzkárok utáni helyreállításra"
-        text="A Magyar Tűzvédelem Zrt. speciális technológiáival és közel 30 év tapasztalatával a tűzeseteket követően gyorsan és hatékonyan lépünk fel. A beavatkozás a tűz utáni 48–72 órában a legeredményesebb, hiszen ekkor előzhetők meg a korróziós és vegyi folyamatok által okozott súlyos másodlagos károk. Szolgáltatásaink célja, hogy az épületek, berendezések és szerkezetek minél nagyobb részét visszaállítsuk a tűz előtti állapothoz közeli szintre – gazdaságosan, biztosítói elvárásoknak megfelelően."
-        info1title="Azonnali kárenyhítés"
-        info1text="Gyors beavatkozás a másodlagos károk és a veszteségek minimalizálására."
-        info2title="Épületszerkezetek helyreállítása"
-        info2text="Sérült elemek bontása, korommentesítés és vegyszeres neutralizálás a biztonság érdekében."
-        info3title="Berendezések mentése"
-        info3text="Elektromos és műszaki eszközök tisztítása, szárítása és korrózió elleni védelme."
-        info4title="Teljes körű ügyintézés"
-        info4text="Biztosítótársaságokkal való kapcsolattartás, dokumentáció és szakszerű helyreállítás egy kézben."
+        title={t("servicePages.tuzkarmentesites.infos.title")}
+        text={t("servicePages.tuzkarmentesites.infos.text")}
+        info1title={t("servicePages.tuzkarmentesites.infos.info1title")}
+        info1text={t("servicePages.tuzkarmentesites.infos.info1text")}
+        info2title={t("servicePages.tuzkarmentesites.infos.info2title")}
+        info2text={t("servicePages.tuzkarmentesites.infos.info2text")}
+        info3title={t("servicePages.tuzkarmentesites.infos.info3title")}
+        info3text={t("servicePages.tuzkarmentesites.infos.info3text")}
+        info4title={t("servicePages.tuzkarmentesites.infos.info4title")}
+        info4text={t("servicePages.tuzkarmentesites.infos.info4text")}
       />
       <ServiceImages imgs="/tuzkarmentesites.jpg" />
-      <CallToAction title="Kérjen személyre szabott ajánlatot még ma!" />
+      <CallToAction title={t("servicePages.common.ctaTitle")} />
     </main>
   );
 };

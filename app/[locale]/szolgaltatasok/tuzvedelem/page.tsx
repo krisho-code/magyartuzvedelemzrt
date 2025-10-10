@@ -1,51 +1,39 @@
 import React from "react";
+import { getI18n } from "../../../../locales/server";
 import ServiceHero from "../../components/Services/ServiceHero";
 import ServiceAbout from "../../components/Services/ServiceAbout";
 import ServiceInfos from "../../components/Services/ServiceInfos";
 import ServiceImages from "../../components/Services/ServiceImages";
 import CallToAction from "../../components/CallToAction/CallToAction";
 
-const Tűzvédelem = () => {
+const Tűzvédelem = async () => {
+  const t = await getI18n();
+
   return (
     <main>
       <ServiceHero
         pageName="tuzvedelem"
-        title="Tűzvédelem"
-        description="Professzionális passzív tűzvédelmi megoldások"
+        title={t("servicePages.tuzvedelem.hero.title")}
+        description={t("servicePages.tuzvedelem.hero.description")}
       />
       <ServiceAbout
-        title="Mi az a tűzvédelem?"
-        description="A tűz rövid idő alatt hatalmas károkat okozhat, ezért kiemelten
-          fontos, hogy az épületek és szerkezetek védve legyenek. A tűzvédelem
-          lényege, hogy a falak, acélszerkezetek és faanyagok ne gyengüljenek
-          meg túl gyorsan, így maradjon idő a menekülésre és a mentésre. Ehhez
-          speciális festékeket, bevonatokat és burkolatokat alkalmazunk, amelyek
-          akár órákig is ellenállnak a lángok hőjének. A munka nagyságától
-          függően néhány nap vagy hét alatt elvégezhető, és hosszú távon
-          biztonságot ad az épület minden használójának."
+        title={t("servicePages.tuzvedelem.about.title")}
+        description={t("servicePages.tuzvedelem.about.description")}
       />
       <ServiceInfos
-        title="Komplex tűzvédelmi szolgáltatások minden épülettípushoz"
-        text="A Magyar Tűzvédelem Zrt. célja, hogy a legmodernebb, tanúsított
-            technológiákkal biztosítsa az ipari, kereskedelmi és lakóépületek
-            szerkezeteinek tűzállóságát. Szolgáltatásaink a jogszabályi
-            előírásoknak megfelelően, szakértő csapatunk bevonásával valósulnak
-            meg – így partnereink teljes biztonságban tudhatják magukat és
-            értékeiket. Alkalmazott technológiáink a tűzvédelmi festés
-            (R15-R120), tűzvédelmi burkolat (R15-R240) és tűzvédelmi habarcs
-            (R15-R240)."
-        info1title="Tűzállósági bevonatok"
-        info1text="Speciális tűzvédő festékek és bevonatok alkalmazása, amelyek
-                  jelentősen növelik az acél- és betonszerkezetek tűzállóságát."
-        info2title="Tűzvédelmi lezárások"
-        info2text="Kábel- és csőátvezetések, valamint fal- és födémáttörések professzionális tűzgátló lezárása a tűz és füst terjedésének megakadályozására."
-        info3title="Könnyűszerkezetes rendszerek védelme"
-        info3text="Gipszkarton és más szerkezetek tűzvédelmi burkolása, hogy minden épülettípus megfeleljen a legszigorúbb biztonsági előírásoknak."
-        info4title="Tanúsított megoldások"
-        info4text="Minden munkafolyamatunk minősített anyagokkal és engedélyezett technológiákkal zajlik, garantálva a jogszabályi megfelelést."
+        title={t("servicePages.tuzvedelem.infos.title")}
+        text={t("servicePages.tuzvedelem.infos.text")}
+        info1title={t("servicePages.tuzvedelem.infos.info1title")}
+        info1text={t("servicePages.tuzvedelem.infos.info1text")}
+        info2title={t("servicePages.tuzvedelem.infos.info2title")}
+        info2text={t("servicePages.tuzvedelem.infos.info2text")}
+        info3title={t("servicePages.tuzvedelem.infos.info3title")}
+        info3text={t("servicePages.tuzvedelem.infos.info3text")}
+        info4title={t("servicePages.tuzvedelem.infos.info4title")}
+        info4text={t("servicePages.tuzvedelem.infos.info4text")}
       />
       <ServiceImages imgs="/tuzvedelem.jpg" />
-      <CallToAction title="Kérjen személyre szabott ajánlatot még ma!" />
+      <CallToAction title={t("servicePages.common.ctaTitle")} />
     </main>
   );
 };

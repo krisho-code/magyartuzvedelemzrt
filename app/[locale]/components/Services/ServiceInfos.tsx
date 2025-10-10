@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { useI18n } from "../../../../locales/client";
 import ServiceInfosContent from "./ServiceInfosContent";
 import CallToActionButton from "../CallToAction/CallToActionButton";
 
@@ -27,6 +30,8 @@ const ServiceInfos: React.FC<ServiceInfosProps> = ({
   info4title,
   info4text,
 }) => {
+  const t = useI18n();
+
   return (
     <section className="service-infos-section flex items-center justify-center py-16 bg-gray-100">
       <div className="container flex flex-col gap-16 px-8">
@@ -42,12 +47,12 @@ const ServiceInfos: React.FC<ServiceInfosProps> = ({
         </div>
         <div className="flex flex-col gap-4 lg:flex-row">
           <CallToActionButton
-            text="Kérjen személyre szabott ajánlatot!"
+            text={t("servicePages.common.ctaButton1")}
             link="/kapcsolat"
           />
           <CallToActionButton
             buttonType="secondary"
-            text="Vegye fel velünk a kapcsolatot!"
+            text={t("servicePages.common.ctaButton2")}
             link="/kapcsolat"
           />
         </div>

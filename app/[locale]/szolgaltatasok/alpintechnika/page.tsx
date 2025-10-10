@@ -1,36 +1,39 @@
 import React from "react";
+import { getI18n } from "../../../../locales/server";
 import ServiceHero from "../../components/Services/ServiceHero";
 import ServiceAbout from "../../components/Services/ServiceAbout";
 import ServiceInfos from "../../components/Services/ServiceInfos";
 import ServiceImages from "../../components/Services/ServiceImages";
 import CallToAction from "../../components/CallToAction/CallToAction";
 
-const Alpintechnika = () => {
+const Alpintechnika = async () => {
+  const t = await getI18n();
+
   return (
     <main>
       <ServiceHero
         pageName="alpintechnika"
-        title="Ipari alpintechnika"
-        description="Biztonságos, gyors és költséghatékony munkavégzés a legnehezebben elérhető helyeken is"
+        title={t("servicePages.alpintechnika.hero.title")}
+        description={t("servicePages.alpintechnika.hero.description")}
       />
       <ServiceAbout
-        title="Mi az az ipari alpintechnika?"
-        description="Vannak munkák, amelyeket állványozás vagy daru nélkül is el lehet végezni – ipari alpintechnikával. Ez azt jelenti, hogy képzett szakemberek kötéltechnika segítségével érik el a magasban vagy nehezen hozzáférhető helyen lévő felületeket. Így gyorsabban és költséghatékonyabban lehet homlokzatot javítani, légtechnikát szerelni, galambtüskézni vagy akár festeni. Az ilyen munkák általában pár órától néhány napig tartanak, és biztonságos megoldást nyújtanak akkor is, amikor más módszerek túl drágák vagy bonyolultak lennének."
+        title={t("servicePages.alpintechnika.about.title")}
+        description={t("servicePages.alpintechnika.about.description")}
       />
       <ServiceInfos
-        title="Rugalmas és hatékony megoldások állványozás nélkül"
-        text="A Magyar Tűzvédelem Zrt. ipari alpintechnikai szolgáltatásai lehetővé teszik, hogy a legnehezebben hozzáférhető területeken is szakszerű és biztonságos munkát végezzünk – drága állványok vagy emelőgépek használata nélkül. Tapasztalt, fiatalos és dinamikus csapatunk szinte bármilyen magassági feladatot el tud látni, legyen szó szerelésről, javításról, tisztításról vagy veszélytelenítésről. Megoldásaink gyorsak, költséghatékonyak, és maximálisan megfelelnek a biztonsági előírásoknak."
-        info1title="Homlokzatok és épületszerkezetek"
-        info1text="Javítás, tisztítás, festés és karbantartás alpintechnikával, akár nagy magasságban is."
-        info2title="Ipari és műszaki feladatok"
-        info2text="Tűzjelző rendszerek, légtechnikai hálózatok, villámhárítók és egyéb berendezések szerelése."
-        info3title="Veszélytelenítés és mentesítés"
-        info3text="Galambtüskék telepítése, madármentesítés, veszélyes elemek eltávolítása."
-        info4title="Gyors és költséghatékony kivitelezés"
-        info4text="Állványozás és emelőgépek nélkül, rugalmas és gazdaságos megoldások minden projektre."
+        title={t("servicePages.alpintechnika.infos.title")}
+        text={t("servicePages.alpintechnika.infos.text")}
+        info1title={t("servicePages.alpintechnika.infos.info1title")}
+        info1text={t("servicePages.alpintechnika.infos.info1text")}
+        info2title={t("servicePages.alpintechnika.infos.info2title")}
+        info2text={t("servicePages.alpintechnika.infos.info2text")}
+        info3title={t("servicePages.alpintechnika.infos.info3title")}
+        info3text={t("servicePages.alpintechnika.infos.info3text")}
+        info4title={t("servicePages.alpintechnika.infos.info4title")}
+        info4text={t("servicePages.alpintechnika.infos.info4text")}
       />
       <ServiceImages imgs="/alpintechnika.jpg" />
-      <CallToAction title="Kérjen személyre szabott ajánlatot még ma!" />
+      <CallToAction title={t("servicePages.common.ctaTitle")} />
     </main>
   );
 };

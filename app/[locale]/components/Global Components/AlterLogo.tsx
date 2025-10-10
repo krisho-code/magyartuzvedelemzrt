@@ -4,7 +4,7 @@ import Link from "next/link";
 const Logo = () => {
   return (
     <Link href="/" className="logo max-w-48">
-      <img src="alter-logo.svg" alt="Magyar Tűzvédelem Zrt." />
+      <img src="/alter-logo.svg" alt="Magyar Tűzvédelem Zrt." />
     </Link>
   );
 };

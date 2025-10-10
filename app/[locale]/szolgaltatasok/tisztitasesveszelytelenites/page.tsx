@@ -1,36 +1,59 @@
 import React from "react";
+import { getI18n } from "../../../../locales/server";
 import ServiceHero from "../../components/Services/ServiceHero";
 import ServiceAbout from "../../components/Services/ServiceAbout";
 import ServiceInfos from "../../components/Services/ServiceInfos";
 import ServiceImages from "../../components/Services/ServiceImages";
 import CallToAction from "../../components/CallToAction/CallToAction";
 
-const Tisztitasesveszelytelenites = () => {
+const Tisztitasesveszelytelenites = async () => {
+  const t = await getI18n();
+
   return (
     <main>
       <ServiceHero
         pageName="iparitesv"
-        title="Ipari tisztítás és veszélytelenítés"
-        description="Hatékony, professzionális megoldások extrém szennyeződések esetén is"
+        title={t("servicePages.tisztitasesveszelytelenites.hero.title")}
+        description={t(
+          "servicePages.tisztitasesveszelytelenites.hero.description"
+        )}
       />
       <ServiceAbout
-        title="Mit jelent az ipari tisztítás és veszélytelenítés?"
-        description="Gyárakban, üzemekben és nagyobb intézményekben időről időre szükség van alapos nagytakarításra. Ez nem egyszerű porszívózást jelent: ipari gépek, légcsatornák, homlokzatok, olajszennyezett padlók tisztításáról van szó. Az ipari tisztítás speciális eszközökkel és vegyszerekkel történik, mindig az adott feladathoz igazítva. Ezáltal nemcsak tisztább, hanem biztonságosabb és egészségesebb is lesz a környezet. Az időtartam a feladattól függ, lehet egy napos vagy akár több hetes munka."
+        title={t("servicePages.tisztitasesveszelytelenites.about.title")}
+        description={t(
+          "servicePages.tisztitasesveszelytelenites.about.description"
+        )}
       />
       <ServiceInfos
-        title="Komplex tisztítási és mentesítési megoldások"
-        text="A Magyar Tűzvédelem Zrt. közel három évtizedes tapasztalattal nyújt teljes körű iparitisztítási és veszélytelenítési szolgáltatásokat. Legyen szó üzemcsarnokokról, irodaházakról, kórházakról vagy speciális létesítményekről, szakembereink a feladathoz leginkább illeszkedő technológiákat és tisztítószereket alkalmazzák. A cél minden esetben ugyanaz: higiénikus, biztonságos és üzemkész környezet biztosítása, miközben megóvjuk a berendezéseket és minimalizáljuk a leállási időt. A tűz- és vízkármentesítési tapasztalatainkra építve a legmodernebb eljárásokat alkalmazzuk a fertőtlenítésben, szennyeződések eltávolításában és speciális ipari felületek tisztításában."
-        info1title="Ipari és épület tisztítás"
-        info1text="Homlokzatok, csarnokok, irodák és kórházi terek professzionális tisztítása, fertőtlenítése."
-        info2title="Berendezések karbantartó tisztítása"
-        info2text="Gépsorok, erőművi generátorok, légtechnikai rendszerek és elektronikai egységek szakszerű mentesítése."
-        info3title="Speciális veszélytelenítés"
-        info3text="Olajszennyezett felületek kezelése, madárürülék mentesítés, hajléktalanok utáni fertőtlenítés."
-        info4title="Rendkívüli helyzetek kezelése"
-        info4text="Viharkárok utáni takarítás, lomtalanítás és gyors reagálás kritikus körülmények között."
+        title={t("servicePages.tisztitasesveszelytelenites.infos.title")}
+        text={t("servicePages.tisztitasesveszelytelenites.infos.text")}
+        info1title={t(
+          "servicePages.tisztitasesveszelytelenites.infos.info1title"
+        )}
+        info1text={t(
+          "servicePages.tisztitasesveszelytelenites.infos.info1text"
+        )}
+        info2title={t(
+          "servicePages.tisztitasesveszelytelenites.infos.info2title"
+        )}
+        info2text={t(
+          "servicePages.tisztitasesveszelytelenites.infos.info2text"
+        )}
+        info3title={t(
+          "servicePages.tisztitasesveszelytelenites.infos.info3title"
+        )}
+        info3text={t(
+          "servicePages.tisztitasesveszelytelenites.infos.info3text"
+        )}
+        info4title={t(
+          "servicePages.tisztitasesveszelytelenites.infos.info4title"
+        )}
+        info4text={t(
+          "servicePages.tisztitasesveszelytelenites.infos.info4text"
+        )}
       />
       <ServiceImages imgs="/iparitesv.jpg" />
-      <CallToAction title="Kérjen személyre szabott ajánlatot még ma!" />
+      <CallToAction title={t("servicePages.common.ctaTitle")} />
     </main>
   );
 };

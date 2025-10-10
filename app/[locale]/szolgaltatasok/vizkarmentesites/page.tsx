@@ -1,36 +1,39 @@
 import React from "react";
+import { getI18n } from "../../../../locales/server";
 import ServiceHero from "../../components/Services/ServiceHero";
 import ServiceAbout from "../../components/Services/ServiceAbout";
 import ServiceInfos from "../../components/Services/ServiceInfos";
 import ServiceImages from "../../components/Services/ServiceImages";
 import CallToAction from "../../components/CallToAction/CallToAction";
 
-const Vizkarmentesites = () => {
+const Vizkarmentesites = async () => {
+  const t = await getI18n();
+
   return (
     <main>
       <ServiceHero
         pageName="vizkarmentesites"
-        title="Vízkármentesítés"
-        description="Professzionális megoldások víz okozta károk esetén"
+        title={t("servicePages.vizkarmentesites.hero.title")}
+        description={t("servicePages.vizkarmentesites.hero.description")}
       />
       <ServiceAbout
-        title="Mi az a vízkár mentesítés?"
-        description="A víz alattomos károkat okozhat: csőtörés, árvíz vagy oltóvíz után a falak és padlók beszívják a nedvességet, ami penészedéshez és szerkezeti károkhoz vezethet. A vízkármentesítés során először eltávolítjuk a felesleges vizet, majd speciális szárítógépekkel kiszárítjuk a falakat és helyiségeket. Ezzel megelőzzük a további romlást és a penész kialakulását. A folyamat néhány naptól akár több hétig is eltarthat, de elengedhetetlen ahhoz, hogy az épület újra biztonságosan használható legyen."
+        title={t("servicePages.vizkarmentesites.about.title")}
+        description={t("servicePages.vizkarmentesites.about.description")}
       />
       <ServiceInfos
-        title="Komplex megoldások vízkár utáni helyreállításra"
-        text="Legyen szó csőtörésről, viharkárról, árvízről vagy oltóvízről, a Magyar Tűzvédelem Zrt. szakemberei speciális berendezésekkel és több évtizedes tapasztalattal nyújtanak gyors és hatékony segítséget. A vízkárok elhárítása nem tűr halasztást: a szakszerű szárítás és fertőtlenítés hiánya súlyos szerkezeti és egészségügyi problémákhoz vezethet. Modern hőszivattyús technológiánknak köszönhetően a falak mélyéről is eltávolítjuk a felesleges nedvességet, megelőzve a penészesedést és a korróziós károsodásokat – így az épület és a berendezések nagy része megmenthető."
-        info1title="Gyors kárenyhítés"
-        info1text="Azonnali intézkedésekkel csökkentjük a másodlagos károk kialakulásának kockázatát."
-        info2title="Speciális szárítástechnológia"
-        info2text="Hőszivattyús berendezésekkel hatékonyan szárítjuk ki az épületszerkezeteket a falak mélyéig."
-        info3title="Fertőtlenítés és penészmentesítés"
-        info3text="A vízkár után gondoskodunk a higiénikus környezetről és a levegő minőségének helyreállításáról."
-        info4title="Berendezések megóvása"
-        info4text="Műszaki eszközök tisztítása, konzerválása és korrózióvédelme a teljes cserék elkerülésére."
+        title={t("servicePages.vizkarmentesites.infos.title")}
+        text={t("servicePages.vizkarmentesites.infos.text")}
+        info1title={t("servicePages.vizkarmentesites.infos.info1title")}
+        info1text={t("servicePages.vizkarmentesites.infos.info1text")}
+        info2title={t("servicePages.vizkarmentesites.infos.info2title")}
+        info2text={t("servicePages.vizkarmentesites.infos.info2text")}
+        info3title={t("servicePages.vizkarmentesites.infos.info3title")}
+        info3text={t("servicePages.vizkarmentesites.infos.info3text")}
+        info4title={t("servicePages.vizkarmentesites.infos.info4title")}
+        info4text={t("servicePages.vizkarmentesites.infos.info4text")}
       />
       <ServiceImages imgs="/vizkarmentesites.jpg" />
-      <CallToAction title="Kérjen személyre szabott ajánlatot még ma!" />
+      <CallToAction title={t("servicePages.common.ctaTitle")} />
     </main>
   );
 };

@@ -257,4 +257,176 @@ export default {
       title: "Fedezze fel szolgáltatásainkat részletesen!",
     },
   },
+  servicePages: {
+    tuzvedelem: {
+      hero: {
+        title: "Tűzvédelem",
+        description: "Professzionális passzív tűzvédelmi megoldások",
+      },
+      about: {
+        title: "Mi az a tűzvédelem?",
+        description:
+          "A tűz rövid idő alatt hatalmas károkat okozhat, ezért kiemelten fontos, hogy az épületek és szerkezetek védve legyenek. A tűzvédelem lényege, hogy a falak, acélszerkezetek és faanyagok ne gyengüljenek meg túl gyorsan, így maradjon idő a menekülésre és a mentésre. Ehhez speciális festékeket, bevonatokat és burkolatokat alkalmazunk, amelyek akár órákig is ellenállnak a lángok hőjének. A munka nagyságától függően néhány nap vagy hét alatt elvégezhető, és hosszú távon biztonságot ad az épület minden használójának.",
+      },
+      infos: {
+        title: "Komplex tűzvédelmi szolgáltatások minden épülettípushoz",
+        text: "A Magyar Tűzvédelem Zrt. célja, hogy a legmodernebb, tanúsított technológiákkal biztosítsa az ipari, kereskedelmi és lakóépületek szerkezeteinek tűzállóságát. Szolgáltatásaink a jogszabályi előírásoknak megfelelően, szakértő csapatunk bevonásával valósulnak meg – így partnereink teljes biztonságban tudhatják magukat és értékeiket. Alkalmazott technológiáink a tűzvédelmi festés (R15-R120), tűzvédelmi burkolat (R15-R240) és tűzvédelmi habarcs (R15-R240).",
+        info1title: "Tűzállósági bevonatok",
+        info1text:
+          "Speciális tűzvédő festékek és bevonatok alkalmazása, amelyek jelentősen növelik az acél- és betonszerkezetek tűzállóságát.",
+        info2title: "Tűzvédelmi lezárások",
+        info2text:
+          "Kábel- és csőátvezetések, valamint fal- és födémáttörések professzionális tűzgátló lezárása a tűz és füst terjedésének megakadályozására.",
+        info3title: "Könnyűszerkezetes rendszerek védelme",
+        info3text:
+          "Gipszkarton és más szerkezetek tűzvédelmi burkolása, hogy minden épülettípus megfeleljen a legszigorúbb biztonsági előírásoknak.",
+        info4title: "Tanúsított megoldások",
+        info4text:
+          "Minden munkafolyamatunk minősített anyagokkal és engedélyezett technológiákkal zajlik, garantálva a jogszabályi megfelelést.",
+      },
+    },
+    azbesztmentesites: {
+      hero: {
+        title: "Azbesztmentesítés",
+        description:
+          "Biztonságosan és szakszerűen, teljes körű szolgáltatás országosan",
+      },
+      about: {
+        title: "Mi az az Azbesztmentesítés?",
+        description:
+          "Az azbeszt régen népszerű építőanyag volt, ma azonban tudjuk, hogy rendkívül veszélyes az egészségre – belégzése súlyos betegségeket okozhat. Az azbesztmentesítés során szakszerűen eltávolítjuk az épületekben lévő régi burkolatokat, csöveket, tetőfedő anyagokat. Ez egy precíz, zárt technológiát igénylő folyamat, hiszen a szálló porszemek jelentik a valódi veszélyt. A munkát mindig engedéllyel rendelkező szakemberek végzik, általában néhány nap alatt. Az eredmény: egészségesebb, biztonságosabb környezet.",
+      },
+      infos: {
+        title: "Komplett megoldások azbesztmentesítésre",
+        text: "A Magyar Tűzvédelem Zrt. közel 30 éves tapasztalattal és speciális szaktudással végzi az azbeszt biztonságos eltávolítását bármilyen formában is forduljon elő. Munkánk során a jogszabályoknak megfelelően, egészségkárosító hatások és környezetszennyezés nélkül biztosítjuk az azbesztes anyagok bontását, kezelését és ártalmatlanítását. Szolgáltatásaink lefedik a teljes folyamatot az előzetes felméréstől és munkaterv-készítéstől a bontáson át egészen a veszélyes hulladék elszállításáig és megsemmisítéséig.",
+        info1title: "Szórt azbeszt eltávolítása",
+        info1text:
+          "Hermetikusan zárt fekete zónában, HEPA-szűrős technológiával és szigorú védelmi protokoll mellett végezzük a bontást.",
+        info2title: "Azbesztcement anyagok bontása",
+        info2text:
+          "Hullámpala, tető- és kerítéselemek biztonságos, szabályos bontása és a veszélyes hulladék teljes körű ártalmatlanítása.",
+        info3title: "Épületen belüli azbesztmentesítés",
+        info3text:
+          "Csővezetékek, légcsatornák, burkolatok és álmennyezetek bontása precíz technológiával és munkavédelmi előírások betartásával.",
+        info4title: "Felmérések és bevizsgálások",
+        info4text:
+          "Azbeszttartalom vizsgálata mintavétellel, valamint épületek teljes azbeszttérképének elkészítése.",
+      },
+    },
+    tuzkarmentesites: {
+      hero: {
+        title: "Tűzkármentesítés",
+        description: "Gyors és szakszerű beavatkozás tűzeset után",
+      },
+      about: {
+        title: "Mi az a tűzkár mentesítés?",
+        description:
+          "Egy tűz után nemcsak az égés, hanem a füst, a korom és az oltóvíz is komoly károkat okoz. Ha nem kezdjük el gyorsan a helyreállítást, a fémek rozsdásodnak, a berendezések tönkre mennek, az épület szerkezete pedig tovább romlik. A tűzkármentesítés célja, hogy a lehető legtöbb értéket megmentsük: kitisztítjuk, fertőtlenítjük és szükség esetén újjáépítjük az érintett részeket. A munka sürgősségtől és károk mértékétől függően pár nap vagy akár több hét is lehet, de minden óra számít.",
+      },
+      infos: {
+        title: "Komplett megoldások tűzkárok utáni helyreállításra",
+        text: "A Magyar Tűzvédelem Zrt. speciális technológiáival és közel 30 év tapasztalatával a tűzeseteket követően gyorsan és hatékonyan lépünk fel. A beavatkozás a tűz utáni 48–72 órában a legeredményesebb, hiszen ekkor előzhetők meg a korróziós és vegyi folyamatok által okozott súlyos másodlagos károk. Szolgáltatásaink célja, hogy az épületek, berendezések és szerkezetek minél nagyobb részét visszaállítsuk a tűz előtti állapothoz közeli szintre – gazdaságosan, biztosítói elvárásoknak megfelelően.",
+        info1title: "Azonnali kárenyhítés",
+        info1text:
+          "Gyors beavatkozás a másodlagos károk és a veszteségek minimalizálására.",
+        info2title: "Épületszerkezetek helyreállítása",
+        info2text:
+          "Sérült elemek bontása, korommentesítés és vegyszeres neutralizálás a biztonság érdekében.",
+        info3title: "Berendezések mentése",
+        info3text:
+          "Elektromos és műszaki eszközök tisztítása, szárítása és korrózió elleni védelme.",
+        info4title: "Teljes körű ügyintézés",
+        info4text:
+          "Biztosítótársaságokkal való kapcsolattartás, dokumentáció és szakszerű helyreállítás egy kézben.",
+      },
+    },
+    vizkarmentesites: {
+      hero: {
+        title: "Vízkármentesítés",
+        description: "Professzionális megoldások víz okozta károk esetén",
+      },
+      about: {
+        title: "Mi az a vízkár mentesítés?",
+        description:
+          "A víz alattomos károkat okozhat: csőtörés, árvíz vagy oltóvíz után a falak és padlók beszívják a nedvességet, ami penészedéshez és szerkezeti károkhoz vezethet. A vízkármentesítés során először eltávolítjuk a felesleges vizet, majd speciális szárítógépekkel kiszárítjuk a falakat és helyiségeket. Ezzel megelőzzük a további romlást és a penész kialakulását. A folyamat néhány naptól akár több hétig is eltarthat, de elengedhetetlen ahhoz, hogy az épület újra biztonságosan használható legyen.",
+      },
+      infos: {
+        title: "Komplex megoldások vízkár utáni helyreállításra",
+        text: "Legyen szó csőtörésről, viharkárról, árvízről vagy oltóvízről, a Magyar Tűzvédelem Zrt. szakemberei speciális berendezésekkel és több évtizedes tapasztalattal nyújtanak gyors és hatékony segítséget. A vízkárok elhárítása nem tűr halasztást: a szakszerű szárítás és fertőtlenítés hiánya súlyos szerkezeti és egészségügyi problémákhoz vezethet. Modern hőszivattyús technológiánknak köszönhetően a falak mélyéről is eltávolítjuk a felesleges nedvességet, megelőzve a penészesedést és a korróziós károsodásokat – így az épület és a berendezések nagy része megmenthető.",
+        info1title: "Gyors kárenyhítés",
+        info1text:
+          "Azonnali intézkedésekkel csökkentjük a másodlagos károk kialakulásának kockázatát.",
+        info2title: "Speciális szárítástechnológia",
+        info2text:
+          "Hőszivattyús berendezésekkel hatékonyan szárítjuk ki az épületszerkezeteket a falak mélyéig.",
+        info3title: "Fertőtlenítés és penészmentesítés",
+        info3text:
+          "A vízkár után gondoskodunk a higiénikus környezetről és a levegő minőségének helyreállításáról.",
+        info4title: "Berendezések megóvása",
+        info4text:
+          "Műszaki eszközök tisztítása, konzerválása és korrózióvédelme a teljes cserék elkerülésére.",
+      },
+    },
+    tisztitasesveszelytelenites: {
+      hero: {
+        title: "Ipari tisztítás és veszélytelenítés",
+        description:
+          "Hatékony, professzionális megoldások extrém szennyeződések esetén is",
+      },
+      about: {
+        title: "Mit jelent az ipari tisztítás és veszélytelenítés?",
+        description:
+          "Gyárakban, üzemekben és nagyobb intézményekben időről időre szükség van alapos nagytakarításra. Ez nem egyszerű porszívózást jelent: ipari gépek, légcsatornák, homlokzatok, olajszennyezett padlók tisztításáról van szó. Az ipari tisztítás speciális eszközökkel és vegyszerekkel történik, mindig az adott feladathoz igazítva. Ezáltal nemcsak tisztább, hanem biztonságosabb és egészségesebb is lesz a környezet. Az időtartam a feladattól függ, lehet egy napos vagy akár több hetes munka.",
+      },
+      infos: {
+        title: "Komplex tisztítási és mentesítési megoldások",
+        text: "A Magyar Tűzvédelem Zrt. közel három évtizedes tapasztalattal nyújt teljes körű iparitisztítási és veszélytelenítési szolgáltatásokat. Legyen szó üzemcsarnokokról, irodaházakról, kórházakról vagy speciális létesítményekről, szakembereink a feladathoz leginkább illeszkedő technológiákat és tisztítószereket alkalmazzák. A cél minden esetben ugyanaz: higiénikus, biztonságos és üzemkész környezet biztosítása, miközben megóvjuk a berendezéseket és minimalizáljuk a leállási időt. A tűz- és vízkármentesítési tapasztalatainkra építve a legmodernebb eljárásokat alkalmazzuk a fertőtlenítésben, szennyeződések eltávolításában és speciális ipari felületek tisztításában.",
+        info1title: "Ipari és épület tisztítás",
+        info1text:
+          "Homlokzatok, csarnokok, irodák és kórházi terek professzionális tisztítása, fertőtlenítése.",
+        info2title: "Berendezések karbantartó tisztítása",
+        info2text:
+          "Gépsorok, erőművi generátorok, légtechnikai rendszerek és elektronikai egységek szakszerű mentesítése.",
+        info3title: "Speciális veszélytelenítés",
+        info3text:
+          "Olajszennyezett felületek kezelése, madárürülék mentesítés, hajléktalanok utáni fertőtlenítés.",
+        info4title: "Rendkívüli helyzetek kezelése",
+        info4text:
+          "Viharkárok utáni takarítás, lomtalanítás és gyors reagálás kritikus körülmények között.",
+      },
+    },
+    alpintechnika: {
+      hero: {
+        title: "Ipari alpintechnika",
+        description:
+          "Biztonságos, gyors és költséghatékony munkavégzés a legnehezebben elérhető helyeken is",
+      },
+      about: {
+        title: "Mi az az ipari alpintechnika?",
+        description:
+          "Vannak munkák, amelyeket állványozás vagy daru nélkül is el lehet végezni – ipari alpintechnikával. Ez azt jelenti, hogy képzett szakemberek kötéltechnika segítségével érik el a magasban vagy nehezen hozzáférhető helyen lévő felületeket. Így gyorsabban és költséghatékonyabban lehet homlokzatot javítani, légtechnikát szerelni, galambtüskézni vagy akár festeni. Az ilyen munkák általában pár órától néhány napig tartanak, és biztonságos megoldást nyújtanak akkor is, amikor más módszerek túl drágák vagy bonyolultak lennének.",
+      },
+      infos: {
+        title: "Rugalmas és hatékony megoldások állványozás nélkül",
+        text: "A Magyar Tűzvédelem Zrt. ipari alpintechnikai szolgáltatásai lehetővé teszik, hogy a legnehezebben hozzáférhető területeken is szakszerű és biztonságos munkát végezzünk – drága állványok vagy emelőgépek használata nélkül. Tapasztalt, fiatalos és dinamikus csapatunk szinte bármilyen magassági feladatot el tud látni, legyen szó szerelésről, javításról, tisztításról vagy veszélytelenítésről. Megoldásaink gyorsak, költséghatékonyak, és maximálisan megfelelnek a biztonsági előírásoknak.",
+        info1title: "Homlokzatok és épületszerkezetek",
+        info1text:
+          "Javítás, tisztítás, festés és karbantartás alpintechnikával, akár nagy magasságban is.",
+        info2title: "Ipari és műszaki feladatok",
+        info2text:
+          "Tűzjelző rendszerek, légtechnikai hálózatok, villámhárítók és egyéb berendezések szerelése.",
+        info3title: "Veszélytelenítés és mentesítés",
+        info3text:
+          "Galambtüskék telepítése, madármentesítés, veszélyes elemek eltávolítása.",
+        info4title: "Gyors és költséghatékony kivitelezés",
+        info4text:
+          "Állványozás és emelőgépek nélkül, rugalmas és gazdaságos megoldások minden projektre.",
+      },
+    },
+    common: {
+      ctaButton1: "Kérjen személyre szabott ajánlatot!",
+      ctaButton2: "Vegye fel velünk a kapcsolatot!",
+      ctaTitle: "Kérjen személyre szabott ajánlatot még ma!",
+    },
+  },
 } as const;
