@@ -1,4 +1,7 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
+import { useI18n } from "@/locales/client";
 import Menu from "./Menu";
 import CallToActionButton from "../CallToAction/CallToActionButton";
 import AlterLogo from "../Global Components/AlterLogo";
@@ -10,6 +13,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
   const [scrolled, setScrolled] = useState(false);
+  const t = useI18n();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,15 +39,15 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
         <CallToActionButton
           link="/kapcsolat"
           extraClasses={"hidden xl:flex"}
-          text="Vegye fel velünk a kapcsolatot!"
+          text={t("header.cta.contactUs")}
         />
 
         {/* Mobile menu */}
         <button className="mobile-menu lg:hidden" onClick={mobileToggle}>
           {mobileOpen ? (
-            <img src="icons/close-icon-white.svg" alt="Close" width={24} />
+            <img src="icons/close-icon-white.svg" alt={t("header.mobile.closeAlt")} width={24} />
           ) : (
-            <img src="icons/menu-icon-white.svg" alt="Menu" width={24} />
+            <img src="icons/menu-icon-white.svg" alt={t("header.mobile.menuAlt")} width={24} />
           )}
         </button>
       </div>

@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { useI18n } from "@/locales/client";
 import Logo from "../Global Components/Logo";
 import Menu from "./Menu";
 import CallToActionButton from "../CallToAction/CallToActionButton";
@@ -9,6 +12,8 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
+  const t = useI18n();
+
   return (
     <div className="navbar flex justify-center items-center h-24 border-b-2 sm:border-t-2 border-gray-200 bg-white">
       <div className="container flex items-center justify-between px-8">
@@ -21,15 +26,15 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
         <CallToActionButton
           link="/kapcsolat"
           extraClasses={"hidden xl:flex"}
-          text="Vegye fel velünk a kapcsolatot!"
+          text={t("header.cta.contactUs")}
         />
 
         {/* Mobile menu */}
         <button className="mobile-menu lg:hidden" onClick={mobileToggle}>
           {mobileOpen ? (
-            <img src="icons/close-icon.svg" alt="Close" width={24} />
+            <img src="icons/close-icon.svg" alt={t("header.mobile.closeAlt")} width={24} />
           ) : (
-            <img src="icons/menu-icon.svg" alt="Menu" width={24} />
+            <img src="icons/menu-icon.svg" alt={t("header.mobile.menuAlt")} width={24} />
           )}
         </button>
       </div>

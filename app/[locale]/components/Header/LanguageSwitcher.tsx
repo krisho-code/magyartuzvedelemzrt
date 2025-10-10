@@ -1,6 +1,6 @@
 "use client";
 
-import { useChangeLocale, useCurrentLocale } from "@/locales/client";
+import { useChangeLocale, useCurrentLocale, useI18n } from "@/locales/client";
 import { ChangeEvent } from "react";
 
 interface LanguageSwitcherProps {
@@ -12,6 +12,7 @@ export default function LanguageSwitcher({
 }: LanguageSwitcherProps) {
   const changeLocale = useChangeLocale();
   const locale = useCurrentLocale();
+  const t = useI18n();
 
   const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value as "hu" | "en";
@@ -24,8 +25,8 @@ export default function LanguageSwitcher({
       value={locale}
       className={`text-regular-normal ${extraClasses}`}
     >
-      <option value="hu">Magyar (HU)</option>
-      <option value="en">English (EN)</option>
+      <option value="hu">{t("header.languageSwitcher.hungarian")}</option>
+      <option value="en">{t("header.languageSwitcher.english")}</option>
     </select>
   );
 }

@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { useI18n } from "@/locales/client";
 import CallToActionButton from "../CallToAction/CallToActionButton";
 import Menu from "./Menu";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -12,6 +15,8 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
   mobileToggle,
   mobileOpen,
 }) => {
+  const t = useI18n();
+
   return (
     <div
       className={`mobile-navbar lg:hidden flex justify-center items-center h-fit py-8 bg-gray-200 ${
@@ -27,7 +32,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
         {/* Item */}
         <CallToActionButton
           link="/kapcsolat"
-          text="Vegye fel velünk a kapcsolatot!"
+          text={t("header.cta.contactUs")}
           mobileToggle={mobileToggle}
         />
         {/* Item */}

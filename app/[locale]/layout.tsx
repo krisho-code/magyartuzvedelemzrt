@@ -4,22 +4,31 @@ import "./styles/globals.css";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Provider from "./components/I18nProvider";
 
 export const metadata: Metadata = {
   title: "",
 };
 
+interface RootLayoutProps {
+  children: React.ReactNode;
+  params: {
+    locale: string;
+  };
+}
+
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  params: { locale },
+}: RootLayoutProps) {
   return (
-    <html lang="">
+    <html lang={locale}>
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <Provider locale={locale}>
+          <Header />
+          {children}
+          <Footer />
+        </Provider>
       </body>
     </html>
   );

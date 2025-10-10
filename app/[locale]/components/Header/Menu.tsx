@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import { useI18n } from "@/locales/client";
 
 interface MenuProps {
   mobileToggle?: () => void;
@@ -7,6 +10,8 @@ interface MenuProps {
 }
 
 const Menu: React.FC<MenuProps> = ({ mobileToggle, extraClasses }) => {
+  const t = useI18n();
+
   return (
     <ul className={`menu ${extraClasses}`}>
       <li>
@@ -15,7 +20,7 @@ const Menu: React.FC<MenuProps> = ({ mobileToggle, extraClasses }) => {
           className="text-medium-normal"
           onClick={mobileToggle}
         >
-          Cégismertető
+          {t("header.navigation.about")}
         </Link>
       </li>
       <li>
@@ -24,7 +29,7 @@ const Menu: React.FC<MenuProps> = ({ mobileToggle, extraClasses }) => {
           className="text-medium-normal"
           onClick={mobileToggle}
         >
-          Szolgáltatások
+          {t("header.navigation.services")}
         </Link>
       </li>
       <li>
@@ -33,7 +38,7 @@ const Menu: React.FC<MenuProps> = ({ mobileToggle, extraClasses }) => {
           className="text-medium-normal"
           onClick={mobileToggle}
         >
-          Kapcsolat
+          {t("header.navigation.contact")}
         </Link>
       </li>
     </ul>
