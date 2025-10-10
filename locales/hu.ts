@@ -198,4 +198,63 @@ export default {
       button: "Segítséget kérek!",
     },
   },
+  servicesPage: {
+    hero: {
+      pageName: "Szolgáltatások",
+      title: "Szolgáltatásaink bemutatása",
+      description:
+        "Szolgáltatásaink célja, hogy ügyfeleink számára mindig biztonságos, megbízható és hosszú távon fenntartható megoldásokat nyújtsunk. Munkánk során a szakmai alaposságot és a minőséget helyezzük előtérbe, hogy partnereink minden esetben elégedetten vehessék igénybe szolgáltatásainkat.",
+      button1: "Szolgáltatásaink",
+      button2: "Kapcsolat",
+    },
+    stats: {
+      title: "Szakértelmünk magáért beszél!",
+      description:
+        "A Magyar Tűzvédelem Zrt. több évtizedes szakmai tapasztalattal, elismert minősítésekkel és engedélyekkel biztosítja ügyfelei számára a legmagasabb színvonalú megoldásokat. Minden projektünkben a megbízhatóság, a biztonság és a precíz kivitelezés áll a középpontban, így partnereink garantáltan hosszú távú értéket kapnak.",
+      stat1: "GNB",
+      text1: "Minősítéssel dolgozunk",
+      stat2: "HPS",
+      text2: "Engedélyünk van a munkáinkra",
+      stat3: "30+",
+      text3: "Év szakmai tapasztalat",
+    },
+    services: {
+      tuzvedelem: {
+        name: "Tűzvédelem",
+        description: "Professzionális passzív tűzvédelmi megoldások",
+        text: "A Magyar Tűzvédelem Zrt. professzionális passzív tűzvédelmi megoldásokkal növeli az épületek tűzállóságát, biztosítva az emberek és értékek védelmét.",
+      },
+      azbesztmentesites: {
+        name: "Azbesztmentesítés",
+        description:
+          "Biztonságosan és szakszerűen, teljes körű szolgáltatás országosan",
+        text: "A Magyar Tűzvédelem Zrt. az azbesztmentesítést szakszerű, hermetikusan lezárt térben, negatív nyomással és HEPA-szűréses elszívással végzi a biztonság érdekében.",
+      },
+      tuzkarmentesites: {
+        name: "Tűzkármentesítés",
+        description: "Gyors és szakszerű beavatkozás tűzeset után",
+        text: "A tűzesetek után végzett tűzkármentesítés nem csupán az ingatlan esztétikai vagy funkcionális helyreállítását jelenti, hanem a másodlagos károk megelőzését is.",
+      },
+      vizkarmentesites: {
+        name: "Vízkármentesítés",
+        description: "Professzionális megoldások víz okozta károk esetén",
+        text: "A Magyar Tűzvédelem Zrt. gyors és hatékony vízkármentesítéssel csökkenti a károkat és megelőzi a hosszú távú következményeket.",
+      },
+      tisztitasesveszelytelenites: {
+        name: "Ipari tisztítás és veszélytelenítés",
+        description:
+          "Hatékony, professzionális megoldások extrém szennyeződések esetén is",
+        text: "A Magyar Tűzvédelem Zrt. ipari létesítmények és gépsorok szakszerű tisztítását és fertőtlenítését biztosítja, veszélyes anyagok és extrém helyzetek kezelésével is.",
+      },
+      alpintechnika: {
+        name: "Ipari alpintechnikai munkák",
+        description: "Biztonságos, gyors és költséghatékony",
+        text: "A Magyar Tűzvédelem Zrt. ipari alpintechnikával biztosít gyors és biztonságos munkavégzést a nehezen hozzáférhető helyeken.",
+      },
+      learnMore: "Tudjon meg többet",
+    },
+    cta: {
+      title: "Fedezze fel szolgáltatásainkat részletesen!",
+    },
+  },
 } as const;

@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import { useI18n } from "../../../../locales/client";
 
 interface ServiceProps {
   name: string;
@@ -18,6 +21,8 @@ const Service: React.FC<ServiceProps> = ({
   img,
   borderBottom = true,
 }) => {
+  const t = useI18n();
+
   return (
     <div
       className={`service flex items-center justify-center py-8 w-full ${
@@ -31,7 +36,7 @@ const Service: React.FC<ServiceProps> = ({
             <p className="text-bold-normal">{description}</p>
             <p className="text-regular-normal">{text}</p>
             <p className="text-regular-normal flex gap-2 w-fit hover:underline">
-              Tudjon meg többet
+              {t("servicesPage.services.learnMore")}
               <img src="/icons/arrow-icon.svg" alt="" className="w-2" />
             </p>
           </div>

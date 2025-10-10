@@ -197,4 +197,63 @@ export default {
       button: "I Need Help!",
     },
   },
+  servicesPage: {
+    hero: {
+      pageName: "Services",
+      title: "Presentation of Our Services",
+      description:
+        "The goal of our services is to always provide safe, reliable, and long-term sustainable solutions for our clients. In our work, we prioritize professional thoroughness and quality, so our partners can always use our services with satisfaction.",
+      button1: "Our Services",
+      button2: "Contact",
+    },
+    stats: {
+      title: "Our Expertise Speaks for Itself!",
+      description:
+        "Magyar Tűzvédelem Zrt. ensures the highest quality solutions for its clients with decades of professional experience, recognized certifications, and permits. In all our projects, reliability, safety, and precise execution are at the center, so our partners are guaranteed to receive long-term value.",
+      stat1: "GNB",
+      text1: "We work with certification",
+      stat2: "HPS",
+      text2: "We have permits for our work",
+      stat3: "30+",
+      text3: "Years of professional experience",
+    },
+    services: {
+      tuzvedelem: {
+        name: "Fire Protection",
+        description: "Professional passive fire protection solutions",
+        text: "Magyar Tűzvédelem Zrt. increases the fire resistance of buildings with professional passive fire protection solutions, ensuring the protection of people and assets.",
+      },
+      azbesztmentesites: {
+        name: "Asbestos Removal",
+        description:
+          "Safely and professionally, comprehensive service nationwide",
+        text: "Magyar Tűzvédelem Zrt. performs asbestos removal professionally in hermetically sealed spaces, with negative pressure and HEPA-filtered exhaust for safety.",
+      },
+      tuzkarmentesites: {
+        name: "Fire Damage Restoration",
+        description: "Fast and professional intervention after fires",
+        text: "Fire damage restoration after fires means not only the aesthetic or functional restoration of the property, but also the prevention of secondary damage.",
+      },
+      vizkarmentesites: {
+        name: "Water Damage Restoration",
+        description: "Professional solutions for water damage",
+        text: "Magyar Tűzvédelem Zrt. reduces damages and prevents long-term consequences with fast and effective water damage restoration.",
+      },
+      tisztitasesveszelytelenites: {
+        name: "Industrial Cleaning and Decontamination",
+        description:
+          "Effective, professional solutions even in extreme contamination cases",
+        text: "Magyar Tűzvédelem Zrt. ensures professional cleaning and disinfection of industrial facilities and machinery, including handling hazardous materials and extreme situations.",
+      },
+      alpintechnika: {
+        name: "Industrial Rope Access Work",
+        description: "Safe, fast, and cost-effective",
+        text: "Magyar Tűzvédelem Zrt. provides fast and safe work performance in hard-to-reach places with industrial rope access techniques.",
+      },
+      learnMore: "Learn More",
+    },
+    cta: {
+      title: "Explore Our Services in Detail!",
+    },
+  },
 } as const;
