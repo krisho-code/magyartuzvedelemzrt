@@ -1,28 +1,31 @@
 import React from "react";
+import { getI18n } from "@/locales/server";
 import AboutInfosContent from "./AboutInfosContent";
 
-const AboutInfos = () => {
+const AboutInfos = async () => {
+  const t = await getI18n();
+
   return (
     <div className="row grid grid-cols-1 gap-8 lg:grid-cols-4">
       <AboutInfosContent
         img="/icons/fire-icon-secondary.svg"
-        title="100%-ban Magyar cég"
-        description="Hazai tulajdonú vállalkozásként elkötelezettek vagyunk a magyar ipar és közszolgáltatások magas színvonalú kiszolgálása iránt."
+        title={t("homeAbout.info1.title")}
+        description={t("homeAbout.info1.description")}
       />
       <AboutInfosContent
         img="/icons/fire-icon-secondary.svg"
-        title="30+ év szakmai tapasztalat"
-        description="Több mint három évtizedes tapasztalatunk biztosítja a megbízható és szakszerű kivitelezést minden projektünkben."
+        title={t("homeAbout.info2.title")}
+        description={t("homeAbout.info2.description")}
       />
       <AboutInfosContent
         img="/icons/fire-icon-secondary.svg"
-        title="Széleskörű szolgáltatások"
-        description="Passzív tűzvédelem, azbesztmentesítés, víz- és tűzkármentesítés, ipari tisztítás és alpintechnikai munkák – mindent egy helyen."
+        title={t("homeAbout.info3.title")}
+        description={t("homeAbout.info3.description")}
       />
       <AboutInfosContent
         img="/icons/fire-icon-secondary.svg"
-        title="Magas színvonal"
-        description="Minősített technológiákkal és szakértő csapattal garantáljuk a legmagasabb szintű biztonságot és hatékonyságot."
+        title={t("homeAbout.info4.title")}
+        description={t("homeAbout.info4.description")}
       />
     </div>
   );

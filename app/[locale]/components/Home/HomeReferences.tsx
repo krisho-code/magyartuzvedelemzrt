@@ -1,22 +1,23 @@
 import React from "react";
+import { getI18n } from "@/locales/server";
 import UnderlinedTitle from "../Global Components/UnderlinedTitle";
 import HomeReferencesInfos from "./HomeReferencesInfos";
 
-const HomeReferences = () => {
+const HomeReferences = async () => {
+  const t = await getI18n();
+
   return (
     <section className="home-references-section flex items-center justify-center py-16 bg-gray-100">
       <div className="container flex flex-col gap-16 px-8">
         <div className="flex flex-col gap-8">
           <UnderlinedTitle
-            pageName="Referenciák"
+            pageName={t("homeReferences.pageName")}
             extraClassesDiv="items-center"
             extraClassesH2="text-center"
-            title="Ők már megbíztak bennünk!"
+            title={t("homeReferences.title")}
           />
           <p className="text-medium-normal text-center">
-            Referenciáink a szakmai elkötelezettségünket és megbízhatóságunkat
-            igazolják, számos sikeresen megvalósított projekt bizonyítja munkánk
-            minőségét.
+            {t("homeReferences.description")}
           </p>
         </div>
         <HomeReferencesInfos />

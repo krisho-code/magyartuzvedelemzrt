@@ -1,8 +1,11 @@
 import React from "react";
+import { getI18n } from "@/locales/server";
 
 import UnderlinedTitle from "../Global Components/UnderlinedTitle";
 
-const ContactForm = () => {
+const ContactForm = async () => {
+  const t = await getI18n();
+
   return (
     <section
       id="conact-form-section"
@@ -13,30 +16,30 @@ const ContactForm = () => {
         <div className="col flex flex-col gap-16">
           <div className="flex flex-col gap-4">
             <UnderlinedTitle
-              pageName="Kapcsolatok"
-              title="Vegye fel velünk a kapcsolatot!"
+              pageName={t("contactForm.pageName")}
+              title={t("contactForm.title")}
             />
             <p className="text-regular-normal">
-              Az alábbi elérhetőségen keressen minket, vagy küldön üzenetet!
+              {t("contactForm.description")}
             </p>
           </div>
           <ul className="flex flex-col gap-4">
             <li className="flex items-center gap-4">
               <img src="/icons/email-icon.svg" alt="" />
               <a href="#" className="underline">
-                info@magyartuzvedelemzrt.hu
+                {t("contactForm.contactInfo.email")}
               </a>
             </li>
             <li className="flex items-center gap-4">
               <img src="/icons/phone-icon.svg" alt="" />
               <a href="#" className="underline">
-                +36 30 475 1050 
+                {t("contactForm.contactInfo.phone")}
               </a>
             </li>
             <li className="flex items-center gap-4">
               <img src="/icons/location-icon.svg" alt="" />
               <a href="#" className="underline">
-                1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson emelet)
+                {t("contactForm.contactInfo.address")}
               </a>
             </li>
           </ul>
@@ -47,7 +50,8 @@ const ContactForm = () => {
             {/* Input */}
             <div className="flex flex-col gap-2">
               <label htmlFor="name">
-                Név / Cégnév <span>*</span>
+                {t("contactForm.form.nameLabel")}{" "}
+                <span>{t("contactForm.form.requiredMark")}</span>
               </label>
               <input
                 id="name"
@@ -58,7 +62,8 @@ const ContactForm = () => {
             {/* Input */}
             <div className="flex flex-col gap-2">
               <label htmlFor="email">
-                Email <span>*</span>
+                {t("contactForm.form.emailLabel")}{" "}
+                <span>{t("contactForm.form.requiredMark")}</span>
               </label>
               <input
                 id="email"
@@ -69,27 +74,31 @@ const ContactForm = () => {
             {/* Input */}
             <div className="flex flex-col gap-2">
               <label htmlFor="message">
-                Üzenet <span>*</span>
+                {t("contactForm.form.messageLabel")}{" "}
+                <span>{t("contactForm.form.requiredMark")}</span>
               </label>
               <textarea
                 name="message"
                 id="message"
                 rows={6}
-                placeholder="Ide írja az üzenetét..."
+                placeholder={t("contactForm.form.messagePlaceholder")}
                 className="block w-full resize-none text-regular-normal border-2 p-3 focus:outline-2 focus:outline-red-700"
               ></textarea>
             </div>
             <div className="flex gap-2">
               <input type="checkbox" name="check" id="check" />
               <label htmlFor="check">
-                Elfogadon a <span className="underline">Feltételeket</span>
+                {t("contactForm.form.termsText")}{" "}
+                <span className="underline">
+                  {t("contactForm.form.termsLink")}
+                </span>
               </label>
             </div>
             <button
               type="submit"
               className="cta-button primary block w-fit h-fit py-3 px-6"
             >
-              Üzenet küldése
+              {t("contactForm.form.submitButton")}
             </button>
           </form>
         </div>

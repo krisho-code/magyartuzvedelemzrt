@@ -12,7 +12,7 @@ const Home = () => {
       <HomeAbout />
       <HomeServices />
       <ContactForm />
-      <CallToAction title="Biztonságban a jövő – válasszon minket!" />
+      <CallToAction />
     </main>
   );
 };
