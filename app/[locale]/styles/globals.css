@@ -65,18 +65,28 @@ body {
 }
 .text-h1-responsive {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 56px;
   line-height: 120%;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .text-h1-responsive {
-    font-size: 56px;
+    font-size: 48px;
+  }
+}
+@media (max-width: 640px) {
+  .text-h1-responsive {
+    font-size: 32px;
   }
 }
 .text-h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
+}
+@media (max-width: 640px) {
+  .text-h2 {
+    font-size: 32px;
+  }
 }
 .text-h3 {
   font-weight: 700;
@@ -97,6 +107,11 @@ body {
   line-height: 150%;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
+}
+@media (max-width: 640px) {
+  .cta-button {
+    font-size: 12px;
+  }
 }
 
 /* Primary */
