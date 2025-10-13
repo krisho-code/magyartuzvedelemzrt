@@ -34,7 +34,7 @@ export default {
   homeServices: {
     pageName: "Szolgáltatások",
     title: "Tekintsd meg szolgáltatásainkat!",
-    cta: "Tekintse meg minden szolgáltatásunkat!",
+    cta: "Tekintse meg szolgáltatásainkat!",
     services: {
       tuzvedelem: "Tűzvédelem",
       azbesztmentesites: "Azbesztmentesítés",
