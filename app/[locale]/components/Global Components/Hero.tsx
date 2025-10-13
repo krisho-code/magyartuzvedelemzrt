@@ -27,10 +27,10 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <section
-      className={`hero-section ${section} w-full max-w-full overflow-hidden grid grid-rows-[min-content_auto] lg:grid-cols-2 lg:grid-rows-1 lg:items-center bg-red-300`}
+      className={`hero-section ${section} w-full max-w-full overflow-hidden grid grid-rows-[min-content_auto] lg:grid-cols-2 lg:grid-rows-1 lg:items-center`}
     >
       <div className="flex items-center justify-center h-fit order-2 lg:order-1 w-full max-w-full">
-        <div className="container flex flex-col gap-8 pt-8 pb-16 px-4 sm:px-6 md:px-8 lg:px-16 w-full max-w-full">
+        <div className="container flex flex-col gap-8 pt-8 pb-16 px-8 sm:px-6 md:px-8 lg:px-16 w-full max-w-full">
           <PageName pageName={pageName} />
           <h1 className="text-h1-responsive break-words overflow-hidden text-wrap">
             {pageTitle}
