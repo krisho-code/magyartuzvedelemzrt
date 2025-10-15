@@ -4,7 +4,6 @@ import Hero from "../components/Global Components/Hero";
 import Stats from "../components/Global Components/Stats";
 import HomeAbout from "../components/Home/HomeAbout";
 import AboutFuture from "../components/About/AboutFuture";
-import AboutTeam from "../components/About/AboutTeam";
 import CallToAction from "../components/CallToAction/CallToAction";
 
 const Cégismertető = async () => {
@@ -20,7 +19,7 @@ const Cégismertető = async () => {
         button1Text={t("aboutPage.hero.button1")}
         button2Text={t("aboutPage.hero.button2")}
         link1="#about-future-section"
-        link2="#about-team-section"
+        link2="#about-future-section"
         // heroImage="/about-hero.jpg"
       />
       <Stats
@@ -35,7 +34,6 @@ const Cégismertető = async () => {
       />
       <HomeAbout hiddenButton={true} />
       <AboutFuture />
-      <AboutTeam />
       <CallToAction title={t("aboutPage.cta.title")} />
     </main>
   );
