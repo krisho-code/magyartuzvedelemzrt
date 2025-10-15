@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import { useI18n } from "@/locales/client";
 
 interface ServiceInfoProps {
   title: string;
@@ -7,6 +10,8 @@ interface ServiceInfoProps {
 }
 
 const ServiceInfo: React.FC<ServiceInfoProps> = ({ title, link }) => {
+  const t = useI18n();
+
   return (
     <div className="service-info flex items-start gap-8">
       <img src="/icons/fire-icon-secondary.svg" alt="" />
@@ -14,7 +19,7 @@ const ServiceInfo: React.FC<ServiceInfoProps> = ({ title, link }) => {
         <Link href={`${link}`} className="flex flex-col gap-2 md:gap-4">
           <h3 className="text-h3">{title}</h3>
           <p className="text-regular-normal underline flex gap-4 items-center">
-            Tudjon meg többet{" "}
+            {t("servicesPage.services.learnMore")}{" "}
             <img src="/icons/arrow-icon.svg" className="w-2" />
           </p>
         </Link>
