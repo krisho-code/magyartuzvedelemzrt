@@ -119,8 +119,8 @@ export default {
       title: "Vállalatunk bemutatása",
       description:
         "A Magyar Tűzvédelem Zrt. alapításának célja egy olyan vállalkozás létrehozása volt, amely műszaki és szakmai színvonalával teljesíti ügyfelei elvárásait. Megbízhatóságát a több évtizedes vezetői tapasztalat, valamint munkatársai szakmai elkötelezettsége és széleskörű referenciái biztosítják.",
-      button1: "Küldetésünk és jövőképünk",
-      button2: "Csapatunk",
+      button1: "Rólunk",
+      button2: "Küldetésünk és jövőképünk",
     },
     stats: {
       title: "Tudásunk kiemelkedik a piacon!",

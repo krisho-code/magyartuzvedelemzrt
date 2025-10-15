@@ -18,7 +18,7 @@ const Cégismertető = async () => {
         pageDescription={t("aboutPage.hero.description")}
         button1Text={t("aboutPage.hero.button1")}
         button2Text={t("aboutPage.hero.button2")}
-        link1="#about-future-section"
+        link1="#about-home-section"
         link2="#about-future-section"
         // heroImage="/about-hero.jpg"
       />
@@ -32,7 +32,7 @@ const Cégismertető = async () => {
         stat3={t("aboutPage.stats.stat3")}
         text3={t("aboutPage.stats.text3")}
       />
-      <HomeAbout hiddenButton={true} />
+      <HomeAbout hiddenButton={true} id="about-home-section" />
       <AboutFuture />
       <CallToAction title={t("aboutPage.cta.title")} />
     </main>

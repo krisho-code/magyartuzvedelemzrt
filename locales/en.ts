@@ -118,8 +118,8 @@ export default {
       title: "Introducing Our Company",
       description:
         "The goal of establishing Magyar Tűzvédelem Zrt. was to create an enterprise that meets its clients' expectations with its technical and professional standards. Its reliability is ensured by decades of leadership experience, as well as the professional commitment and extensive references of its staff.",
-      button1: "Our Mission and Vision",
-      button2: "Our Team",
+      button1: "About Us",
+      button2: "Our Mission and Vision",
     },
     stats: {
       title: "Our Expertise Stands Out in the Market!",

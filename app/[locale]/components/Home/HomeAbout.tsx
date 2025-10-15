@@ -6,15 +6,20 @@ import CallToActionButton from "../CallToAction/CallToActionButton";
 
 interface HomeAboutProps {
   hiddenButton?: boolean;
+  id?: string;
 }
 
 const HomeAbout: React.FC<HomeAboutProps> = async ({
   hiddenButton = false,
+  id,
 }) => {
   const t = await getI18n();
 
   return (
-    <section className="home-about-section flex items-center justify-center py-16">
+    <section
+      className="home-about-section flex items-center justify-center py-16"
+      id={id}
+    >
       <div className="container flex flex-col gap-16 px-8">
         <UnderlinedTitle
           pageName={t("homeAbout.pageName")}
