@@ -92,6 +92,15 @@ export default {
       services: "Services",
       contact: "Contact",
     },
+    servicesDropdown: {
+      allServices: "All Services",
+      tuzvedelem: "Fire Protection",
+      azbesztmentesites: "Asbestos Removal",
+      tuzkarmentesites: "Fire Damage Restoration",
+      vizkarmentesites: "Water Damage Restoration",
+      tisztitasesveszelytelenites: "Industrial Cleaning and Decontamination",
+      alpintechnika: "Industrial Rope-Access Services",
+    },
     cta: {
       contactUs: "Get in Touch with Us!",
     },

@@ -93,6 +93,15 @@ export default {
       services: "Szolgáltatások",
       contact: "Kapcsolat",
     },
+    servicesDropdown: {
+      allServices: "Összes szolgáltatás",
+      tuzvedelem: "Tűzvédelem",
+      azbesztmentesites: "Azbesztmentesítés",
+      tuzkarmentesites: "Tűzkármentesítés",
+      vizkarmentesites: "Vízkármentesítés",
+      tisztitasesveszelytelenites: "Ipari tisztítás és veszélytelenítés",
+      alpintechnika: "Ipari alpintechnika",
+    },
     cta: {
       contactUs: "Vegye fel velünk a kapcsolatot!",
     },

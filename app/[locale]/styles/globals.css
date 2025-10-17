@@ -591,6 +591,31 @@ a:active {
   hyphens: auto;
 }
 
+/* Services Dropdown */
+.services-dropdown {
+  transform-origin: top;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 0; /* No rounded corners */
+}
+
+.services-dropdown ul li a {
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.services-dropdown ul li:last-child a {
+  border-bottom: none;
+}
+
+.services-dropdown ul li a:hover {
+  background-color: rgba(174, 33, 56, 0.05);
+  padding-left: 4px;
+  transition: all 0.25s ease-in-out;
+}
+
 /* Responsive text sizing improvements */
 @media (max-width: 480px) {
   .text-h1-responsive {
@@ -601,5 +626,12 @@ a:active {
   .text-medium-normal {
     font-size: 16px !important;
     line-height: 140% !important;
+  }
+
+  .services-dropdown {
+    width: 100%;
+    box-shadow: none;
+    margin-top: 8px;
+    border-radius: 0; /* No rounded corners on mobile either */
   }
 }
