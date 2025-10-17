@@ -20,6 +20,13 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
   const pathname = usePathname();
   const t = useI18n();
 
+  // Function to only close mobile menu (not toggle)
+  const closeMobileMenu = () => {
+    if (mobileOpen) {
+      mobileToggle();
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 48);
@@ -62,7 +69,7 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
         <div className="container flex items-center justify-between px-8">
           {/* Item */}
           <nav className="nav flex items-center gap-8">
-            <AlterLogo mobileToggle={mobileToggle} />
+            <AlterLogo mobileToggle={closeMobileMenu} />
             <Menu
               extraClasses="hidden lg:flex items-center gap-8"
               servicesDropdownOpen={servicesDropdownOpen}
