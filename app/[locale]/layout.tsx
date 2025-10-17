@@ -8,6 +8,9 @@ import Provider from "./components/I18nProvider";
 
 export const metadata: Metadata = {
   title: "",
+  appleWebApp: {
+    title: "MyWebSite",
+  },
 };
 
 interface RootLayoutProps {
