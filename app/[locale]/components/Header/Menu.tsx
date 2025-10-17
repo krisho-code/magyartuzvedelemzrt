@@ -78,9 +78,24 @@ const Menu: React.FC<MenuProps> = ({
       <li ref={dropdownRef} className="relative">
         <button
           onClick={handleServicesClick}
-          className="text-medium-normal hover:text-[#ae2138] transition-colors duration-250 cursor-pointer"
+          className="text-medium-normal hover:text-[#ae2138] transition-colors duration-250 cursor-pointer flex items-center gap-1"
         >
           {t("header.navigation.services")}
+          <svg
+            className={`w-4 h-4 transition-transform duration-300 ${
+              servicesDropdownOpen ? "rotate-180" : ""
+            }`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
         </button>
 
         {/* Services Dropdown - Mobile Only */}
