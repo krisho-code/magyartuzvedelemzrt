@@ -600,23 +600,30 @@ a:active {
 
 .services-dropdown ul li a {
   white-space: nowrap;
-  font-size: 14px;
-  font-weight: 400;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   position: relative;
-}
-
-.services-dropdown ul li:last-child a {
-  border-bottom: none;
+  /* Removed border-bottom for clean dropdown appearance */
 }
 
 .services-dropdown ul li a:hover {
-  background-color: rgba(174, 33, 56, 0.05);
-  padding-left: 4px;
-  transition: all 0.25s ease-in-out;
+  /* Only text color change on hover, no background */
+  transition: color 0.25s ease-in-out;
+}
+
+/* Mobile Menu Items - Add divider lines */
+.mobile-navbar .menu li:not(:last-child):not(.dropdown-li-item) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Responsive text sizing improvements */
+@media (max-width: 1023px) {
+  .services-dropdown {
+    box-shadow: none !important;
+    border-radius: 0;
+  }
+}
+
 @media (max-width: 480px) {
   .text-h1-responsive {
     font-size: 28px !important;

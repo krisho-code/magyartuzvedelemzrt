@@ -93,64 +93,64 @@ const Menu: React.FC<MenuProps> = ({
             }`}
           >
             <ul className="py-2">
-              <li>
+              <li className="dropdown-li-item">
                 <Link
                   href="/szolgaltatasok"
-                  className="block px-4 py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                  className="block px-4 py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                   onClick={handleDropdownLinkClick}
                 >
                   {t("header.servicesDropdown.allServices")}
                 </Link>
               </li>
-              <li>
+              <li className="dropdown-li-item">
                 <Link
                   href="/szolgaltatasok/tuzvedelem"
-                  className="block px-4 py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                  className="block px-4 py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                   onClick={handleDropdownLinkClick}
                 >
                   {t("header.servicesDropdown.tuzvedelem")}
                 </Link>
               </li>
-              <li>
+              <li className="dropdown-li-item">
                 <Link
                   href="/szolgaltatasok/azbesztmentesites"
-                  className="block px-4 py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                  className="block px-4 py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                   onClick={handleDropdownLinkClick}
                 >
                   {t("header.servicesDropdown.azbesztmentesites")}
                 </Link>
               </li>
-              <li>
+              <li className="dropdown-li-item">
                 <Link
                   href="/szolgaltatasok/tuzkarmentesites"
-                  className="block px-4 py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                  className="block px-4 py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                   onClick={handleDropdownLinkClick}
                 >
                   {t("header.servicesDropdown.tuzkarmentesites")}
                 </Link>
               </li>
-              <li>
+              <li className="dropdown-li-item">
                 <Link
                   href="/szolgaltatasok/vizkarmentesites"
-                  className="block px-4 py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                  className="block px-4 py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                   onClick={handleDropdownLinkClick}
                 >
                   {t("header.servicesDropdown.vizkarmentesites")}
                 </Link>
               </li>
-              <li>
+              <li className="dropdown-li-item">
                 <Link
                   href="/szolgaltatasok/tisztitasesveszelytelenites"
-                  className="block px-4 py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                  className="block px-4 py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                   onClick={handleDropdownLinkClick}
                 >
                   {t("header.servicesDropdown.tisztitasesveszelytelenites")}
                 </Link>
               </li>
-              <li>
+              <li className="dropdown-li-item">
                 <Link
                   href="/szolgaltatasok/alpintechnika"
-                  className="block px-4 py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                  className="block px-4 py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                   onClick={handleDropdownLinkClick}
                 >
                   {t("header.servicesDropdown.alpintechnika")}

@@ -99,7 +99,7 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
             <li>
               <Link
                 href="/szolgaltatasok"
-                className="block py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                className="block py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                 onClick={() => setServicesDropdownOpen(false)}
               >
                 {t("header.servicesDropdown.allServices")}
@@ -108,7 +108,7 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
             <li>
               <Link
                 href="/szolgaltatasok/tuzvedelem"
-                className="block py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                className="block py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                 onClick={() => setServicesDropdownOpen(false)}
               >
                 {t("header.servicesDropdown.tuzvedelem")}
@@ -117,7 +117,7 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
             <li>
               <Link
                 href="/szolgaltatasok/azbesztmentesites"
-                className="block py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                className="block py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                 onClick={() => setServicesDropdownOpen(false)}
               >
                 {t("header.servicesDropdown.azbesztmentesites")}
@@ -126,7 +126,7 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
             <li>
               <Link
                 href="/szolgaltatasok/tuzkarmentesites"
-                className="block py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                className="block py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                 onClick={() => setServicesDropdownOpen(false)}
               >
                 {t("header.servicesDropdown.tuzkarmentesites")}
@@ -135,7 +135,7 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
             <li>
               <Link
                 href="/szolgaltatasok/vizkarmentesites"
-                className="block py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                className="block py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                 onClick={() => setServicesDropdownOpen(false)}
               >
                 {t("header.servicesDropdown.vizkarmentesites")}
@@ -144,7 +144,7 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
             <li>
               <Link
                 href="/szolgaltatasok/tisztitasesveszelytelenites"
-                className="block py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                className="block py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                 onClick={() => setServicesDropdownOpen(false)}
               >
                 {t("header.servicesDropdown.tisztitasesveszelytelenites")}
@@ -153,7 +153,7 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
             <li>
               <Link
                 href="/szolgaltatasok/alpintechnika"
-                className="block py-2 text-black hover:text-[#ae2138] transition-colors duration-250"
+                className="block py-2 text-medium-normal hover:text-[#ae2138] transition-colors duration-250"
                 onClick={() => setServicesDropdownOpen(false)}
               >
                 {t("header.servicesDropdown.alpintechnika")}
