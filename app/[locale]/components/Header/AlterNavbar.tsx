@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import { useI18n } from "@/locales/client";
+import { useRouter, usePathname } from "next/navigation";
 import Menu from "./Menu";
 import CallToActionButton from "../CallToAction/CallToActionButton";
 import AlterLogo from "../Global Components/AlterLogo";
@@ -16,6 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
   const [scrolled, setScrolled] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
   const t = useI18n();
 
   useEffect(() => {
@@ -43,17 +45,24 @@ const Navbar: React.FC<NavbarProps> = ({ mobileToggle, mobileOpen }) => {
     };
   }, []);
 
+  // Close dropdown when navigating to other pages
+  useEffect(() => {
+    setServicesDropdownOpen(false);
+  }, [pathname]);
+
   return (
     <div ref={dropdownRef} className="relative">
       <div
         className={`navbar alter-navbar flex justify-center items-center h-24 bg-zinc-800 text-white transition-opacity ease-in-out duration-250 ${
-          mobileOpen ? "opacity-100" : "opacity-80"
-        } ${scrolled ? "opacity-80" : "opacity-100"} hover:opacity-100`}
+          mobileOpen || servicesDropdownOpen ? "opacity-100" : "opacity-80"
+        } ${
+          scrolled && !servicesDropdownOpen ? "opacity-80" : "opacity-100"
+        } hover:opacity-100`}
       >
         <div className="container flex items-center justify-between px-8">
           {/* Item */}
           <nav className="nav flex items-center gap-8">
-            <AlterLogo />
+            <AlterLogo mobileToggle={mobileToggle} />
             <Menu
               extraClasses="hidden lg:flex items-center gap-8"
               servicesDropdownOpen={servicesDropdownOpen}

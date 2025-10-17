@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { useI18n } from "@/locales/client";
+import { usePathname } from "next/navigation";
 
 interface MenuProps {
   mobileToggle?: () => void;
@@ -18,6 +19,7 @@ const Menu: React.FC<MenuProps> = ({
   setServicesDropdownOpen: parentSetServicesDropdownOpen,
 }) => {
   const t = useI18n();
+  const pathname = usePathname();
   const [localServicesDropdownOpen, setLocalServicesDropdownOpen] =
     useState(false);
   const dropdownRef = useRef<HTMLLIElement>(null);
@@ -33,22 +35,28 @@ const Menu: React.FC<MenuProps> = ({
   // Close dropdown when clicking outside (only for mobile)
   useEffect(() => {
     const isMobile = extraClasses?.includes("flex-col");
-    if (!isMobile) return; // Desktop dropdown is handled by parent
+    if (!isMobile || !servicesDropdownOpen) return; // Desktop dropdown is handled by parent
 
     const handleClickOutside = (event: MouseEvent) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
+      // Only close if clicking outside the entire mobile menu container
+      // We need to check if the click is outside the mobile navbar, not just the dropdown
+      const mobileNavbar = document.querySelector(".mobile-navbar");
+      if (mobileNavbar && !mobileNavbar.contains(event.target as Node)) {
         setServicesDropdownOpen(false);
       }
     };
 
     document.addEventListener("mousedown", handleClickOutside);
+
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [extraClasses, setServicesDropdownOpen]);
+
+  // Close dropdown when navigating to other pages
+  useEffect(() => {
+    setServicesDropdownOpen(false);
+  }, [pathname, setServicesDropdownOpen]);
 
   const handleServicesClick = (e: React.MouseEvent) => {
     e.preventDefault();

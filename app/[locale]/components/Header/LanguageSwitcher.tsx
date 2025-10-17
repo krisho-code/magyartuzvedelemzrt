@@ -5,10 +5,12 @@ import { ChangeEvent } from "react";
 
 interface LanguageSwitcherProps {
   extraClasses?: string;
+  mobileToggle?: () => void;
 }
 
 export default function LanguageSwitcher({
   extraClasses,
+  mobileToggle,
 }: LanguageSwitcherProps) {
   const changeLocale = useChangeLocale();
   const locale = useCurrentLocale();
@@ -17,6 +19,10 @@ export default function LanguageSwitcher({
   const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value as "hu" | "en";
     changeLocale(newLocale);
+    // Close mobile menu when language is changed in mobile view
+    if (mobileToggle) {
+      mobileToggle();
+    }
   };
 
   return (

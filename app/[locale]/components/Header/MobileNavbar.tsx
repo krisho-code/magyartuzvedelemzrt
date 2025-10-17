@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useI18n } from "@/locales/client";
 import CallToActionButton from "../CallToAction/CallToActionButton";
 import Menu from "./Menu";
@@ -16,6 +16,14 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
   mobileOpen,
 }) => {
   const t = useI18n();
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+
+  // Close the services dropdown when the mobile menu closes
+  useEffect(() => {
+    if (!mobileOpen) {
+      setServicesDropdownOpen(false);
+    }
+  }, [mobileOpen]);
 
   return (
     <div
@@ -28,6 +36,8 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
         <Menu
           extraClasses="flex flex-col gap-0.5"
           mobileToggle={mobileToggle}
+          servicesDropdownOpen={servicesDropdownOpen}
+          setServicesDropdownOpen={setServicesDropdownOpen}
         />
         {/* Item */}
         <CallToActionButton
@@ -36,7 +46,10 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
           mobileToggle={mobileToggle}
         />
         {/* Item */}
-        <LanguageSwitcher extraClasses="sm:hidden" />
+        <LanguageSwitcher
+          extraClasses="sm:hidden"
+          mobileToggle={mobileToggle}
+        />
       </div>
     </div>
   );
