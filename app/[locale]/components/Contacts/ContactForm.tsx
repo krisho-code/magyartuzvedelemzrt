@@ -2,6 +2,9 @@ import React from "react";
 import { getI18n } from "@/locales/server";
 
 import UnderlinedTitle from "../Global Components/UnderlinedTitle";
+import ContactEmail from "../Global Components/ContactEmail";
+import ContactPhone from "../Global Components/ContactPhone";
+import ContactLocation from "../Global Components/ContactLocation";
 
 const ContactForm = async () => {
   const t = await getI18n();
@@ -25,22 +28,13 @@ const ContactForm = async () => {
           </div>
           <ul className="flex flex-col gap-4">
             <li className="flex items-center gap-4">
-              <img src="/icons/email-icon.svg" alt="" />
-              <a href="#" className="underline">
-                {t("contactForm.contactInfo.email")}
-              </a>
+              <ContactEmail icon={true} underline={true} />
             </li>
             <li className="flex items-center gap-4">
-              <img src="/icons/phone-icon.svg" alt="" />
-              <a href="#" className="underline">
-                {t("contactForm.contactInfo.phone")}
-              </a>
+              <ContactPhone icon={true} underline={true} />
             </li>
             <li className="flex items-center gap-4">
-              <img src="/icons/location-icon.svg" alt="" />
-              <a href="#" className="underline">
-                {t("contactForm.contactInfo.address")}
-              </a>
+              <ContactLocation icon={true} underline={true} />
             </li>
           </ul>
         </div>

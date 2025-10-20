@@ -1,4 +1,8 @@
 import React from "react";
+import ContactEmail from "../Global Components/ContactEmail";
+import ContactPhone from "../Global Components/ContactPhone";
+import ContactLocation from "../Global Components/ContactLocation";
+import ContactMailAddress from "../Global Components/ContactMailAddress";
 
 interface ContactInfosProps {
   icon: string;
@@ -19,9 +23,17 @@ const ContactInfosContent: React.FC<ContactInfosProps> = ({
       <div className="flex flex-col gap-2">
         <h4 className="text-h4">{title}</h4>
         <p className="text-medium-normal">{text}</p>
-        <a href="#" className="text-regular-normal underline">
+        {/* <a href="#" className="text-regular-normal underline">
           {link}
-        </a>
+        </a> */}
+        {link === "email" && <ContactEmail icon={false} underline={true} />}
+        {link === "phone" && <ContactPhone icon={false} underline={true} />}
+        {link === "address" && (
+          <ContactLocation icon={false} underline={true} />
+        )}
+        {link === "mail" && (
+          <ContactMailAddress icon={false} underline={true} />
+        )}
       </div>
     </div>
   );

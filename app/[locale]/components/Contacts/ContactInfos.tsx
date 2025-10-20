@@ -14,25 +14,25 @@ const ContactInfos = () => {
           icon="/icons/email-icon-secondary.svg"
           title={t("contactPage.contactInfos.email.title")}
           text={t("contactPage.contactInfos.email.text")}
-          link={t("contactPage.contactInfos.email.link")}
+          link="email"
         />
         <ContactInfosContent
           icon="/icons/phone-icon-secondary.svg"
           title={t("contactPage.contactInfos.phone.title")}
           text={t("contactPage.contactInfos.phone.text")}
-          link={t("contactPage.contactInfos.phone.link")}
+          link="phone"
         />
         <ContactInfosContent
           icon="/icons/location-icon-secondary.svg"
           title={t("contactPage.contactInfos.address.title")}
           text={t("contactPage.contactInfos.address.text")}
-          link={t("contactPage.contactInfos.address.link")}
+          link="address"
         />
         <ContactInfosContent
           icon="/icons/message-icon-secondary.svg"
           title={t("contactPage.contactInfos.postal.title")}
           text={t("contactPage.contactInfos.postal.text")}
-          link={t("contactPage.contactInfos.postal.link")}
+          link="mail"
         />
       </div>
     </section>

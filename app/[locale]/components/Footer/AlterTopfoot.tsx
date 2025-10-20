@@ -5,6 +5,8 @@ import { useI18n } from "@/locales/client";
 import CallToActionButton from "../CallToAction/CallToActionButton";
 import AlterLogo from "../Global Components/AlterLogo";
 import Menu from "../Header/Menu";
+import ContactPhone from "../Global Components/ContactPhone";
+import ContactEmail from "../Global Components/ContactEmail";
 
 const Topfoot = () => {
   const t = useI18n();
@@ -26,14 +28,8 @@ const Topfoot = () => {
           <Menu extraClasses="flex flex-col gap-2 md:flex-row md:items-center md:gap-8" />
 
           <div className="contacts hidden lg:flex items-center gap-8">
-            <a href="#" className="phone flex items-center gap-4">
-              <img src="icons/phone-icon-white.svg" alt="" width={16} />
-              <p className="text-regular-normal">{t("header.topbar.phone")}</p>
-            </a>
-            <a href="#" className="email flex items-center gap-4">
-              <img src="icons/email-icon-white.svg" alt="" width={16} />
-              <p className="text-regular-normal">{t("header.topbar.email")}</p>
-            </a>
+            <ContactPhone icon={true} white={true} />
+            <ContactEmail icon={true} white={true} />
           </div>
         </div>
       </div>
