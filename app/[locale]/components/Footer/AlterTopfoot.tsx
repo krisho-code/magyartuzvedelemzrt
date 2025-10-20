@@ -25,7 +25,10 @@ const Topfoot = () => {
 
         {/* Item */}
         <div className="row flex items-center justify-between">
-          <Menu extraClasses="flex flex-col gap-2 md:flex-row md:items-center md:gap-8" />
+          <Menu
+            extraClasses="flex flex-col gap-2 md:flex-row md:items-center md:gap-8"
+            disableServicesDropdown={true}
+          />
 
           <div className="contacts hidden lg:flex items-center gap-8">
             <ContactPhone icon={true} white={true} />

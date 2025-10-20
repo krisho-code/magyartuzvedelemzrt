@@ -23,7 +23,10 @@ const Topfoot = () => {
 
         {/* Item */}
         <div className="row flex items-center justify-between">
-          <Menu extraClasses="flex flex-col gap-2 md:flex-row md:items-center md:gap-8" />
+          <Menu
+            extraClasses="flex flex-col gap-2 md:flex-row md:items-center md:gap-8"
+            disableServicesDropdown={true}
+          />
 
           <div className="contacts hidden lg:flex items-center gap-8">
             <a href="#" className="phone flex items-center gap-4">
@@ -31,7 +34,7 @@ const Topfoot = () => {
               <p className="text-regular-normal">{t("header.topbar.phone")}</p>
             </a>
             <a href="#" className="email flex items-center gap-4">
-              <img src="icons/email-icon.svg" alt="" width={16} />
+              <img src="icons/phone-icon.svg" alt="" width={16} />
               <p className="text-regular-normal">{t("header.topbar.email")}</p>
             </a>
           </div>

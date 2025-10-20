@@ -10,6 +10,7 @@ interface MenuProps {
   extraClasses?: string;
   servicesDropdownOpen?: boolean;
   setServicesDropdownOpen?: (open: boolean) => void;
+  disableServicesDropdown?: boolean;
 }
 
 const Menu: React.FC<MenuProps> = ({
@@ -17,6 +18,7 @@ const Menu: React.FC<MenuProps> = ({
   extraClasses,
   servicesDropdownOpen: parentServicesDropdownOpen,
   setServicesDropdownOpen: parentSetServicesDropdownOpen,
+  disableServicesDropdown = false,
 }) => {
   const t = useI18n();
   const pathname = usePathname();
@@ -84,30 +86,40 @@ const Menu: React.FC<MenuProps> = ({
         </Link>
       </li>
       <li ref={dropdownRef} className="relative">
-        <button
-          onClick={handleServicesClick}
-          className="text-medium-normal hover:text-[#ae2138] transition-colors duration-250 cursor-pointer flex items-center gap-1"
-        >
-          {t("header.navigation.services")}
-          <svg
-            className={`w-4 h-4 transition-transform duration-300 ${
-              servicesDropdownOpen ? "rotate-180" : ""
-            }`}
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+        {disableServicesDropdown ? (
+          <Link
+            href="/szolgaltatasok"
+            className="text-medium-normal"
+            onClick={mobileToggle}
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
+            {t("header.navigation.services")}
+          </Link>
+        ) : (
+          <button
+            onClick={handleServicesClick}
+            className="text-medium-normal hover:text-[#ae2138] transition-colors duration-250 cursor-pointer flex items-center gap-1"
+          >
+            {t("header.navigation.services")}
+            <svg
+              className={`w-4 h-4 transition-transform duration-300 ${
+                servicesDropdownOpen ? "rotate-180" : ""
+              }`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+        )}
 
         {/* Services Dropdown - Mobile Only */}
-        {isMobile && (
+        {isMobile && !disableServicesDropdown && (
           <div
             className={`services-dropdown relative mt-2 w-full bg-gray-200 overflow-hidden transition-all duration-300 ease-in-out ${
               servicesDropdownOpen
