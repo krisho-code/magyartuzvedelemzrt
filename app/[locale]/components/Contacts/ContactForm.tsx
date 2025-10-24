@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { useI18n } from "@/locales/client";
+import { useI18n, useCurrentLocale } from "@/locales/client";
 
 import UnderlinedTitle from "../Global Components/UnderlinedTitle";
 import ContactEmail from "../Global Components/ContactEmail";
@@ -22,6 +22,7 @@ interface FormErrors {
 
 const ContactForm = () => {
   const t = useI18n();
+  const currentLocale = useCurrentLocale();
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -99,7 +100,7 @@ const ContactForm = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, locale: currentLocale }),
       });
 
       const result = await response.json();

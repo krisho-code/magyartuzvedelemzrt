@@ -68,14 +68,6 @@ export async function POST(request: NextRequest) {
             }</p>
           </div>
           
-          <div style="margin: 20px 0; padding: 15px; background-color: #fff3cd; border-left: 4px solid #ffc107;">
-            <h3 style="margin: 0 0 10px 0; color: #856404;">Segítségkérés típusa:</h3>
-            <p style="margin: 0; line-height: 1.6;">
-              Az ügyfél segítséget kért a megfelelő szolgáltatás kiválasztásában. 
-              Nem tudja pontosan, hogy milyen szolgáltatásra van szüksége, ezért szakértői tanácsadást igényel.
-            </p>
-          </div>
-          
           <div style="margin: 20px 0; padding: 15px; background-color: #d1ecf1; border-left: 4px solid #bee5eb;">
             <h3 style="margin: 0 0 10px 0; color: #0c5460;">Javasolt következő lépések:</h3>
             <ul style="margin: 10px 0; padding-left: 20px; line-height: 1.6;">
@@ -157,32 +149,12 @@ Küldés időpontja: ${new Date().toLocaleString("hu-HU")}
           </div>
           
           <div style="margin: 20px 0; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #6c757d;">
-            <h3 style="margin: 0 0 10px 0; color: #333;">What can we do for you?</h3>
+            <h3 style="margin: 0 0 10px 0; color: #333;">Contact us:</h3>
             <ul style="margin: 10px 0; padding-left: 20px; line-height: 1.6;">
-              <li><strong>Free consultation:</strong> Our experts will help you choose the right service</li>
-              <li><strong>Customized offer:</strong> A solution optimized for your needs</li>
-              <li><strong>Quick response time:</strong> We will contact you within 24-48 hours</li>
+              <li><strong>Phone:</strong> +36 30 475 1050</li>
+              <li><strong>Email:</strong> info@magyartuzvedelemzrt.hu</li>
+              <li><strong>Address:</strong> 1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson floor)</li>
             </ul>
-          </div>
-          
-          <div style="margin: 20px 0; padding: 15px; background-color: #fff3cd; border-left: 4px solid #ffc107;">
-            <h3 style="margin: 0 0 10px 0; color: #856404;">Our services:</h3>
-            <p style="margin: 0; line-height: 1.6;">
-              • Fire Protection<br>
-              • Asbestos Removal<br>
-              • Fire Damage Restoration<br>
-              • Water Damage Restoration<br>
-              • Industrial Cleaning and Decontamination<br>
-              • Industrial Alpine Technology
-            </p>
-          </div>
-          
-          <div style="margin: 20px 0; text-align: center;">
-            <p style="margin: 0; line-height: 1.6;">
-              <strong>Contact us:</strong><br>
-              Phone: +36 30 475 1050<br>
-              Email: info@magyartuzvedelemzrt.hu
-            </p>
           </div>
           
           <div style="margin-top: 30px; text-align: center; font-size: 12px; color: #666;">
@@ -208,32 +180,12 @@ Küldés időpontja: ${new Date().toLocaleString("hu-HU")}
           </div>
           
           <div style="margin: 20px 0; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #6c757d;">
-            <h3 style="margin: 0 0 10px 0; color: #333;">Mit tehetünk Önért?</h3>
+            <h3 style="margin: 0 0 10px 0; color: #333;">Elérhetőségeink:</h3>
             <ul style="margin: 10px 0; padding-left: 20px; line-height: 1.6;">
-              <li><strong>Ingyenes konzultáció:</strong> Szakértőink segítenek kiválasztani a megfelelő szolgáltatást</li>
-              <li><strong>Személyre szabott ajánlat:</strong> Az Ön igényeire optimalizált megoldás</li>
-              <li><strong>Gyors válaszidő:</strong> 24-48 órán belül jelentkezünk</li>
+              <li><strong>Telefon:</strong> +36 30 475 1050</li>
+              <li><strong>Email:</strong> info@magyartuzvedelemzrt.hu</li>
+              <li><strong>Cím:</strong> 1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson emelet)</li>
             </ul>
-          </div>
-          
-          <div style="margin: 20px 0; padding: 15px; background-color: #fff3cd; border-left: 4px solid #ffc107;">
-            <h3 style="margin: 0 0 10px 0; color: #856404;">Szolgáltatásaink:</h3>
-            <p style="margin: 0; line-height: 1.6;">
-              • Tűzvédelem<br>
-              • Azbesztmentesítés<br>
-              • Tűzkármentesítés<br>
-              • Vízkármentesítés<br>
-              • Ipari tisztítás és veszélytelenítés<br>
-              • Ipari alpintechnika
-            </p>
-          </div>
-          
-          <div style="margin: 20px 0; text-align: center;">
-            <p style="margin: 0; line-height: 1.6;">
-              <strong>Elérhetőségeink:</strong><br>
-              Telefon: +36 30 475 1050<br>
-              Email: info@magyartuzvedelemzrt.hu
-            </p>
           </div>
           
           <div style="margin-top: 30px; text-align: center; font-size: 12px; color: #666;">
@@ -252,22 +204,10 @@ Dear Customer!
 We have received your help request, and our colleagues will contact you soon 
 at ${email}.
 
-What can we do for you?
-- Free consultation: Our experts will help you choose the right service
-- Customized offer: A solution optimized for your needs  
-- Quick response time: We will contact you within 24-48 hours
-
-Our services:
-• Fire Protection
-• Asbestos Removal
-• Fire Damage Restoration
-• Water Damage Restoration
-• Industrial Cleaning and Decontamination
-• Industrial Alpine Technology
-
 Contact us:
-Phone: +36 30 475 1050
-Email: info@magyartuzvedelemzrt.hu
+- Phone: +36 30 475 1050
+- Email: info@magyartuzvedelemzrt.hu
+- Address: 1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson floor)
 
 ---
 Magyar Tűzvédelem Zrt.
@@ -281,22 +221,10 @@ Tisztelt Ügyfél!
 Megkaptuk segítségkérését, és kollégáink hamarosan felveszik Önnel a kapcsolatot 
 a ${email} email címen.
 
-Mit tehetünk Önért?
-- Ingyenes konzultáció: Szakértőink segítenek kiválasztani a megfelelő szolgáltatást
-- Személyre szabott ajánlat: Az Ön igényeire optimalizált megoldás  
-- Gyors válaszidő: 24-48 órán belül jelentkezünk
-
-Szolgáltatásaink:
-• Tűzvédelem
-• Azbesztmentesítés
-• Tűzkármentesítés
-• Vízkármentesítés
-• Ipari tisztítás és veszélytelenítés
-• Ipari alpintechnika
-
 Elérhetőségeink:
-Telefon: +36 30 475 1050
-Email: info@magyartuzvedelemzrt.hu
+- Telefon: +36 30 475 1050
+- Email: info@magyartuzvedelemzrt.hu
+- Cím: 1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson emelet)
 
 ---
 Magyar Tűzvédelem Zrt.
