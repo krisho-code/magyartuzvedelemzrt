@@ -36,7 +36,7 @@ const HomeServicesInfos = async () => {
       <img
         src="/home-services.jpg"
         alt=""
-        className="order-1 lg:order-2 h-full object-cover"
+        className="order-1 lg:order-2 w-full h-auto max-h-96 lg:h-full lg:max-h-none object-cover"
       />
     </div>
   );
