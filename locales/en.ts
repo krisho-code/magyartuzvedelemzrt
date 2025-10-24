@@ -222,6 +222,21 @@ export default {
         "Request contact from us by email and we'll help you figure it out!",
       placeholder: "Enter your email address!",
       button: "I Need Help!",
+      validation: {
+        emailRequired: "Email field is required",
+        emailInvalid: "Please enter a valid email address",
+        emailMaxLength: "Email must be maximum 100 characters",
+      },
+      messages: {
+        success: "Help request sent successfully!",
+        successDescription: "Our colleagues will contact you soon!",
+        error: "An error occurred",
+        generalError: "An unexpected error occurred during the help request",
+        serverError: "A server error occurred while sending the help request",
+      },
+      form: {
+        submitting: "Sending...",
+      },
     },
   },
   servicesPage: {

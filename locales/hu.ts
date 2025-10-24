@@ -223,6 +223,22 @@ export default {
         "Kérjen megkeresést tőlünk emailben és segítünk Önnek kitalálni!",
       placeholder: "Adja meg az email címét!",
       button: "Segítséget kérek!",
+      validation: {
+        emailRequired: "Az email mező kitöltése kötelező",
+        emailInvalid: "Kérem, adjon meg egy érvényes email címet",
+        emailMaxLength: "Az email maximum 100 karakter lehet",
+      },
+      messages: {
+        success: "Segítségkérés sikeresen elküldve!",
+        successDescription:
+          "Kollégáink hamarosan felveszik Önnel a kapcsolatot!",
+        error: "Hiba történt",
+        generalError: "Váratlan hiba történt a segítségkérés során",
+        serverError: "Szerver hiba történt a segítségkérés küldése során",
+      },
+      form: {
+        submitting: "Küldés...",
+      },
     },
   },
   servicesPage: {
