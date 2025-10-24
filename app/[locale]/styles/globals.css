@@ -642,3 +642,39 @@ a:active {
     border-radius: 0; /* No rounded corners on mobile either */
   }
 }
+
+/* Contact Form Pop-up Animations */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slide-in {
+  animation: slideInFromRight 0.3s ease-out forwards;
+}
+
+.animate-slide-out {
+  animation: slideOutToRight 0.3s ease-in forwards;
+}
+
+/* Ensure pop-ups appear above everything */
+.notification-popup {
+  z-index: 9999;
+}
