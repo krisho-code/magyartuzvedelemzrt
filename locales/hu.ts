@@ -121,7 +121,7 @@ export default {
   },
   header: {
     topbar: {
-      phone: "+36 98 123 7456",
+      phone: "+36 30 475 1050",
       email: " info@magyartuzvedelemzrt.hu",
     },
     navigation: {
