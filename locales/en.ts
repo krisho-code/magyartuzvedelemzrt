@@ -103,7 +103,7 @@ export default {
   header: {
     topbar: {
       phone: "+36 98 123 7456",
-      email: "info@magyar-tuzvedelem.hu",
+      email: " info@magyartuzvedelemzrt.hu",
     },
     navigation: {
       about: "About Us",
@@ -213,7 +213,7 @@ export default {
       postal: {
         title: "Mailing Address",
         text: "If you want to contact us by other means, please use this address!",
-        link: "2013 Pomáz Kós Károly utca 34/1/A",
+        link: "1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson floor)",
       },
     },
     callbackRequest: {

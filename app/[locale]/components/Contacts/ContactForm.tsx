@@ -4,7 +4,7 @@ import { useI18n, useCurrentLocale } from "@/locales/client";
 
 import UnderlinedTitle from "../Global Components/UnderlinedTitle";
 import ContactEmail from "../Global Components/ContactEmail";
-import ContactPhone from "../Global Components/ContactPhone";
+// import ContactPhone from "../Global Components/ContactPhone";
 import ContactLocation from "../Global Components/ContactLocation";
 
 interface FormData {
@@ -158,9 +158,9 @@ const ContactForm = () => {
             <li className="flex items-center gap-4">
               <ContactEmail icon={true} underline={true} />
             </li>
-            <li className="flex items-center gap-4">
+            {/* <li className="flex items-center gap-4">
               <ContactPhone icon={true} underline={true} />
-            </li>
+            </li> */}
             <li className="flex items-center gap-4">
               <ContactLocation icon={true} underline={true} />
             </li>

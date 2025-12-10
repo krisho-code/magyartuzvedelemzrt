@@ -58,7 +58,7 @@ export default {
   callToAction: {
     defaultTitle: "Biztonságban a jövő – válasszon minket!",
     defaultDescription:
-      "Nézze meg és tájékozódjon szolgáltatásainkból, majd kérjen konzultációt vagy küldjön ajánlatot!",
+      "Nézze meg és tájékozódjon szolgáltatásainkból, majd kérjen konzultációt vagy küldjön ajánlatkérést!",
     defaultCta1: "Informálódjon szolgáltatásainkból!",
     defaultCta2: "Kérjen konzultációt!",
   },
@@ -104,7 +104,7 @@ export default {
   header: {
     topbar: {
       phone: "+36 98 123 7456",
-      email: "info@magyar-tuzvedelem.hu",
+      email: " info@magyartuzvedelemzrt.hu",
     },
     navigation: {
       about: "Cégismertető",
@@ -214,7 +214,7 @@ export default {
       postal: {
         title: "Levelezési cím",
         text: "Ha más úton szeretne kapcsolatba lépni velünk, erre címezzen!",
-        link: "2013 Pomáz Kós Károly utca 34/1/A",
+        link: "1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson emelet)",
       },
     },
     callbackRequest: {

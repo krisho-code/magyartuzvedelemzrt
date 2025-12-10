@@ -30,9 +30,12 @@ const Topfoot = () => {
             disableServicesDropdown={true}
           />
 
-          <div className="contacts hidden lg:flex items-center gap-8">
-            <ContactPhone icon={true} white={true} />
+          <div className="contacts hidden lg:flex items-center gap-4">
+            {/* <ContactPhone icon={true} white={true} /> */}
             <ContactEmail icon={true} white={true} />
+            <p className="text-white pl-4 border-l-2 border-gray-400">
+              Küldjön ajánlatkérést!
+            </p>
           </div>
         </div>
       </div>
