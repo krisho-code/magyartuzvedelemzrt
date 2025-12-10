@@ -27,14 +27,10 @@ export default async function RootLayout({
   const { locale } = await params;
 
   return (
-    <html lang={locale}>
-      <body>
-        <Provider locale={locale}>
-          <Header />
-          {children}
-          <Footer />
-        </Provider>
-      </body>
-    </html>
+    <Provider locale={locale}>
+      <Header />
+      {children}
+      <Footer />
+    </Provider>
   );
 }
