@@ -20,8 +20,8 @@ const ContactEmail = ({ icon, white, underline }: EmailProps) => {
       rel="noopener noreferrer"
       className="email flex gap-4 hover:color-text-primary"
     >
-      {white && <img src="icons/email-icon-white.svg" alt="" width={16} />}
-      {!white && <img src="icons/email-icon.svg" alt="" width={16} />}
+      {white && <img src="/icons/email-icon-white.svg" alt="" width={16} />}
+      {!white && <img src="/icons/email-icon.svg" alt="" width={16} />}
       <span
         className={`text-regular-normal ${white ? "text-white" : ""} ${
           underline ? "underline" : ""

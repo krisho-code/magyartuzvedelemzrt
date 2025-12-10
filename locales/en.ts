@@ -13,7 +13,7 @@ export default {
     info1: {
       title: "100% Hungarian Company",
       description:
-        "As a domestically owned enterprise, we are committed to providing high-quality services to Hungarian industry and public services.",
+        "As a domestically owned enterprise, we are committed to providing high-quality services to Hungarian and international industry and public services.",
     },
     info2: {
       title: "30+ Years of Professional Experience",
@@ -154,10 +154,10 @@ export default {
         "Magyar Tűzvédelem Zrt. is a 100% Hungarian-owned company that offers reliable services based on nearly 30 years of professional experience. Its main activities are passive fire protection and asbestos removal, providing high-quality service to domestic partners.",
       stat1: "30+",
       text1: "Years of professional experience",
-      stat2: "100+",
-      text2: "Satisfied clients",
-      stat3: "50+",
-      text3: "Settlements served nationwide",
+      stat2: "50+",
+      text2: "Key client projects",
+      stat3: "100%",
+      text3: "Hungarian ownership",
     },
     future: {
       title: "Our Mission and Vision",
@@ -269,7 +269,7 @@ export default {
         name: "Asbestos Removal",
         description:
           "Safely and professionally, comprehensive service nationwide",
-        text: "Magyar Tűzvédelem Zrt. performs asbestos removal professionally in hermetically sealed spaces, with negative pressure and HEPA-filtered exhaust for safety.",
+        text: "Magyar Tűzvédelem Zrt. performs asbestos removal professionally, in strict compliance with relevant regulations to ensure the safety of you and your environment.",
       },
       tuzkarmentesites: {
         name: "Fire Damage Restoration",
@@ -315,15 +315,15 @@ export default {
         info1title: "Fire resistance coatings",
         info1text:
           "Application of special fire protection paints and coatings that significantly increase the fire resistance of steel and concrete structures.",
-        info2title: "Fire protection seals",
+        info2title: "Fire-resistant seals",
         info2text:
           "Professional fire-resistant sealing of cable and pipe penetrations, as well as wall and floor penetrations to prevent the spread of fire and smoke.",
         info3title: "Lightweight system protection",
         info3text:
           "Fire protection cladding of drywall and other structures so that all building types comply with the strictest safety regulations.",
-        info4title: "Certified solutions",
+        info4title: "Steel structure passive fire protection",
         info4text:
-          "All our work processes are carried out with qualified materials and approved technologies, guaranteeing legal compliance.",
+          "Steel structures lose strength above 500 °C. Our coatings prevent collapse and enable asset protection.",
       },
     },
     azbesztmentesites: {
@@ -376,9 +376,9 @@ export default {
         info3title: "Equipment salvage",
         info3text:
           "Cleaning, drying, and corrosion protection of electrical and technical equipment.",
-        info4title: "Complete case management",
+        info4title: "Corrosion and chemical protection",
         info4text:
-          "Communication with insurance companies, documentation, and professional restoration in one hand.",
+          "Burning plastics release chloride ions that form corrosive acids. Our technologies neutralize these processes and protect structures from damage.",
       },
     },
     vizkarmentesites: {

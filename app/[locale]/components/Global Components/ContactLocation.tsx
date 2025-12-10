@@ -19,7 +19,7 @@ const ContactLocation = ({ icon, underline }: ContactLocationProps) => {
       rel="noopener noreferrer"
       className="location flex gap-4 hover:color-text-primary"
     >
-      <img src="icons/location-icon.svg" alt="" width={16} />
+      <img src="/icons/location-icon.svg" alt="" width={16} />
       <span className={`text-regular-normal ${underline ? "underline" : ""}`}>
         {address}
       </span>

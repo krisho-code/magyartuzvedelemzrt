@@ -13,7 +13,7 @@ export default {
     info1: {
       title: "100%-ban Magyar cég",
       description:
-        "Hazai tulajdonú vállalkozásként elkötelezettek vagyunk a magyar ipar és közszolgáltatások magas színvonalú kiszolgálása iránt.",
+        "Hazai tulajdonú vállalkozásként elkötelezettek vagyunk a magyar és nemzetközi ipar és közszolgáltatások magas színvonalú kiszolgálása iránt.",
     },
     info2: {
       title: "30+ év szakmai tapasztalat",
@@ -155,10 +155,10 @@ export default {
         "A Magyar Tűzvédelem Zrt. egy 100%-ban magyar tulajdonú vállalkozás, amely közel 30 év szakmai tapasztalatra építve kínál megbízható szolgáltatásokat. Fő tevékenységei a passzív tűzvédelem és azbesztmentesítés, hazai partnerek magas színvonalú kiszolgálásával.",
       stat1: "30+",
       text1: "Év szakmai tapasztalat",
-      stat2: "100+",
-      text2: "Elégedett ügyfél",
-      stat3: "50+",
-      text3: "Településen végzett munka országszerte",
+      stat2: "50+",
+      text2: "Kiemelt ügyfélmunka",
+      stat3: "100%",
+      text3: "Magyar tulajdon",
     },
     future: {
       title: "Küldetésünk és jövőképünk",
@@ -271,7 +271,7 @@ export default {
         name: "Azbesztmentesítés",
         description:
           "Biztonságosan és szakszerűen, teljes körű szolgáltatás országosan",
-        text: "A Magyar Tűzvédelem Zrt. az azbesztmentesítést szakszerű, hermetikusan lezárt térben, negatív nyomással és HEPA-szűréses elszívással végzi a biztonság érdekében.",
+        text: "A Magyar Tűzvédelem Zrt. az azbesztmenetsítést szakszerűen, a vonatkozó jogszbaályok szigorú betartásával végzi az Ön és környezete biztonságának érdekében.",
       },
       tuzkarmentesites: {
         name: "Tűzkármentesítés",
@@ -317,15 +317,15 @@ export default {
         info1title: "Tűzállósági bevonatok",
         info1text:
           "Speciális tűzvédő festékek és bevonatok alkalmazása, amelyek jelentősen növelik az acél- és betonszerkezetek tűzállóságát.",
-        info2title: "Tűzvédelmi lezárások",
+        info2title: "Tűzgátló lezárások",
         info2text:
           "Kábel- és csőátvezetések, valamint fal- és födémáttörések professzionális tűzgátló lezárása a tűz és füst terjedésének megakadályozására.",
-        info3title: "Könnyűszerkezetes rendszerek védelme",
+        info3title: "Légcsatornák tűzvédelme",
         info3text:
-          "Gipszkarton és más szerkezetek tűzvédelmi burkolása, hogy minden épülettípus megfeleljen a legszigorúbb biztonsági előírásoknak.",
-        info4title: "Tanúsított megoldások",
+          "Légcsatrona burkolása, önálló légcsatorna készítése tűzálló anyagokból a tűzterjedés megakadályozására.",
+        info4title: "Acélszerkezetek passzív tűzvédelme",
         info4text:
-          "Minden munkafolyamatunk minősített anyagokkal és engedélyezett technológiákkal zajlik, garantálva a jogszabályi megfelelést.",
+          "Az acélszerkezetek 500 °C felett elveszítik szilárdságukat. Bevonataink megakadályozzák az összeomlást és biztosítják az értékek mentését.",
       },
     },
     azbesztmentesites: {
@@ -378,9 +378,9 @@ export default {
         info3title: "Berendezések mentése",
         info3text:
           "Elektromos és műszaki eszközök tisztítása, szárítása és korrózió elleni védelme.",
-        info4title: "Teljes körű ügyintézés",
+        info4title: "Korróziós folyamatok elleni védelme",
         info4text:
-          "Biztosítótársaságokkal való kapcsolattartás, dokumentáció és szakszerű helyreállítás egy kézben.",
+          "A műanyagok égéséből felszabaduló kloridion sósavat alkot. Speciális technológiáink ezeket a kémiai folyamatokat semlegesítik és védi a szerkezeteket.",
       },
     },
     vizkarmentesites: {
