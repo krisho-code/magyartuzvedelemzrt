@@ -72,6 +72,24 @@ export default {
       phone: "+36 30 475 1050",
       address: "1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson emelet)",
     },
+    contactPersons: [
+      {
+        phone: "+36 30 095 9903",
+        name: "Göndös Zsolt",
+        position: "Tűzvédelem",
+      },
+      {
+        phone: "+36 30 982 5686",
+        name: "Fodor Csaba",
+        position:
+          "Azbesztmentesítés, Tűzkármentesítés, Vízkármentesítés, Ipari tisztítás és veszélytelenítés",
+      },
+      {
+        phone: "+36 30 475 1050",
+        name: "Krámer Ferenc",
+        position: "Cégvezető",
+      },
+    ],
     form: {
       nameLabel: "Név / Cégnév",
       emailLabel: "Email",

@@ -1,10 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import { useI18n, useCurrentLocale } from "@/locales/client";
+import hu from "@/locales/hu";
+import en from "@/locales/en";
 
 import UnderlinedTitle from "../Global Components/UnderlinedTitle";
 import ContactEmail from "../Global Components/ContactEmail";
-// import ContactPhone from "../Global Components/ContactPhone";
+import ContactPhone from "../Global Components/ContactPhone";
 import ContactLocation from "../Global Components/ContactLocation";
 
 interface FormData {
@@ -23,6 +25,10 @@ interface FormErrors {
 const ContactForm = () => {
   const t = useI18n();
   const currentLocale = useCurrentLocale();
+  const contactPersons =
+    currentLocale === "hu"
+      ? hu.contactForm.contactPersons
+      : en.contactForm.contactPersons;
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -154,13 +160,21 @@ const ContactForm = () => {
               {t("contactForm.description")}
             </p>
           </div>
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-8">
             <li className="flex items-center gap-4">
               <ContactEmail icon={true} underline={true} />
             </li>
-            {/* <li className="flex items-center gap-4">
-              <ContactPhone icon={true} underline={true} />
-            </li> */}
+            {contactPersons.map((person, index: number) => (
+              <li key={`phone-${index}`} className="flex items-start">
+                <ContactPhone
+                  icon={true}
+                  underline={false}
+                  phone={person.phone}
+                  name={person.name}
+                  position={person.position}
+                />
+              </li>
+            ))}
             <li className="flex items-center gap-4">
               <ContactLocation icon={true} underline={true} />
             </li>

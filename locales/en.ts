@@ -71,6 +71,24 @@ export default {
       phone: "+36 30 475 1050",
       address: "1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson floor)",
     },
+    contactPersons: [
+      {
+        phone: "+36 30 095 9903",
+        name: "Zsolt Göndös",
+        position: "Fire Protection",
+      },
+      {
+        phone: "+36 30 982 5686",
+        name: "Csaba Fodor",
+        position:
+          "Asbestos Removal, Fire Damage Restoration, Water Damage Restoration, Industrial Cleaning and Decontamination",
+      },
+      {
+        phone: "+36 30 475 1050",
+        name: "Ferenc Krámer",
+        position: "Chief Executive",
+      },
+    ],
     form: {
       nameLabel: "Name / Company Name",
       emailLabel: "Email",
