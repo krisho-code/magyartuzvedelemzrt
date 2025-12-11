@@ -52,7 +52,11 @@ const Tisztitasesveszelytelenites = async () => {
           "servicePages.tisztitasesveszelytelenites.infos.info4text"
         )}
       />
-      <ServiceImages imgs="/iparitesv.jpg" />
+      <ServiceImages
+        img1="/images/iparitesv1.png"
+        img2="/images/iparitesv2.png"
+        img3="/images/iparitesv3.png"
+      />
       <CallToAction title={t("servicePages.common.ctaTitle")} />
     </main>
   );

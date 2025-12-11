@@ -540,47 +540,47 @@ a:active {
 /* Home Hero */
 .home-hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/hero-bg.jpg") no-repeat center center/cover;
+    url("/images/hero-bg.png") no-repeat center center/cover;
 }
 
 /* Heros */
 .hero-section.about .image {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url("/about-hero.jpg") no-repeat center center/cover;
+    url("/images/about-hero.png") no-repeat center center/cover;
 }
 .hero-section.services .image {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url("/services-hero.jpg") no-repeat center center/cover;
+    url("/images/services-hero.png") no-repeat center center/cover;
 }
 .hero-section.contacts .image {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url("/contacts-hero.jpg") no-repeat center center/cover;
+    url("/images/contact-hero.png") no-repeat center center/cover;
 }
 
 /* Service Hero */
 .service-hero-section.tuzvedelem {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/tuzvedelem.jpg") no-repeat center center/cover;
+    url("/images/tuzvedelem.png") no-repeat center center/cover;
 }
 .service-hero-section.azbesztmentesites {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/azbesztmentesites.jpg") no-repeat center center/cover;
+    url("/images/azbesztmentesites.png") no-repeat center center/cover;
 }
 .service-hero-section.tuzkarmentesites {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/tuzkarmentesites.jpg") no-repeat center center/cover;
+    url("/images/tuzkarmentesites.png") no-repeat center center/cover;
 }
 .service-hero-section.vizkarmentesites {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/vizkarmentesites.jpg") no-repeat center center/cover;
+    url("/images/vizkarmentesites.png") no-repeat center center/cover;
 }
 .service-hero-section.iparitesv {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/iparitesv.jpg") no-repeat center center/cover;
+    url("/images/iparitesv.png") no-repeat center center/cover;
 }
 .service-hero-section.alpintechnika {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/alpintechnika.jpg") no-repeat center center/cover;
+    url("/images/alpintechnika.png") no-repeat center center/cover;
 }
 
 /* Text overflow and wrapping utilities */

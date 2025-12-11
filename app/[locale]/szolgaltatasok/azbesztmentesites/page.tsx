@@ -32,7 +32,11 @@ const Azbesztmentesites = async () => {
         info4title={t("servicePages.azbesztmentesites.infos.info4title")}
         info4text={t("servicePages.azbesztmentesites.infos.info4text")}
       />
-      <ServiceImages imgs="/azbesztmentesites.jpg" />
+      <ServiceImages
+        img1="/images/azbesztmentesites1.png"
+        img2="/images/azbesztmentesites2.png"
+        img3="/images/azbesztmentesites3.png"
+      />
       <CallToAction title={t("servicePages.common.ctaTitle")} />
     </main>
   );

@@ -39,7 +39,7 @@ const AboutFuture = async () => {
           </div>
         </div>
         <img
-          src="/about-future.jpg"
+          src="/images/about-future.png"
           alt=""
           className="w-full h-full max-w-full object-cover order-1 lg:order-2"
         />
