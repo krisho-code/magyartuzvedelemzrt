@@ -1,5 +1,6 @@
 import React from "react";
 import { getI18n } from "@/locales/server";
+import Image from "next/image";
 
 const AboutFuture = async () => {
   const t = await getI18n();
@@ -38,9 +39,11 @@ const AboutFuture = async () => {
             </div>
           </div>
         </div>
-        <img
+        <Image
           src="/images/about-future.png"
           alt=""
+          width={500}
+          height={64}
           className="w-full h-full max-w-full object-cover order-1 lg:order-2"
         />
       </div>

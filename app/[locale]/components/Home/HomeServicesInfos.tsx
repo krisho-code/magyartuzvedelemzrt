@@ -1,5 +1,7 @@
 import React from "react";
 import { getI18n } from "@/locales/server";
+import Image from "next/image";
+
 import HomeServicesInfosContent from "./HomeServicesInfosContent";
 
 const HomeServicesInfos = async () => {
@@ -33,9 +35,11 @@ const HomeServicesInfos = async () => {
           link="/szolgaltatasok/alpintechnika"
         />
       </div>
-      <img
+      <Image
         src="/images/home-services.png"
         alt=""
+        width={500}
+        height={64}
         className="order-1 lg:order-2 w-full h-auto max-h-96 lg:h-full lg:max-h-none object-cover"
       />
     </div>

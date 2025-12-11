@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { useI18n } from "../../../../locales/client";
+import Image from "next/image";
 
 interface ServiceProps {
   name: string;
@@ -40,9 +41,11 @@ const Service: React.FC<ServiceProps> = ({
               <img src="/icons/arrow-icon.svg" alt="" className="w-2" />
             </p>
           </div>
-          <img
+          <Image
             src={`${img}`}
             alt=""
+            width={500}
+            height={64}
             className="w-full max-h-[320px] object-cover lg:max-h-[448px]"
           />
         </div>
