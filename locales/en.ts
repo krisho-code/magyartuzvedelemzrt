@@ -100,7 +100,8 @@ export default {
       requiredMark: "*",
       submitting: "Sending...",
       characterCount: "characters",
-      privacyCheckboxLabel: "I have read and accept the Data Processing Information.",
+      privacyCheckboxLabel:
+        "I have read and accept the Data Processing Information.",
     },
     validation: {
       nameRequired: "Name field is required",
@@ -272,10 +273,10 @@ export default {
       title: "Our Expertise Speaks for Itself!",
       description:
         "Magyar Tűzvédelem Zrt. ensures the highest quality solutions for its clients with decades of professional experience, recognized certifications, and permits. In all our projects, reliability, safety, and precise execution are at the center, so our partners are guaranteed to receive long-term value.",
-      stat1: "GNB",
-      text1: "We work with certification",
-      stat2: "HPS",
-      text2: "We have permits for our work",
+      stat1: "50+",
+      text1: "Key client projects",
+      stat2: "ISO",
+      text2: "Systematic work execution",
       stat3: "30+",
       text3: "Years of professional experience",
     },

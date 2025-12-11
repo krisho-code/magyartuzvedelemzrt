@@ -101,7 +101,8 @@ export default {
       requiredMark: "*",
       submitting: "Küldés...",
       characterCount: "karakter",
-      privacyCheckboxLabel: "Elolvastam és elfogadom az Adatkezelési Tájékoztatót.",
+      privacyCheckboxLabel:
+        "Elolvastam és elfogadom az Adatkezelési Tájékoztatót.",
     },
     validation: {
       nameRequired: "A név mező kitöltése kötelező",
@@ -274,10 +275,10 @@ export default {
       title: "Szakértelmünk magáért beszél!",
       description:
         "A Magyar Tűzvédelem Zrt. több évtizedes szakmai tapasztalattal, elismert minősítésekkel és engedélyekkel biztosítja ügyfelei számára a legmagasabb színvonalú megoldásokat. Minden projektünkben a megbízhatóság, a biztonság és a precíz kivitelezés áll a középpontban, így partnereink garantáltan hosszú távú értéket kapnak.",
-      stat1: "GNB",
-      text1: "Minősítéssel dolgozunk",
-      stat2: "HPS",
-      text2: "Engedélyünk van a munkáinkra",
+      stat1: "50+",
+      text1: "Kiemelt ügyfélmunka",
+      stat2: "ISO",
+      text2: "Rendszer szerinti munkavégzés",
       stat3: "30+",
       text3: "Év szakmai tapasztalat",
     },
