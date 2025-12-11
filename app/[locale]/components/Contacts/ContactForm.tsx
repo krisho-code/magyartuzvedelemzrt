@@ -324,7 +324,7 @@ const ContactForm = () => {
                     rel="noopener noreferrer"
                     className="hover:underline"
                   >
-                    Elolvastam és elfogadom az Adatkezelési Tájékoztatót.
+                    {t("contactForm.form.privacyCheckboxLabel")}
                   </a>
                   <span className="ml-1 text-red-600">
                     {t("contactForm.form.requiredMark")}

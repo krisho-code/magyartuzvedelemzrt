@@ -100,6 +100,7 @@ export default {
       requiredMark: "*",
       submitting: "Sending...",
       characterCount: "characters",
+      privacyCheckboxLabel: "I have read and accept the Data Processing Information.",
     },
     validation: {
       nameRequired: "Name field is required",

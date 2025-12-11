@@ -101,6 +101,7 @@ export default {
       requiredMark: "*",
       submitting: "Küldés...",
       characterCount: "karakter",
+      privacyCheckboxLabel: "Elolvastam és elfogadom az Adatkezelési Tájékoztatót.",
     },
     validation: {
       nameRequired: "A név mező kitöltése kötelező",
