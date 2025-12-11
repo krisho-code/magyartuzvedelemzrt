@@ -491,4 +491,191 @@ export default {
       ctaTitle: "Request a Custom Quote Today!",
     },
   },
+  impresszum: {
+    title: "Imprint",
+    companyData: {
+      heading: "Company Information",
+      companyName: "Company Name:",
+      companyNameValue: "Magyar Tűzvédelem and Fire Damage Restoration Ltd.",
+      headquarters: "Headquarters:",
+      headquartersValue:
+        "1052 Budapest, Deák Ferenc Square 3. (Meyer Levinson Floor)",
+      postalAddress: "Postal Address:",
+      postalAddressValue:
+        "1052 Budapest, Deák Ferenc Square 3. (Meyer Levinson Floor)",
+      taxNumber: "Tax Number:",
+      taxNumberValue: "27419030-2-41",
+      companyRegistration: "Company Registration Number:",
+      companyRegistrationValue: "01-10-141515",
+      phone: "Phone Number:",
+      phoneValue: "+36 30 475 1050",
+      email: "Email Address:",
+      emailValue: "info@magyartuzvedelemzrt.hu",
+    },
+    hostingProvider: {
+      heading: "Hosting Provider Information",
+      companyName: "Company Name:",
+      companyNameValue: "Vercel Inc.",
+      address: "Address:",
+      addressValue: "340 S Lemon Ave #4133 Walnut, CA 91789, USA",
+      contact: "Contact:",
+      contactValue: "privacy@vercel.com / https://vercel.com",
+    },
+  },
+  adatkezelesitajekoztato: {
+    title: "Data Privacy Policy",
+    section1: {
+      heading: "1. Introduction and General Information",
+      intro:
+        "This Data Privacy Policy (hereinafter: Policy) explains how Magyar Tűzvédelem Zrt. (hereinafter: Data Controller, we, us or the Company) collects, processes, handles, and protects personal data. We are committed to complying with data protection laws, in particular the General Data Protection Regulation (GDPR) of the European Union.",
+      dataControllerLabel: "Data Controller:",
+      companyNameLabel: "Company Name:",
+      companyNameValue: "Magyar Tűzvédelem and Fire Damage Restoration Ltd.",
+      addressLabel: "Address:",
+      addressValue:
+        "1052 Budapest, Deák Ferenc Square 3. (Meyer Levinson Floor)",
+      emailLabel: "Email:",
+      emailValue: "info@magyartuzvedelemzrt.hu",
+      phoneLabel: "Phone:",
+      phoneValue: "+36 30 475 1050",
+      website:
+        "This Policy applies to the processing of personal data that takes place through our website (www.magyartuzvedelemzrt.hu), in particular through the contact form.",
+    },
+    section2: {
+      heading: "2. Purpose of Data Processing",
+      intro: "We process personal data exclusively for the following purposes:",
+      purpose1: "To respond to messages sent by you",
+      purpose2: "Communication via your provided email address",
+      purpose3: "Contacting you at your provided phone number",
+      purpose4: "Fulfilling consultation and quote request",
+      purpose5: "Establishing and maintaining business relationships",
+      marketing:
+        "We do not use your data for marketing purposes without your prior express consent.",
+    },
+    section3: {
+      heading: "3. Type of Data Collected and Storage Method",
+      intro:
+        "Through the contact form, we request the following personal data:",
+      dataType1Label: "Name / Company Name:",
+      dataType1Value: "The name or company name provided",
+      dataType2Label: "Email Address:",
+      dataType2Value: "Your email contact address",
+      dataType3Label: "Message:",
+      dataType3Value: "The text of the message you sent",
+      storageTitle: "How do we store your data?",
+      storage:
+        "The website does not save your data in a web database. After you fill out the form, the technical system immediately converts your data into an email message and forwards it to the Data Controller's email account. No permanent copy of the data is made on the website server (Vercel); it is only stored in our email system.",
+    },
+    section4: {
+      heading: "4. Legal Basis for Data Processing",
+      intro:
+        "The processing of your personal data is based on the following legal basis:",
+      legalBasisLabel: "Voluntary Consent (GDPR Article 6 (1) a)):",
+      legalBasisValue:
+        "By filling out and submitting the contact form, you explicitly consent to the processing of your personal data.",
+      consent:
+        "Data processing takes place only with your consent, which you can revoke at any time.",
+    },
+    section5: {
+      heading: "5. Data Transmission",
+      intro: "Your data is processed as follows:",
+      hostingProvider: "Hosting Provider:",
+      hostingProviderValue:
+        "The technical operation of the website is provided by Vercel Inc. (340 S Lemon Ave #4133 Walnut, CA 91789, USA). The contract with the provider and the Data Processing Agreement (DPA) guarantee the security of your data in accordance with GDPR requirements.",
+      emailProviders: "Email Providers:",
+      emailProvidersValue:
+        "Correspondence is handled through basic email providers.",
+      important: "Important:",
+      importantValue:
+        "We do not sell your data, do not pass it to third parties for advertising purposes, and do not share it with business partners without your consent.",
+      transfer:
+        "Data transmission only occurs to the extent necessary for the operation of the above-mentioned technology.",
+    },
+    section6: {
+      heading: "6. Data Protection and Security",
+      intro:
+        "We consider the security of your data a high priority. We take numerous measures:",
+      https: "HTTPS/SSL Encryption:",
+      httpsValue:
+        "All communication between the website and your browser takes place through an encrypted HTTPS connection.",
+      serverSecurity: "Secure Server Conditions:",
+      serverSecurityValue:
+        "We store data on secure server infrastructure that has physical and logical protection.",
+      accessControl: "Access Control:",
+      accessControlValue:
+        "Only persons necessary for data processing can access the data.",
+      regularReview: "Regular Review:",
+      regularReviewValue:
+        "We regularly review our data protection measures and security protocols.",
+      disclaimer:
+        "However, since the internet is not completely secure, we cannot guarantee 100% security. It is your responsibility to keep your passwords and sensitive data secure.",
+    },
+    section7: {
+      heading: "7. Data Subject Rights (GDPR)",
+      intro:
+        "Under applicable data protection laws, you have the following rights:",
+      accessRight: "Right of Access:",
+      accessRightValue:
+        "You can request a copy of your data and information about its processing.",
+      rectificationRight: "Right of Rectification:",
+      rectificationRightValue:
+        "You can request the correction of your data if it is inaccurate or incomplete.",
+      deletionRight: "Right of Deletion (Right to be Forgotten):",
+      deletionRightValue:
+        "Under certain circumstances, you can request the deletion of your data.",
+      restrictionRight: "Right to Restrict Processing:",
+      restrictionRightValue:
+        "You can request the restriction of processing of your data.",
+      objectionRight: "Right to Object:",
+      objectionRightValue:
+        "You can object to the processing of your data for certain purposes.",
+      portabilityRight: "Right to Data Portability:",
+      portabilityRightValue:
+        "You can request your data to be provided in a structured, widely used, machine-readable format.",
+      requestInfo:
+        "You can submit requests related to these rights through the contact details below.",
+    },
+    section8: {
+      heading: "8. Cookies and Online Tracking",
+      essentialCookies: "Essential Cookies:",
+      essentialCookiesValue:
+        "Our website uses essential technical cookies that ensure proper page loading and secure operation. These do not collect a personal profile of you.",
+      thirdPartyAnalytics: "Third-Party Cookies:",
+      thirdPartyAnalyticsValue:
+        "Our website may contain elements such as Google Maps or other embedded content that may use their own cookies. The privacy policies of the respective providers apply to these.",
+      cookieManagement:
+        "You can control the acceptance of cookies through your browser settings. However, please note that disabling cookies may affect the functionality of certain features on the website.",
+    },
+    section9: {
+      heading: "9. Data Retention Period",
+      intro: "We store your personal data only for as long as:",
+      retention1:
+        "It is necessary for data processing (e.g., until we respond to your inquiry)",
+      retention2:
+        "Required by applicable law (e.g., accounting or public records)",
+      retention3: "We have not deleted the data at your request",
+      retentionPeriod:
+        "After responding to your inquiry, we generally delete the data within 1 year, unless further legitimate interest justifies retention.",
+    },
+    section10: {
+      heading: "10. Contact Regarding Data Protection Questions",
+      intro:
+        "If you have questions about our data processing or wish to exercise your GDPR rights, please contact us at the following details:",
+      emailLabel: "Email:",
+      emailValue: "info@magyartuzvedelemzrt.hu",
+      postalLabel: "Postal Address:",
+      postalValue:
+        "1052 Budapest, Deák Ferenc Square 3. (Meyer Levinson Floor)",
+      complaint:
+        "You can also file data protection complaints with the National Data Protection Authority: info@naih.hu, or at https://www.naih.hu/",
+    },
+    section11: {
+      heading: "11. Updates and Changes",
+      intro:
+        "We reserve the right to modify or update this Data Privacy Policy at any time to comply with legal requirements or changes in our data processing practices.",
+      notification:
+        "In case of significant changes, we will notify the affected parties and make this public via email or on our website.",
+      lastUpdated: "Last updated: December 11, 2025.",
+    },
+  },
 } as const;

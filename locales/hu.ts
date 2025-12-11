@@ -493,4 +493,190 @@ export default {
       ctaTitle: "Kérjen személyre szabott ajánlatot még ma!",
     },
   },
+  impresszum: {
+    title: "Impresszum",
+    companyData: {
+      heading: "Vállalkozás adatai",
+      companyName: "Cégnév:",
+      companyNameValue: "Magyar Tűzvédelem és Kármentesítő Zrt.",
+      headquarters: "Székhely:",
+      headquartersValue:
+        "1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson emelet)",
+      postalAddress: "Posta cím:",
+      postalAddressValue:
+        "1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson emelet)",
+      taxNumber: "Adószám:",
+      taxNumberValue: "27419030-2-41",
+      companyRegistration: "Cégjegyzékszám:",
+      companyRegistrationValue: "01-10-141515",
+      phone: "Telefonszám:",
+      phoneValue: "+36 30 475 1050",
+      email: "E-mail cím:",
+      emailValue: "info@magyartuzvedelemzrt.hu",
+    },
+    hostingProvider: {
+      heading: "Tárhelyszolgáltató adatai",
+      companyName: "Cégnév:",
+      companyNameValue: "Vercel Inc.",
+      address: "Cím:",
+      addressValue: "340 S Lemon Ave #4133 Walnut, CA 91789, USA",
+      contact: "Elérhetőség:",
+      contactValue: "privacy@vercel.com / https://vercel.com",
+    },
+  },
+  adatkezelesitajekoztato: {
+    title: "Adatkezelési tájékoztató",
+    section1: {
+      heading: "1. Bevezetés és általános információk",
+      intro:
+        "Ez az Adatkezelési tájékoztató (továbbiakban: Tájékoztató) ismerteti, hogy a Magyar Tűzvédelem Zrt. (továbbiakban: Adatkezelő, mi, ránk vagy a Társaság) hogyan gyűjt, kezel, feldolgoz és véd személyes adatokat. Elkötelezettünk az adatvédelmi jogszabályok betartásában, különösen az Európai Unió Általános Adatvédelmi Rendeletének (GDPR).",
+      dataControllerLabel: "Adatkezelő:",
+      companyNameLabel: "Cégnév:",
+      companyNameValue: "Magyar Tűzvédelem és Kármentesítő Zrt.",
+      addressLabel: "Cím:",
+      addressValue: "1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson emelet)",
+      emailLabel: "E-mail:",
+      emailValue: "info@magyartuzvedelemzrt.hu",
+      phoneLabel: "Telefon:",
+      phoneValue: "+36 30 475 1050",
+      website:
+        "Ez a Tájékoztató az adatkezelésre vonatkozik, amely a weboldalunkon (www.magyartuzvedelemzrt.hu) keresztül történik, különösen a kapcsolatfelvételi formanyomtatványon keresztül.",
+    },
+    section2: {
+      heading: "2. Adatkezelés célja",
+      intro: "A személyes adatokat kizárólag a következő célokra kezeljük:",
+      purpose1: "Az Ön által küldött üzenetre való válaszadás",
+      purpose2: "Kommunikáció az Ön megadott e-mail címen keresztül",
+      purpose3: "Az Ön megadott telefonszámon történő elérhetőség",
+      purpose4: "Konzultáció és ajánlatkérés teljesítése",
+      purpose5: "Üzleti kapcsolatok kialakítása és fenntartása",
+      marketing:
+        "Adatait nem használjuk marketing célokra az Ön előzetes kifejezett beleegyezése nélkül.",
+    },
+    section3: {
+      heading: "3. Gyűjtött adatok típusa és a tárolás módja",
+      intro:
+        "A kapcsolatfelvételi formanyomtatványon keresztül az alábbi személyes adatokat kérjük be:",
+      dataType1Label: "Név / Cégnév:",
+      dataType1Value: "A megadott név vagy cégmegnevezés",
+      dataType2Label: "E-mail cím:",
+      dataType2Value: "Az Ön e-mail kapcsolattartási címe",
+      dataType3Label: "Üzenet:",
+      dataType3Value: "Az Ön által küldött üzenet szövege",
+      storageTitle: "Hogyan tároljuk az adatokat?",
+      storage:
+        "A weboldal nem menti el az Ön adatait webes adatbázisba. A technikai háttérrendszer az űrlap kitöltése után az adatokat azonnal egy e-mail üzenetté alakítja, és továbbítja az Adatkezelő e-mail fiókjába. A weboldal szerverén (Vercel) az adatokról nem készül tartós másolat, azok kizárólag a levelezőrendszerünkben kerülnek tárolásra.",
+    },
+    section4: {
+      heading: "4. Adatkezelés jogalapja",
+      intro:
+        "Az Ön személyes adatainak feldolgozása az alábbi jogalappal történik:",
+      legalBasisLabel: "Önkéntes beleegyezés (GDPR 6. cikk (1) a) pont):",
+      legalBasisValue:
+        "A kapcsolatfelvételi formanyomtatvány kitöltésével és elküldésével Ön kifejezetten beleegyezik személyes adatai feldolgozásába.",
+      consent:
+        "Az adatkezelés kizárólag az Ön beleegyezésével történik, amely Ön bármikor visszavonhat.",
+    },
+    section5: {
+      heading: "5. Adattovábbítás",
+      intro: "Az Ön adatait az alábbiak szerint kezeljük:",
+      hostingProvider: "Tárhelyszolgáltató:",
+      hostingProviderValue:
+        "A weboldal technikai üzemeltetését a Vercel Inc. (340 S Lemon Ave #4133 Walnut, CA 91789, USA) biztosítja. A szolgáltatóval kötött szerződés és adatfeldolgozási megállapodás (DPA) garantálja az adatok biztonságát a GDPR előírásaival összhangban.",
+      emailProviders: "E-mail szolgáltatók:",
+      emailProvidersValue:
+        "A levelezés alapvető e-mail szolgáltatók segítségével valósul meg.",
+      important: "Fontos:",
+      importantValue:
+        "Az Ön adatait nem értékesítjük, nem adjuk át harmadik felek számára reklámozási célokra, és nem osztjuk meg üzleti partnerek számára az Ön beleegyezése nélkül.",
+      transfer:
+        "Az adatok továbbítása csak a fent felsorolt technika működtetéséhez szükséges mértékben történik.",
+    },
+    section6: {
+      heading: "6. Adatvédelem és biztonság",
+      intro:
+        "Az Ön adatainak biztonságát magas prioritásnak tekintjük. Számos intézkedés megtesszük:",
+      https: "HTTPS/SSL titkosítás:",
+      httpsValue:
+        "Az összes kommunikáció a weboldal és az Ön böngészője között titkosított HTTPS kapcsolaton keresztül történik.",
+      serverSecurity: "Biztonságos szerverfeltételek:",
+      serverSecurityValue:
+        "Az adatokat biztonságos szerver infrastruktúrán tároljuk, amely fizikai és logikai védelemmel rendelkezik.",
+      accessControl: "Hozzáférés korlátozása:",
+      accessControlValue:
+        "Az adatokhoz csak az adatkezeléshez szükséges személyek férhetnek hozzá.",
+      regularReview: "Rendszeres felülvizsgálat:",
+      regularReviewValue:
+        "Rendszeresen felülvizsgáljuk adatvédelmi intézkedéseinket és biztonsági protokollunkat.",
+      disclaimer:
+        "Azonban, mivel az internet nem teljesen biztonságos, nem tudjuk garantálni a 100%-os biztonságot. Az Ön felelőssége, hogy biztonságban tartsa jelszavait és bizalmas adatait.",
+    },
+    section7: {
+      heading: "7. Érintetti jogok (GDPR)",
+      intro:
+        "A személyes adatok védelméről szóló hatályos jogszabályok értelmében Önnek az alábbi jogai vannak:",
+      accessRight: "Hozzáférési jog:",
+      accessRightValue:
+        "Kérheti az Ön adatainak másolatát és információt azok feldolgozásáról.",
+      rectificationRight: "Helyesbítési jog:",
+      rectificationRightValue:
+        "Kérheti az Ön adatainak helyesbítését, ha azok pontatlanok vagy hiányosak.",
+      deletionRight: "Törlési jog (Felejtéshez való jog):",
+      deletionRightValue:
+        "Bizonyos körülmények között kérheti az Ön adatainak törlését.",
+      restrictionRight: "Feldolgozás korlátozási joga:",
+      restrictionRightValue:
+        "Kérheti az Ön adatainak feldolgozásának korlátozását.",
+      objectionRight: "Tiltakozási jog:",
+      objectionRightValue:
+        "Tiltakozhat az Ön adatainak bizonyos célokra történő feldolgozása ellen.",
+      portabilityRight: "Adathordozhatóság joga:",
+      portabilityRightValue:
+        "Kérheti az Ön adatainak strukturált, széles körben használt, géppel olvasható formátumban történő átadását.",
+      requestInfo:
+        "Az ezekkel a jogokkal kapcsolatos kéréseket az alábbi elérhetőségeken keresztül nyújthatja be.",
+    },
+    section8: {
+      heading: "8. Sütik és online nyomkövetés",
+      essentialCookies: "Alapvető sütik:",
+      essentialCookiesValue:
+        "Weboldalunk alapvető technikai sütikkel működik, amelyek biztosítják az oldal helyes betöltését és biztonságos működését. Ezek nem gyűjtenek személyes profilt Önről.",
+      thirdPartyAnalytics: "Harmadik fél sütik:",
+      thirdPartyAnalyticsValue:
+        "Lehetséges, hogy weboldalunk olyan elemeket tartalmaz, mint a Google Maps vagy más beágyazott tartalmak, amelyek saját sütiket használhatnak. Ezekre vonatkozóan az adott szolgáltatók adatvédelmi szabályai érvényesek.",
+      cookieManagement:
+        "Ön szabályozhatja a sütik fogadását a böngészője beállításain keresztül. Kérjük azonban vegyük figyelembe, hogy a sütik letiltása az oldal bizonyos funkcióinak működésére hatással lehet.",
+    },
+    section9: {
+      heading: "9. Adatok tárolási ideje",
+      intro: "Az Ön személyes adatait csak olyan ideig tároljuk, amíg:",
+      retention1:
+        "Az adatkezeléshez szükséges (pl. az Ön megkeresésre történő válaszadásig)",
+      retention2:
+        "A vonatkozó jogszabályok megkövetelik (pl. számviteli vagy közteherre vonatkozó nyilvántartások)",
+      retention3: "Az Ön erre vonatkozó kérésére nem töröltük az adatokat",
+      retentionPeriod:
+        "Az érdeklődésre válaszadása után az adatokat általában legfeljebb 1 év múlva töröljük, ha további jogos érdek nem indokolja a tárolást.",
+    },
+    section10: {
+      heading: "10. Kapcsolattartás az adatvédelemmel kapcsolatos kérdésekben",
+      intro:
+        "Ha kérdése van az adatkezelésünkről vagy szeretné gyakorolni az Ön GDPR-jogait, kérjük, forduljon hozzánk az alábbi elérhetőségeken:",
+      emailLabel: "E-mail:",
+      emailValue: "info@magyartuzvedelemzrt.hu",
+      postalLabel: "Postai cím:",
+      postalValue: "1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson emelet)",
+      complaint:
+        "Az adatvédelemmel kapcsolatos panaszait a Nemzeti Adatvédelmi Felügyelethez is bejelentetheti: info@naih.hu, illetve a https://www.naih.hu/ címen.",
+    },
+    section11: {
+      heading: "11. Frissítések és változtatások",
+      intro:
+        "Fenntartjuk az ezt az Adatkezelési tájékoztatót bármikor módosítani vagy frissíteni jogot, hogy az megfeleljék a jogszabályi követelményeknek vagy a mi adatkezelési gyakorlatának megváltozásakor.",
+      notification:
+        "Jelentős módosítások esetén értesítjük az érintetteket, és az e-mail útján vagy az weboldalon keresztül hozzuk ezt nyilvánosságra.",
+      lastUpdated:
+        "Az Adatkezelési tájékoztató utolsó frissítésének dátuma: 2025. december 11.",
+    },
+  },
 } as const;

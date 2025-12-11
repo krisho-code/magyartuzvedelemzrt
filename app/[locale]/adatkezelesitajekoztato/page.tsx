@@ -1,322 +1,213 @@
-import React from "react";
+import { getScopedI18n } from "@/locales/server";
 
-const Adatkezelesitajekoztato = () => {
+const Adatkezelesitajekoztato = async () => {
+  const t = (await getScopedI18n("adatkezelesitajekoztato")) as any;
+
   return (
     <main className="pt-24">
       <div className="container mx-auto py-16 px-8">
-        <h1 className="text-h2 color-primary-text pb-4">
-          Adatkezelési tájékoztató
-        </h1>
+        <h1 className="text-h2 color-primary-text pb-4">{t("title")}</h1>
 
-        {/* 1. Bevezetés és általános információk */}
+        {/* Section 1 */}
         <div className="flex flex-col pb-8">
-          <h2 className="pb-2 font-bold text-lg">
-            1. Bevezetés és általános információk
-          </h2>
+          <h2 className="pb-2 font-bold text-lg">{t("section1.heading")}</h2>
+          <p className="pb-2">{t("section1.intro")}</p>
           <p className="pb-2">
-            Ez az Adatkezelési tájékoztató (továbbiakban: „Tájékoztató")
-            ismerteti, hogy a<strong> Magyar Tűzvédelem Zrt.</strong>{" "}
-            (továbbiakban: „Adatkezelő", „mi", „ránk" vagy „a Társaság") hogyan
-            gyűjt, kezel, feldolgoz és véd személyes adatokat. Elkötelezettünk
-            az adatvédelmi jogszabályok betartásában, különösen az Európai Unió
-            Általános Adatvédelmi Rendeletének (GDPR).
+            <strong>{t("section1.dataControllerLabel")}</strong>
           </p>
           <p className="pb-2">
-            <strong>Adatkezelő:</strong>
+            <strong>{t("section1.companyNameLabel")}</strong>{" "}
+            {t("section1.companyNameValue")}
           </p>
           <p className="pb-2">
-            <strong>Cégnév:</strong> Magyar Tűzvédelem és Kármentesítő Zrt.
+            <strong>{t("section1.addressLabel")}</strong>{" "}
+            {t("section1.addressValue")}
           </p>
           <p className="pb-2">
-            <strong>Cím:</strong> 1052 Budapest, Deák Ferenc tér 3. (Meyer
-            Levinson emelet)
+            <strong>{t("section1.emailLabel")}</strong>{" "}
+            {t("section1.emailValue")}
           </p>
           <p className="pb-2">
-            <strong>E-mail:</strong> info@magyartuzvedelemzrt.hu
+            <strong>{t("section1.phoneLabel")}</strong>{" "}
+            {t("section1.phoneValue")}
           </p>
-          <p className="pb-2">
-            <strong>Telefon:</strong> +36 30 475 1050
-          </p>
-          <p className="pb-4">
-            Ez a Tájékoztató az adatkezelésre vonatkozik, amely a weboldalunkon
-            (www.magyartuzvedelemzrt.hu) keresztül történik, különösen a
-            kapcsolatfelvételi formanyomtatványon keresztül.
-          </p>
+          <p className="pb-4">{t("section1.website")}</p>
         </div>
 
-        {/* 2. Adatkezelés célja */}
+        {/* Section 2 */}
         <div className="flex flex-col pb-8">
-          <h2 className="pb-2 font-bold text-lg">2. Adatkezelés célja</h2>
-          <p className="pb-2">
-            A személyes adatokat kizárólag a következő célokra kezeljük:
-          </p>
+          <h2 className="pb-2 font-bold text-lg">{t("section2.heading")}</h2>
+          <p className="pb-2">{t("section2.intro")}</p>
+          <ul className="pb-4 list-disc list-inside">
+            <li className="pb-1">{t("section2.purpose1")}</li>
+            <li className="pb-1">{t("section2.purpose2")}</li>
+            <li className="pb-1">{t("section2.purpose3")}</li>
+            <li className="pb-1">{t("section2.purpose4")}</li>
+            <li className="pb-1">{t("section2.purpose5")}</li>
+          </ul>
+          <p>{t("section2.marketing")}</p>
+        </div>
+
+        {/* Section 3 */}
+        <div className="flex flex-col pb-8">
+          <h2 className="pb-2 font-bold text-lg">{t("section3.heading")}</h2>
+          <p className="pb-2">{t("section3.intro")}</p>
           <ul className="pb-4 list-disc list-inside">
             <li className="pb-1">
-              Az Ön által küldött üzenetre való válaszadás
+              <strong>{t("section3.dataType1Label")}</strong>{" "}
+              {t("section3.dataType1Value")}
             </li>
             <li className="pb-1">
-              Kommunikáció az Ön megadott e-mail címen keresztül
+              <strong>{t("section3.dataType2Label")}</strong>{" "}
+              {t("section3.dataType2Value")}
             </li>
             <li className="pb-1">
-              Az Ön megadott telefonszámon történő elérhetőség
-            </li>
-            <li className="pb-1">Konzultáció és ajánlatkérés teljesítése</li>
-            <li className="pb-1">
-              Üzleti kapcsolatok kialakítása és fenntartása
+              <strong>{t("section3.dataType3Label")}</strong>{" "}
+              {t("section3.dataType3Value")}
             </li>
           </ul>
-          <p>
-            Adatait nem használjuk marketing célokra az Ön előzetes kifejezett
-            beleegyezése nélkül.
-          </p>
+          <p className="font-bold mb-2">{t("section3.storageTitle")}</p>
+          <p>{t("section3.storage")}</p>
         </div>
 
-        {/* 3. Gyűjtött adatok típusa */}
+        {/* Section 4 */}
         <div className="flex flex-col pb-8">
-          <h2 className="pb-2 font-bold text-lg">
-            3. Gyűjtött adatok típusa és a tárolás módja
-          </h2>
-          <p className="pb-2">
-            A kapcsolatfelvételi formanyomtatványon keresztül az alábbi
-            személyes adatokat kérjük be:
-          </p>
+          <h2 className="pb-2 font-bold text-lg">{t("section4.heading")}</h2>
+          <p className="pb-2">{t("section4.intro")}</p>
           <ul className="pb-4 list-disc list-inside">
             <li className="pb-1">
-              <strong>Név / Cégnév:</strong> A megadott név vagy cégmegnevezés
-            </li>
-            <li className="pb-1">
-              <strong>E-mail cím:</strong> Az Ön e-mail kapcsolattartási címe
-            </li>
-            <li className="pb-1">
-              <strong>Üzenet:</strong> Az Ön által küldött üzenet szövege
+              <strong>{t("section4.legalBasisLabel")}</strong>{" "}
+              {t("section4.legalBasisValue")}
             </li>
           </ul>
-          <p className="font-bold mb-2">Hogyan tároljuk az adatokat?</p>
-          <p>
-            A weboldal <strong>nem menti el</strong> az Ön adatait webes
-            adatbázisba. A technikai háttérrendszer az űrlap kitöltése után az
-            adatokat azonnal egy e-mail üzenetté alakítja, és továbbítja az
-            Adatkezelő e-mail fiókjába. A weboldal szerverén (Vercel) az
-            adatokról nem készül tartós másolat, azok kizárólag a
-            levelezőrendszerünkben kerülnek tárolásra.
-          </p>
+          <p>{t("section4.consent")}</p>
         </div>
 
-        {/* 4. Adatkezelés jogalapja */}
+        {/* Section 5 */}
         <div className="flex flex-col pb-8">
-          <h2 className="pb-2 font-bold text-lg">4. Adatkezelés jogalapja</h2>
-          <p className="pb-2">
-            Az Ön személyes adatainak feldolgozása az alábbi jogalappal
-            történik:
-          </p>
+          <h2 className="pb-2 font-bold text-lg">{t("section5.heading")}</h2>
+          <p className="pb-2">{t("section5.intro")}</p>
           <ul className="pb-4 list-disc list-inside">
             <li className="pb-1">
-              <strong>Önkéntes beleegyezés (GDPR 6. cikk (1) a) pont):</strong>{" "}
-              A kapcsolatfelvételi formanyomtatvány kitöltésével és elküldésével
-              Ön kifejezetten beleegyezik személyes adatai feldolgozásába.
-            </li>
-          </ul>
-          <p>
-            Az adatkezelés kizárólag az Ön beleegyezésével történik, amely Ön
-            bármikor visszavonhat.
-          </p>
-        </div>
-
-        {/* 5. Adattovábbítás */}
-        <div className="flex flex-col pb-8">
-          <h2 className="pb-2 font-bold text-lg">5. Adattovábbítás</h2>
-          <p className="pb-2">Az Ön adatait az alábbiak szerint kezeljük:</p>
-          <ul className="pb-4 list-disc list-inside">
-            <li className="pb-1">
-              <strong>Tárhelyszolgáltató:</strong> A weboldal technikai
-              üzemeltetését a <strong>Vercel Inc.</strong> (340 S Lemon Ave
-              #4133 Walnut, CA 91789, USA) biztosítja. A szolgáltatóval kötött
-              szerződés és adatfeldolgozási megállapodás (DPA) garantálja az
-              adatok biztonságát a GDPR előírásaival összhangban.
+              <strong>{t("section5.hostingProvider")}</strong>{" "}
+              {t("section5.hostingProviderValue")}
             </li>
             <li className="pb-1">
-              <strong>E-mail szolgáltatók:</strong> A levelezés alapvető e-mail
-              szolgáltatók segítségével valósul meg.
+              <strong>{t("section5.emailProviders")}</strong>{" "}
+              {t("section5.emailProvidersValue")}
             </li>
           </ul>
           <p className="pb-4">
-            <strong>Fontos:</strong> Az Ön adatait nem értékesítjük, nem adjuk
-            át harmadik felek számára reklámozási célokra, és nem osztjuk meg
-            üzleti partnerek számára az Ön beleegyezése nélkül.
+            <strong>{t("section5.important")}</strong>{" "}
+            {t("section5.importantValue")}
           </p>
-          <p>
-            Az adatok továbbítása csak a fent felsorolt technika működtetéséhez
-            szükséges mértékben történik.
-          </p>
+          <p>{t("section5.transfer")}</p>
         </div>
 
-        {/* 6. Adatvédelem és biztonság */}
+        {/* Section 6 */}
         <div className="flex flex-col pb-8">
-          <h2 className="pb-2 font-bold text-lg">
-            6. Adatvédelem és biztonság
-          </h2>
-          <p className="pb-2">
-            Az Ön adatainak biztonságát magas prioritásnak tekintjük. Számos
-            intézkedés megtesszük:
-          </p>
+          <h2 className="pb-2 font-bold text-lg">{t("section6.heading")}</h2>
+          <p className="pb-2">{t("section6.intro")}</p>
           <ul className="pb-4 list-disc list-inside">
             <li className="pb-1">
-              <strong>HTTPS/SSL titkosítás:</strong> Az összes kommunikáció a
-              weboldal és az Ön böngészője között titkosított HTTPS kapcsolaton
-              keresztül történik.
+              <strong>{t("section6.https")}</strong> {t("section6.httpsValue")}
             </li>
             <li className="pb-1">
-              <strong>Biztonságos szerverfeltételek:</strong> Az adatokat
-              biztonságos szerver infrastruktúrán tároljuk, amely fizikai és
-              logikai védelemmel rendelkezik.
+              <strong>{t("section6.serverSecurity")}</strong>{" "}
+              {t("section6.serverSecurityValue")}
             </li>
             <li className="pb-1">
-              <strong>Hozzáférés korlátozása:</strong> Az adatokhoz csak az
-              adatkezeléshez szükséges személyek férhetnek hozzá.
+              <strong>{t("section6.accessControl")}</strong>{" "}
+              {t("section6.accessControlValue")}
             </li>
             <li className="pb-1">
-              <strong>Rendszeres felülvizsgálat:</strong> Rendszeresen
-              felülvizsgáljuk adatvédelmi intézkedéseinket és biztonsági
-              protokollunkat.
+              <strong>{t("section6.regularReview")}</strong>{" "}
+              {t("section6.regularReviewValue")}
             </li>
           </ul>
-          <p>
-            Azonban, mivel az internet nem teljesen biztonságos, nem tudjuk
-            garantálni a 100%-os biztonságot. Az Ön felelőssége, hogy
-            biztonságban tartsa jelszavait és bizalmas adatait.
-          </p>
+          <p>{t("section6.disclaimer")}</p>
         </div>
 
-        {/* 7. Érintetti jogok */}
+        {/* Section 7 */}
         <div className="flex flex-col pb-8">
-          <h2 className="pb-2 font-bold text-lg">7. Érintetti jogok (GDPR)</h2>
-          <p className="pb-2">
-            A személyes adatok védelméről szóló hatályos jogszabályok értelmében
-            Önnek az alábbi jogai vannak:
-          </p>
+          <h2 className="pb-2 font-bold text-lg">{t("section7.heading")}</h2>
+          <p className="pb-2">{t("section7.intro")}</p>
           <ul className="pb-4 list-disc list-inside">
             <li className="pb-1">
-              <strong>Hozzáférési jog:</strong> Kérheti az Ön adatainak
-              másolatát és információt azok feldolgozásáról.
+              <strong>{t("section7.accessRight")}</strong>{" "}
+              {t("section7.accessRightValue")}
             </li>
             <li className="pb-1">
-              <strong>Helyesbítési jog:</strong> Kérheti az Ön adatainak
-              helyesbítését, ha azok pontatlanok vagy hiányosak.
+              <strong>{t("section7.rectificationRight")}</strong>{" "}
+              {t("section7.rectificationRightValue")}
             </li>
             <li className="pb-1">
-              <strong>Törlési jog (Felejtéshez való jog):</strong> Bizonyos
-              körülmények között kérheti az Ön adatainak törlését.
+              <strong>{t("section7.deletionRight")}</strong>{" "}
+              {t("section7.deletionRightValue")}
             </li>
             <li className="pb-1">
-              <strong>Feldolgozás korlátozási joga:</strong> Kérheti az Ön
-              adatainak feldolgozásának korlátozását.
+              <strong>{t("section7.restrictionRight")}</strong>{" "}
+              {t("section7.restrictionRightValue")}
             </li>
             <li className="pb-1">
-              <strong>Tiltakozási jog:</strong> Tiltakozhat az Ön adatainak
-              bizonyos célokra történő feldolgozása ellen.
+              <strong>{t("section7.objectionRight")}</strong>{" "}
+              {t("section7.objectionRightValue")}
             </li>
             <li className="pb-1">
-              <strong>Adathordozhatóság joga:</strong> Kérheti az Ön adatainak
-              strukturált, széles körben használt, géppel olvasható formátumban
-              történő átadását.
+              <strong>{t("section7.portabilityRight")}</strong>{" "}
+              {t("section7.portabilityRightValue")}
             </li>
           </ul>
-          <p className="pb-4">
-            Az ezekkel a jogokkal kapcsolatos kéréseket az alábbi
-            elérhetőségeken keresztül nyújthatja be.
-          </p>
+          <p className="pb-4">{t("section7.requestInfo")}</p>
         </div>
 
-        {/* 8. Sütik és online nyomkövetés */}
+        {/* Section 8 */}
         <div className="flex flex-col pb-8">
-          <h2 className="pb-2 font-bold text-lg">
-            8. Sütik és online nyomkövetés
-          </h2>
+          <h2 className="pb-2 font-bold text-lg">{t("section8.heading")}</h2>
           <p className="pb-2">
-            <strong>Alapvető sütik:</strong> Weboldalunk alapvető technikai
-            sütikkel működik, amelyek biztosítják az oldal helyes betöltését és
-            biztonságos működését. Ezek nem gyűjtenek személyes profilt Önről.
+            <strong>{t("section8.essentialCookies")}</strong>{" "}
+            {t("section8.essentialCookiesValue")}
           </p>
           <p className="pb-2">
-            <strong>Harmadik fél sütik:</strong> Lehetséges, hogy weboldalunk
-            olyan elemeket tartalmaz, mint a Google Maps vagy más beágyazott
-            tartalmak, amelyek saját sütiket használhatnak. Ezekre vonatkozóan
-            az adott szolgáltatók adatvédelmi szabályai érvényesek.
+            <strong>{t("section8.thirdPartyAnalytics")}</strong>{" "}
+            {t("section8.thirdPartyAnalyticsValue")}
           </p>
-          <p className="pb-4">
-            Ön szabályozhatja a sütik fogadását a böngészője beállításain
-            keresztül. Kérjük azonban vegyük figyelembe, hogy a sütik letiltása
-            az oldal bizonyos funkcióinak működésére hatással lehet.
-          </p>
+          <p className="pb-4">{t("section8.cookieManagement")}</p>
         </div>
 
-        {/* 9. Adatok tárolási ideje */}
+        {/* Section 9 */}
         <div className="flex flex-col pb-8">
-          <h2 className="pb-2 font-bold text-lg">9. Adatok tárolási ideje</h2>
-          <p className="pb-2">
-            Az Ön személyes adatait csak olyan ideig tároljuk, amíg:
-          </p>
+          <h2 className="pb-2 font-bold text-lg">{t("section9.heading")}</h2>
+          <p className="pb-2">{t("section9.intro")}</p>
           <ul className="pb-4 list-disc list-inside">
-            <li className="pb-1">
-              Az adatkezeléshez szükséges (pl. az Ön megkeresésre történő
-              válaszadásig)
-            </li>
-            <li className="pb-1">
-              A vonatkozó jogszabályok megkövetelik (pl. számviteli vagy
-              közteherre vonatkozó nyilvántartások)
-            </li>
-            <li className="pb-1">
-              Az Ön erre vonatkozó kérésére nem töröltük az adatokat
-            </li>
+            <li className="pb-1">{t("section9.retention1")}</li>
+            <li className="pb-1">{t("section9.retention2")}</li>
+            <li className="pb-1">{t("section9.retention3")}</li>
           </ul>
-          <p>
-            Az érdeklődésre válaszadása után az adatokat általában legfeljebb 1
-            év múlva töröljük, ha további jogos érdek nem indokolja a tárolást.
-          </p>
+          <p>{t("section9.retentionPeriod")}</p>
         </div>
 
-        {/* 10. Kapcsolattartás az adatvédelemmel kapcsolatos kérdésekben */}
+        {/* Section 10 */}
         <div className="flex flex-col pb-8">
-          <h2 className="pb-2 font-bold text-lg">
-            10. Kapcsolattartás az adatvédelemmel kapcsolatos kérdésekben
-          </h2>
+          <h2 className="pb-2 font-bold text-lg">{t("section10.heading")}</h2>
+          <p className="pb-2">{t("section10.intro")}</p>
           <p className="pb-2">
-            Ha kérdése van az adatkezelésünkről vagy szeretné gyakorolni az Ön
-            GDPR-jogait, kérjük, forduljon hozzánk az alábbi elérhetőségeken:
-          </p>
-          <p className="pb-2">
-            <strong>E-mail:</strong> info@magyartuzvedelemzrt.hu
+            <strong>{t("section10.emailLabel")}</strong>{" "}
+            {t("section10.emailValue")}
           </p>
           <p className="pb-4">
-            <strong>Postai cím:</strong> 1052 Budapest, Deák Ferenc tér 3.
-            (Meyer Levinson emelet)
+            <strong>{t("section10.postalLabel")}</strong>{" "}
+            {t("section10.postalValue")}
           </p>
-          <p className="pb-4">
-            Az adatvédelemmel kapcsolatos panaszait a Nemzeti Adatvédelmi
-            Felügyelethez is bejelentetheti: info@naih.hu, illetve a
-            https://www.naih.hu/ címen.
-          </p>
+          <p className="pb-4">{t("section10.complaint")}</p>
         </div>
 
-        {/* 11. Frissítések és változtatások */}
+        {/* Section 11 */}
         <div className="flex flex-col pb-4">
-          <h2 className="pb-2 font-bold text-lg">
-            11. Frissítések és változtatások
-          </h2>
-          <p className="pb-2">
-            Fenntartjuk az ezt az Adatkezelési tájékoztatót bármikor módosítani
-            vagy frissíteni jogot, hogy az megfeleljék a jogszabályi
-            követelményeknek vagy a mi adatkezelési gyakorlatának
-            megváltozásakor.
-          </p>
-          <p className="pb-2">
-            Jelentős módosítások esetén értesítjük az érintetteket, és az e-mail
-            útján vagy az weboldalon keresztül hozzuk ezt nyilvánosságra.
-          </p>
-          <p>
-            Az Adatkezelési tájékoztató utolsó frissítésének dátuma: 2025.
-            december 11.
-          </p>
+          <h2 className="pb-2 font-bold text-lg">{t("section11.heading")}</h2>
+          <p className="pb-2">{t("section11.intro")}</p>
+          <p className="pb-2">{t("section11.notification")}</p>
+          <p>{t("section11.lastUpdated")}</p>
         </div>
       </div>
     </main>
