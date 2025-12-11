@@ -152,9 +152,8 @@ export default {
   footer: {
     copyright: "© 2025 Magyar Tűzvédelem Zrt. | All rights reserved",
     links: {
-      faq: "FAQ",
-      cookies: "Cookies",
-      other: "Other",
+      impresszum: "Imprint",
+      adatkezelesitajekoztato: "Data Privacy Policy",
     },
   },
   aboutPage: {

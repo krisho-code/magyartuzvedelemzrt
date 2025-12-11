@@ -14,8 +14,16 @@ const Bottomfoot = () => {
         </p>
         <ul className="links flex items-center gap-4 order-1 md:order-2">
           <li>
-            <a href="#" className="text-regular-nomral underline">
-              {t("footer.links.cookies")}
+            <a href="/impresszum" className="text-regular-nomral underline">
+              {t("footer.links.impresszum")}
+            </a>
+          </li>
+          <li>
+            <a
+              href="/adatkezelesitajekoztato"
+              className="text-regular-nomral underline"
+            >
+              {t("footer.links.adatkezelesitajekoztato")}
             </a>
           </li>
         </ul>
