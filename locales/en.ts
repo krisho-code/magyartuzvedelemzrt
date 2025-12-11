@@ -109,6 +109,8 @@ export default {
       emailMaxLength: "Email must be maximum 100 characters",
       messageRequired: "Message field is required",
       messageMaxLength: "Message must be maximum 1000 characters",
+      privacyRequired:
+        "Please read and accept the Data Processing Information to continue.",
     },
     messages: {
       success: "Message sent successfully!",

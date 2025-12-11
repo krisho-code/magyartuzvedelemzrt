@@ -13,12 +13,14 @@ interface FormData {
   name: string;
   email: string;
   message: string;
+  privacyAccepted: boolean;
 }
 
 interface FormErrors {
   name?: string;
   email?: string;
   message?: string;
+  privacyAccepted?: string;
   general?: string;
 }
 
@@ -33,6 +35,7 @@ const ContactForm = () => {
     name: "",
     email: "",
     message: "",
+    privacyAccepted: false,
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -65,6 +68,14 @@ const ContactForm = () => {
       newErrors.message = t("contactForm.validation.messageRequired");
     } else if (formData.message.length > 1000) {
       newErrors.message = t("contactForm.validation.messageMaxLength");
+    }
+
+    // Privacy acceptance validation
+    if (!formData.privacyAccepted) {
+      newErrors.privacyAccepted =
+        currentLocale === "en"
+          ? "Please accept the Data Processing Information to continue"
+          : "Kérjük, fogadja el az Adatkezelési Tájékoztatót a folytatáshoz";
     }
 
     setErrors(newErrors);
@@ -117,7 +128,7 @@ const ContactForm = () => {
 
       // Success
       setSubmitStatus("success");
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ name: "", email: "", message: "", privacyAccepted: false });
 
       // Auto-hide success message after 5 seconds
       setTimeout(() => {
@@ -275,6 +286,56 @@ const ContactForm = () => {
             <div className="text-sm text-gray-600 -mt-6">
               {formData.message.length}/1000{" "}
               {t("contactForm.form.characterCount")}
+            </div>
+
+            {/* Privacy Policy Checkbox */}
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center gap-3">
+                <input
+                  id="privacyAccepted"
+                  name="privacyAccepted"
+                  type="checkbox"
+                  checked={formData.privacyAccepted}
+                  onChange={(e) => {
+                    setFormData((prev) => ({
+                      ...prev,
+                      privacyAccepted: e.target.checked,
+                    }));
+                    // Clear error when user checks the box
+                    if (errors.privacyAccepted) {
+                      setErrors((prev) => ({
+                        ...prev,
+                        privacyAccepted: undefined,
+                      }));
+                    }
+                  }}
+                  className={`mt-1 w-4 h-4 cursor-pointer ${
+                    errors.privacyAccepted ? "accent-red-600" : ""
+                  }`}
+                  disabled={isSubmitting}
+                />
+                <label
+                  htmlFor="privacyAccepted"
+                  className="cursor-pointer text-regular-normal"
+                >
+                  <a
+                    href={`/${currentLocale}/adatkezelesitajekoztato`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Elolvastam és elfogadom az Adatkezelési Tájékoztatót.
+                  </a>
+                  <span className="ml-1 text-red-600">
+                    {t("contactForm.form.requiredMark")}
+                  </span>
+                </label>
+              </div>
+              {errors.privacyAccepted && (
+                <span className="text-red-600 text-sm flex items-center gap-1">
+                  {errors.privacyAccepted}
+                </span>
+              )}
             </div>
 
             <button

@@ -110,6 +110,8 @@ export default {
       emailMaxLength: "Az email maximum 100 karakter lehet",
       messageRequired: "Az üzenet mező kitöltése kötelező",
       messageMaxLength: "Az üzenet maximum 1000 karakter lehet",
+      privacyRequired:
+        "Kérjük, olvassa el és fogadja el az Adatkezelési Tájékoztatót a folytatáshoz.",
     },
     messages: {
       success: "Üzenet sikeresen elküldve!",
