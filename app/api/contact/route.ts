@@ -133,7 +133,6 @@ Küldés időpontja: ${new Date().toLocaleString("hu-HU")}
           <div style="margin: 20px 0; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #6c757d;">
             <h3 style="margin: 0 0 10px 0; color: #333;">Contact us:</h3>
             <ul style="margin: 10px 0; padding-left: 20px; line-height: 1.6;">
-              <li><strong>Phone:</strong> +36 30 475 1050</li>
               <li><strong>Email:</strong> info@magyartuzvedelemzrt.hu</li>
               <li><strong>Address:</strong> 1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson floor)</li>
             </ul>
@@ -164,7 +163,6 @@ Küldés időpontja: ${new Date().toLocaleString("hu-HU")}
           <div style="margin: 20px 0; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #6c757d;">
             <h3 style="margin: 0 0 10px 0; color: #333;">Elérhetőségeink:</h3>
             <ul style="margin: 10px 0; padding-left: 20px; line-height: 1.6;">
-              <li><strong>Telefon:</strong> +36 30 475 1050</li>
               <li><strong>Email:</strong> info@magyartuzvedelemzrt.hu</li>
               <li><strong>Cím:</strong> 1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson emelet)</li>
             </ul>
@@ -187,7 +185,6 @@ We have successfully received your message and our colleagues will respond to yo
 at ${email}.
 
 Contact us:
-- Phone: +36 30 475 1050
 - Email: info@magyartuzvedelemzrt.hu
 - Address: 1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson floor)
 
@@ -204,7 +201,6 @@ Sikeresen megkaptuk üzenetét, és kollégáink hamarosan válaszolnak Önnek
 a ${email} email címen.
 
 Elérhetőségeink:
-- Telefon: +36 30 475 1050
 - Email: info@magyartuzvedelemzrt.hu
 - Cím: 1052 Budapest, Deák Ferenc tér 3. (Meyer Levinson emelet)
 
