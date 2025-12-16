@@ -34,7 +34,9 @@ export async function POST(request: NextRequest) {
 
     // Create transporter
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.EMAIL_ADDRESS,
         pass: process.env.EMAIL_PASS,
@@ -241,8 +243,10 @@ Professzionális tűzvédelmi megoldások, szakemberektől
     );
   } catch (error) {
     console.error("Error sending help request:", error);
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    console.error("Error details:", errorMessage);
     return NextResponse.json(
-      { error: "Failed to send help request" },
+      { error: `Failed to send help request: ${errorMessage}` },
       { status: 500 }
     );
   }
