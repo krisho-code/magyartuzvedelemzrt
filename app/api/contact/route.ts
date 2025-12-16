@@ -79,7 +79,8 @@ export async function POST(request: NextRequest) {
           <div style="margin-top: 20px; text-align: center; font-size: 12px; color: #666;">
             <p style="margin: 0;">Magyar Tűzvédelem Zrt. - Kapcsolatfelvételi űrlap</p>
             <p style="margin: 5px 0 0 0;">Küldés időpontja: ${new Date().toLocaleString(
-              "hu-HU"
+              "hu-HU",
+              { timeZone: "Europe/Budapest" }
             )}</p>
           </div>
         </div>
@@ -97,7 +98,9 @@ ${message}
 
 ---
 Magyar Tűzvédelem Zrt. - Kapcsolatfelvételi űrlap
-Küldés időpontja: ${new Date().toLocaleString("hu-HU")}
+Küldés időpontja: ${new Date().toLocaleString("hu-HU", {
+        timeZone: "Europe/Budapest",
+      })}
       `,
     };
 
